@@ -6,6 +6,15 @@ body {
     height: 100%;
 }
 
+h1 {
+    // Um simples 'display: none' não funcionaria aqui pois o mkdocs material substitui
+    // o título do site pelo título da página quando o elemento h1 deixa de ser visível
+    // https://github.com/squidfunk/mkdocs-material/blob/master/src/templates/assets/javascripts/components/header/title/index.ts#L113
+    position: absolute;
+    opacity: 0;
+    z-index: -999;
+}
+
 #background-container {
     width: 100%;
     height: 100%;

@@ -6,7 +6,7 @@ hide:
   - navigation
 ---
 
-# Davi Augusto Moreira Da Silva { style="display: none" }
+# Início
 
 <div class="perfil" markdown>
 <div class="perfil-imagem-container">
