@@ -1,0 +1,8 @@
+.cache
+.vscode
+venv/
+site/
+extra/
+
+# Arquivos css gerados usando scss
+docs/stylesheets/

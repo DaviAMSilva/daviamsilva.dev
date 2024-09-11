@@ -1,0 +1,127 @@
+site_name: Davi Augusto Moreira Da Silva
+site_author: Davi Augusto Moreira da Silva
+site_description: Site pessoal de Davi Augusto Moreira da Silva
+site_url: https://www.daviamsilva.dev
+repo_url: https://github.com/daviamsilva/daviamsilva.dev
+repo_name: daviamsilva.dev
+edit_uri: edit/main/docs/
+theme:
+  name: material
+  logo: images/Lamp2D.gif
+  favicon: images/Lamp2D.gif
+  icon:
+    logo: fontawesome/solid/lightbulb
+    repo: fontawesome/brands/github
+  font:
+    text: Fira Sans
+    code: Fira Code
+  language: pt-BR
+  custom_dir: overrides
+  palette:
+    # Palette toggle for Automatic
+    - media: "(prefers-color-scheme)"
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to Light Mode
+
+    # Palette toggle for Light Mode
+    - media: "(prefers-color-scheme: light)"
+      primary: custom
+      accent: custom
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for Dark Mode
+    - media: "(prefers-color-scheme: dark)"
+      primary: custom
+      accent: custom
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to Automatic
+
+    # # Palette toggle for One Monokai
+    # - media:
+    #   primary: custom
+    #   accent: custom
+    #   scheme: onemonokai
+    #   toggle:
+    #     icon: material/microsoft-visual-studio-code
+    #     name: Switch to Automatic
+  features:
+    # - navigation.instant
+    # - navigation.footer
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - toc.follow
+    - toc.integrate
+    - navigation.top
+    - content.tooltips
+
+markdown_extensions:
+  - tables
+  - def_list
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+
+watch:
+  - overrides/
+
+plugins:
+  - search
+  - privacy
+  - awesome-pages
+  - blog
+  - glightbox
+  - social:
+      cards_layout_options:
+        font_family: Fira Code
+  # - git-revision-date-localized
+
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  social:
+    - icon: simple/github
+      link: https://github.com/DaviAMSilva/
+      name: "GitHub" 
+    - icon: simple/linkedin
+      link: https://www.linkedin.com/in/daviamsilva/
+      name: "LinkedIn"
+    - icon: simple/mastodon
+      link: https://mastodon.social/@daviamsilva
+      name: "Mastodon"
+    - icon: simple/reddit
+      link: https://www.reddit.com/user/DaviAMSilva/
+      name: "Reddit"
+    - icon: simple/lemmy
+      link: https://lemmy.eco.br/u/DaviAMSilva
+      name: "Lemmy"

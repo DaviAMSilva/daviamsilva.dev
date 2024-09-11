@@ -1,0 +1,29 @@
+{% extends "main.html" %}
+
+{% block libs %}
+{{ super() }}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.min.js"></script>
+{% endblock %}
+
+{% block scripts %}
+{{ super() }}
+<script>
+    // Força o uso do modo escuro
+    document.body.setAttribute("data-md-color-switching", "")
+    document.body.setAttribute("data-md-color-scheme", "slate")
+    setTimeout(function () {
+        document.body.removeAttribute("data-md-color-switching")
+    })
+</script>
+<script src="scripts/background.js"></script>
+{% endblock %}
+
+{% block container %}
+{{ super() }}
+<div id="background-container"></div>
+{% endblock %}
+
+{% block styles %}
+{{ super() }}
+<link rel="stylesheet" href="stylesheets/home.css">
+{% endblock %}

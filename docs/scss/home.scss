@@ -1,0 +1,152 @@
+@import "_break.scss";
+@import "_cores.scss";
+
+html,
+body {
+    height: 100%;
+}
+
+#background-container {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+    z-index: -10;
+    background: $davi-blue--background;
+}
+
+.md-header,
+.md-tabs,
+.md-footer {
+    background-color: #0008;
+
+    .md-footer-meta {
+        background: none;
+    }
+}
+
+.md-main {
+    .md-main__inner {
+        margin-top: 0;
+        height: 100%;
+        display: flex;
+    }
+}
+
+.md-content {
+    .md-content__inner {
+        height: 100%;
+        padding-top: 0;
+    }
+
+    article::before {
+        display: none;
+    }
+}
+
+/* Esconde botão de troca de cor */
+[data-md-component="palette"] {
+    display: none;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+
+    @include break-at-orientation(portrait) {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    // Para celular em paisagem
+    @media screen and ((max-height: 450px) or (max-width: 750px)) and (orientation: landscape) {
+        font-size: 0.7em;
+    }
+
+    .perfil-imagem-container {
+        display: flex;
+        align-items: center;
+        width: 30em;
+        height: auto;
+
+        max-width: 70vh;
+        max-height: 70vh;
+        min-width: 20em;
+        min-height: 20em;
+
+        overflow: hidden;
+
+        @media screen and ((max-height: 450px) or (max-width: 750px)) and (orientation: landscape) {
+            width: min(75vw, 70vh);
+            height: auto;
+            max-width: min(75vw, 70vh);
+            max-height: min(75vw, 70vh);
+            min-width: 15em;
+            min-height: 15em;
+        }
+        @include break-at-orientation(portrait) {
+            width: min(90vw, 50vh);
+            height: auto;
+            max-width: min(90vw, 50vh);
+            max-height: min(90vw, 50vh);
+            min-width: 10em;
+            min-height: 10em;
+        }
+
+        .perfil-imagem {
+            width: 90%;
+            height: 90%;
+            margin: auto;
+            transition: ease 0.1s;
+
+            border-radius: 50%;
+            border: $davi-blue--background 7.5px solid;
+            background: $davi-blue--light;
+
+            &:hover {
+                width: 100%;
+                height: 100%;
+                border-radius: 0%;
+            }
+
+            @include break-at-orientation(portrait) {
+                width: 100%;
+                height: 100%;
+                margin-bottom: 0;
+                border-radius: unset;
+                border-bottom: none;
+            }
+        }
+    }
+
+    .perfil-conteudo {
+        color: white;
+        font-size: 1.25em;
+        background-color: rgba($davi-blue--background, 0.75);
+        border: $davi-blue--background 7.5px solid;
+        padding: 1em;
+        overflow: hidden;
+        max-width: 70vw;
+
+        @include break-at-orientation(portrait) {
+            font-size: 0.8em;
+            padding-top: 0;
+            width: min(90vw, 50vh);
+            max-width: min(90vw, 50vh);
+        }
+
+        .perfil-linha1 {
+            font-weight: bold;
+            font-family: Fira Code, monospace;
+        }
+
+        .perfil-nome {
+            font-size: 1.5em;
+        }
+    }
+}

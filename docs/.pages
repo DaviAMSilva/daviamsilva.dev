@@ -1,0 +1,6 @@
+nav:
+  - Início: index.md
+  - Sobre: sobre.md
+  - Currículo: curriculo.md
+  - Contato: contato.md
+  - ...
