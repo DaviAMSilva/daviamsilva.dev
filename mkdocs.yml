@@ -100,10 +100,17 @@ plugins:
   - awesome-pages
   - blog
   - glightbox
+  - git-revision-date-localized:
+      type: timeago
+      timezone: America/Sao_Paulo
+      locale: pt
+      fallback_to_build_date: false
+      enable_creation_date: true
+      exclude:
+          - index.md
   - social:
       cards_layout_options:
         font_family: Fira Code
-  # - git-revision-date-localized
 
 extra_css:
   - stylesheets/extra.css

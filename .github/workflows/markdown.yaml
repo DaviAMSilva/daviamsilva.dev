@@ -1,0 +1,15 @@
+on: [push, pull_request]
+
+jobs:
+  lint:
+    name: Verifica arquivos markdown
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: DavidAnson/markdownlint-cli2-action@v16
+      with:
+        config: .markdownlint.jsonc
+        globs: |
+          docs/**/*.md
+          !venv/**/*.md
+          !node_modules/**/*.md
