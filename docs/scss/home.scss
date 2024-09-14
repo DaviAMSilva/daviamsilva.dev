@@ -83,18 +83,18 @@ h1 {
         width: 30em;
         height: auto;
 
-        max-width: 70vh;
-        max-height: 70vh;
+        max-width: 65vh;
+        max-height: 65vh;
         min-width: 20em;
         min-height: 20em;
 
         overflow: hidden;
 
         @media screen and ((max-height: 450px) or (max-width: 750px)) and (orientation: landscape) {
-            width: min(75vw, 70vh);
+            width: min(75vw, 65vh);
             height: auto;
-            max-width: min(75vw, 70vh);
-            max-height: min(75vw, 70vh);
+            max-width: min(75vw, 65vh);
+            max-height: min(75vw, 65vh);
             min-width: 15em;
             min-height: 15em;
         }
@@ -140,7 +140,7 @@ h1 {
         border: $davi-blue--background 7.5px solid;
         padding: 1em;
         overflow: hidden;
-        max-width: 70vw;
+        max-width: 65vw;
 
         @include break-at-orientation(portrait) {
             font-size: 0.8em;
