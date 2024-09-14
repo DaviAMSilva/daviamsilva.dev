@@ -98,7 +98,13 @@ plugins:
   - search
   - privacy
   - awesome-pages
-  - blog
+  - tags:
+      tags_file: tags.md
+  - blog:
+      blog_toc: true
+      archive_toc: true
+      post_url_date_format: yyyy/MM/dd
+      post_url_format: "{categories}/{slug}"
   - glightbox
   - git-revision-date-localized:
       type: timeago
@@ -117,9 +123,12 @@ extra_css:
 
 extra:
   social:
+    - icon: simple/whatsapp
+      link: https://api.whatsapp.com/send?phone=5533988314020
+      name: "WhatsApp"
     - icon: simple/github
       link: https://github.com/DaviAMSilva/
-      name: "GitHub" 
+      name: "GitHub"
     - icon: simple/linkedin
       link: https://www.linkedin.com/in/daviamsilva/
       name: "LinkedIn"
