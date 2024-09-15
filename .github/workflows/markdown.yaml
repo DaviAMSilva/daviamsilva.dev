@@ -1,4 +1,10 @@
-on: [push, pull_request]
+on:
+  push:
+    paths:
+      - '**.md'
+  pull_request:
+    paths:
+      - '**.md'
 
 jobs:
   lint:
@@ -10,6 +16,6 @@ jobs:
       with:
         config: .markdownlint.jsonc
         globs: |
-          docs/**/*.md
-          !venv/**/*.md
-          !node_modules/**/*.md
+          **.md
+          !venv
+          !node_modules
