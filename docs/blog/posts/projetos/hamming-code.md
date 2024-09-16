@@ -2,6 +2,7 @@
 date: 2022-04-20
 categories:
   - Projetos
+  - Faculdade
 tags:
   - python
   - ferramenta
@@ -9,4 +10,4 @@ tags:
   - faculdade
 ---
 
-# Mosaico de Fotos
+# Hamming Code

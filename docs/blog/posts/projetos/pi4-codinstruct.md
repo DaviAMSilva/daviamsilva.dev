@@ -14,6 +14,7 @@ tags:
   - site
   - markdown
   - github actions
+  - github pages
   - webpack
   - node
   - npm
