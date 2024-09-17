@@ -1,8 +1,5 @@
 User-agent: *
 Disallow: 
 Disallow: /files
-Disallow: /images
-Allow: /images/Lamp*.gif
-Allow: /images/Lamp*.png
-Allow: /images/Perfil.webp
+Disallow: /mathjax
 Sitemap: https://www.daviamsilva.dev/sitemap.xml

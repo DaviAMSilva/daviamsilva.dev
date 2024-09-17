@@ -65,6 +65,7 @@ theme:
     - content.tooltips
 
 markdown_extensions:
+  - abbr
   - tables
   - def_list
   - attr_list
@@ -90,6 +91,8 @@ markdown_extensions:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
+  - pymdownx.arithmatex:
+      generic: true
 
 watch:
   - overrides/
@@ -104,11 +107,10 @@ plugins:
       blog_toc: true
       archive_toc: true
       pagination_per_page: 5
-      archive_pagination_per_page: 5
-      categories_pagination_per_page: 5
       post_url_date_format: yyyy/MM/dd
       post_url_format: "{categories}/{slug}"
-  - glightbox
+  - glightbox:
+        auto_caption: true
   - git-revision-date-localized:
       type: timeago
       timezone: America/Sao_Paulo
@@ -120,6 +122,10 @@ plugins:
   - social:
       cards_layout_options:
         font_family: Fira Code
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - mathjax/tex-mml-chtml.js
 
 extra_css:
   - stylesheets/extra.css

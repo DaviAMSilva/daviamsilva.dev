@@ -52,6 +52,18 @@ h1 {
     article::before {
         display: none;
     }
+
+    .perfil-botoes {
+        text-wrap: nowrap;
+
+        a {
+            margin: 0.01em;
+        }
+
+        @include break-at-orientation(portrait) {
+            font-size: 0.85em;
+        }
+    }
 }
 
 /* Esconde botão de troca de cor */
@@ -98,6 +110,7 @@ h1 {
             min-width: 15em;
             min-height: 15em;
         }
+
         @include break-at-orientation(portrait) {
             width: min(90vw, 50vh);
             height: auto;
