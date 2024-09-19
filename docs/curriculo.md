@@ -8,7 +8,7 @@
 
 !!! warning ""
 
-    Abaixo se encontra a versão digital do currículo de Davi Augusto Moreira da Silva. Para a versão em PDF acesse o arquivo: [Currículo :fontawesome-solid-file-pdf:](files/Currículo.pdf).
+    Abaixo se encontra a versão digital do currículo de Davi Augusto Moreira da Silva. Para a versão em PDF acesse o arquivo: [Currículo :fontawesome-solid-file-pdf:](files/Currículo.pdf){ target="_blank" rel="noopener noreferrer" }.
 
 # Davi Augusto Moreira da Silva
 

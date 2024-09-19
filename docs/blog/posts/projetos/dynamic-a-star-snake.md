@@ -1,4 +1,5 @@
 ---
+title: dynamic-a-star-snake
 date: 2020-01-14
 slug: dynamic-a-star-snake
 categories:
@@ -12,4 +13,4 @@ tags:
   - algoritmo
 ---
 
-# Dynamic A* Snake { #dynamic-a-star-snake }
+# Dynamic A* Snake
