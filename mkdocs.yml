@@ -98,8 +98,11 @@ watch:
   - overrides/
 
 plugins:
+  # Plugin desabilitado até as configurações avançadas estarem disponíveis
+  # Isso é infelizmente necessário devido aos badges do shields.io
+  # - privacy
+
   - search
-  - privacy
   - awesome-pages
   - tags:
       tags_file: tags.md
