@@ -13,4 +13,5 @@ tags:
   - algoritmo
 ---
 
+<!-- markdownlint-disable MD025 -->
 # Dynamic A* Snake

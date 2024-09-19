@@ -20,4 +20,4 @@ Esse foi um algoritmo bem simples que eu desenvolvi cujo o objetivo é encontrar
 
 Tradicionalmente o algoritmo de [par de pontos mais próximos](https://pt.wikipedia.org/wiki/Problema_do_par_de_pontos_mais_próximo) tem tempo de execução representado por $O\left(n^2\right)$, mas utilizando a estratégia acima é possível reduzir o tempo necessário para $O\left(n \log n\right)$, sendo muito mais eficiente.
 
-Eu desenvolvi esse algoritmo enquanto estava cursando o curso *PENSAMENTO COMPUTACIONAL, PROGRAMAÇÃO E APLICAÇÕES EM MATEMÁTICA* ofertada pelo ProMO por ter sido premiado por uma medalha de prata na edição da OBMEP do ano anterior.
+Eu desenvolvi esse algoritmo enquanto estava cursando o curso *PENSAMENTO COMPUTACIONAL, PROGRAMAÇÃO E APLICAÇÕES EM MATEMÁTICA* ofertada pelo ProMO 2019 por ter sido premiado por uma medalha de prata na OBMEP 2018.
