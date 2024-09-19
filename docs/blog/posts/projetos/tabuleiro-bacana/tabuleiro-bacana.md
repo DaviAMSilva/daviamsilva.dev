@@ -68,5 +68,3 @@ Como se pode imaginar esse algoritmo não é eficiente, mas esse não foi um obj
 Por causa disso eu acredito que a complexidade temporal desse algoritmo é $O\left(4^{n^2}\right)$, enquanto a complexidade espacial é $O\left(n^2 \times 4^{n^2}\right)$. É claro que isso se aplicaria apenas para o pior caso possível, sendo que na prática a maioria das possibilidades se tornarão inválidas e a recursão interrompida antes de completar todo o tabuleiro, mesmo assim isso demonstra a ineficiência desse algoritmo.
 
 Após terminar esse projeto eu pude verificar que minha solução estava de acordo com o resultado gerado pelo meu algoritmo e depois da liberação das repostas respostas oficiais eu tive a confirmação de que eu respondi corretamente todas as letras dessa questão.
-
-*[OBMEP]: Olimpíada Brasileira de Matemática das Escolas Públicas

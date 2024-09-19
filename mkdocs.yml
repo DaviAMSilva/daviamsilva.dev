@@ -78,7 +78,9 @@ markdown_extensions:
   - pymdownx.mark
   - pymdownx.tilde
   - pymdownx.inlinehilite
-  - pymdownx.snippets
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
   - pymdownx.superfences
   - pymdownx.tasklist:
       custom_checkbox: true
@@ -95,6 +97,7 @@ markdown_extensions:
       generic: true
 
 watch:
+  - includes/
   - overrides/
 
 plugins:

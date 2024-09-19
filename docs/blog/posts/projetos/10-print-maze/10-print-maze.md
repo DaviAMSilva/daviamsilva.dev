@@ -36,8 +36,6 @@ Eu gosto bastante da maneira como eu implementei o sistema de gride diagonal e o
 
 Em retrospectiva eu deveria ter utilizado classes para essa utilidade específica, permitindo uma possível herança de propriedades, mas na época eu ainda estava pouco familiarizado com os conceitos próprios de POO.
 
-*[POO]: Programação Orientada à Objetos
-
 </div>
 
 ```js title="Lookups.js" linenums="29"
