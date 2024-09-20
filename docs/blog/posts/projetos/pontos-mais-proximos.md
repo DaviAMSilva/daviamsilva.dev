@@ -1,4 +1,5 @@
 ---
+title: Pontos Mais Próximos
 date: 2020-02-29
 categories:
   - Projetos
@@ -8,8 +9,6 @@ tags:
   - algoritmo
   - obmep
 ---
-
-# Pontos Mais Próximos
 
 [![GitHub DaviAMSilva/Pontos-mais-proximos](https://img.shields.io/badge/github-DaviAMSilva%2FPontos--mais--proximos-white?logo=github)](https://github.com/DaviAMSilva/Pontos-mais-proximos){ target="\_blank" rel="noopener noreferrer" }
 [![Website Pontos Mais Próximos](https://img.shields.io/badge/website-Pontos Mais Próximos-326eff)](https://daviamsilva.github.io/OBMEP/par-mais-proximo/){ target="\_blank" rel="noopener noreferrer" }

@@ -1,4 +1,4 @@
 {
-    "MD033": false, // MD033/no-inline-html
-    "MD013": false // MD013/line-length
+    "MD033": false, // MD033/no-inline-html : Inline HTML
+    "MD013": false  // MD013/line-length    : Line length
 }

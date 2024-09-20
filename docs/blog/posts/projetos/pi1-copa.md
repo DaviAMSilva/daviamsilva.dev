@@ -1,4 +1,5 @@
 ---
+title: Simulador de Copa
 date: 2020-07-01
 categories:
   - Projetos
@@ -9,5 +10,3 @@ tags:
   - faculdade
   - make
 ---
-
-# Simulador de Copa

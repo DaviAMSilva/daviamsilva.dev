@@ -1,4 +1,5 @@
 ---
+title: The Owl House Mod for Balatro
 date:
   created: 2024-07-28
 categories:
@@ -9,5 +10,3 @@ tags:
   - steam
   - github actions
 ---
-
-# The Owl House Mod for Balatro

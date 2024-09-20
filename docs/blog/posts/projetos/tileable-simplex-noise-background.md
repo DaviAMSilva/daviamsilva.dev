@@ -1,4 +1,5 @@
 ---
+title: Tileable Simplex Noise Background
 date: 2020-02-29
 categories:
   - Projetos
@@ -7,5 +8,3 @@ tags:
   - p5.js
   - simplex noise
 ---
-
-# Tileable Simplex Noise Background

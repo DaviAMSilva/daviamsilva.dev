@@ -1,4 +1,5 @@
 ---
+title: Arcade Mania
 date:
   created: 2020-11-24
   updated: 2022-06-13
@@ -15,5 +16,3 @@ tags:
   - devkitpro
   - game boy advance
 ---
-
-# Arcade Mania

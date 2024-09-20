@@ -1,4 +1,5 @@
 ---
+title: Hamming Code
 date: 2022-04-20
 categories:
   - Projetos
@@ -9,5 +10,3 @@ tags:
   - algoritmo
   - faculdade
 ---
-
-# Hamming Code
