@@ -112,9 +112,13 @@ plugins:
   - blog:
       blog_toc: true
       archive_toc: true
+      archive_url_format: "arquivo/{date}"
       pagination_per_page: 5
+      pagination_url_format: "p/{page}"
       post_url_date_format: yyyy/MM/dd
       post_url_format: "{categories}/{slug}"
+      categories_url_format: "categoria/{slug}"
+      authors_profiles_url_format: "autor/{slug}"
   - glightbox:
         auto_caption: true
   - git-revision-date-localized:
