@@ -29,8 +29,8 @@ hide:
 
 @media screen and (min-width: 45em) {
     .md-content p:not(.admonition-title) {
-        font-size: 2em;
-        height: 1.5em;
+        font-size: 1.9em;
+        height: 1.40em;
         flex-direction: row;
         justify-content: flex-start;
     }
@@ -65,6 +65,9 @@ html .md-typeset .admonition > :last-child {
 
     [:simple-linkedin:&nbsp;LinkedIn](https://www.linkedin.com/in/daviamsilva/)
     <span class="expandir">/in/daviamsilva</span>
+
+    [:fontawesome-solid-envelope:&nbsp;E-mail](mailto:daviamsilva@hotmail.com)
+    <span class="expandir">daviamsilva@hotmail.com</span>
 
 !!! info ""
 

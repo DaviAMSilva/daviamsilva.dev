@@ -141,12 +141,15 @@ extra:
     - icon: simple/whatsapp
       link: https://api.whatsapp.com/send?phone=5533988314020
       name: "WhatsApp"
-    - icon: simple/github
-      link: https://github.com/DaviAMSilva/
-      name: "GitHub"
     - icon: simple/linkedin
       link: https://www.linkedin.com/in/daviamsilva/
       name: "LinkedIn"
+    - icon: fontawesome/solid/envelope
+      link: mailto:daviamsilva@hotmail.com
+      name: "E-mail"
+    - icon: simple/github
+      link: https://github.com/DaviAMSilva/
+      name: "GitHub"
     - icon: simple/mastodon
       link: https://mastodon.social/@daviamsilva
       name: "Mastodon"

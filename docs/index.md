@@ -16,8 +16,8 @@ hide:
 <p class="perfil-linha1">Olá, meu nome é <br /><span class="perfil-nome">DAVI&nbsp;AUGUSTO MOREIRA&nbsp;DA&nbsp;SILVA</span></p>
 <p class="perfil-linha2">Eu sou um cientista da computação, sete vezes medalhista da <strong><a href="https://www.obmep.org.br/" target="_blank" rel="noopener noreferrer">OBMEP</a></strong></p>
 <div class="perfil-botoes" markdown>
-[:fontawesome-solid-info: Sobre](sobre.md){ .md-button .md-button--primary }
-[:fontawesome-solid-user: Contato](contato.md){ .md-button .md-button--primary }
+[:fontawesome-solid-user-tie: Sobre](sobre.md){ .md-button .md-button--primary }
+[:fontawesome-solid-address-book: Contato](contato.md){ .md-button .md-button--primary }
 [:fontawesome-solid-file-pdf: Currículo](curriculo.md){ .md-button .md-button--primary }
 [:fontawesome-solid-screwdriver-wrench: Projetos](/blog/category/projetos){ .md-button .md-button--primary }
 </div>
