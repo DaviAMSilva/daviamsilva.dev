@@ -1,10 +1,13 @@
-$davi-blue: rgb(5, 5, 131);
-$davi-blue--light: rgb(25, 25, 255);
-$davi-blue--lightest: rgb(50, 110, 255);
-$davi-blue--dark: rgb(0, 0, 100);
-$davi-blue--background: rgb(10, 10, 20);
+$davi-blue-hue: 240deg;
+$davi-red-hue: 0deg;
 
-$davi-green: rgb(5, 130, 36);
-$davi-green--light: rgb(25, 255, 83);
-$davi-green--lightest: rgb(90, 255, 150);
-$davi-green--dark: rgb(0, 99, 25);
+$davi-blue:             hsl($davi-blue-hue,  93%, 27%);
+$davi-blue--light:      hsl($davi-blue-hue, 100%, 55%);
+$davi-blue--lightest:   hsl(222,            100%, 60%);
+$davi-blue--dark:       hsl($davi-blue-hue, 100%, 20%);
+$davi-blue--background: hsl($davi-blue-hue,  33%,  6%);
+
+$davi-red:              hsl($davi-red-hue,  93%, 26%);
+$davi-red--light:       hsl($davi-red-hue, 100%, 55%);
+$davi-red--lightest:    hsl($davi-red-hue, 100%, 68%);
+$davi-red--dark:        hsl($davi-red-hue, 100%, 19%);

@@ -11,7 +11,7 @@ tags:
 
 # 10 PRINT MAZE
 
-[![GitHub DaviAMSilva/10-print-maze](https://img.shields.io/badge/github-DaviAMSilva%2F10--print--maze-white?logo=github)](https://github.com/DaviAMSilva/10-print-maze){ target="\_blank" rel="noopener noreferrer" }
+[![GitHub DaviAMSilva/10-print-maze](https://img.shields.io/badge/github-DaviAMSilva%2F10--print--maze-dddddd?logo=github)](https://github.com/DaviAMSilva/10-print-maze){ target="\_blank" rel="noopener noreferrer" }
 [![OpenProcessing 10 PRINT MAZE](https://img.shields.io/badge/openprocessing-10 PRINT MAZE-f44848)](https://openprocessing.org/sketch/743512){ target="\_blank" rel="noopener noreferrer" }
 [![Website 10 PRINT MAZE](https://img.shields.io/badge/website-10 PRINT MAZE-326eff)](https://daviamsilva.github.io/10-print-maze/){ target="\_blank" rel="noopener noreferrer" }
 

@@ -18,13 +18,22 @@ theme:
   language: pt-BR
   custom_dir: overrides
   palette:
+    # Palette toggle for One Monokai
+    - media: "(prefers-color-scheme: dark)"
+      primary: custom
+      accent: custom
+      scheme: onemonokai
+      toggle:
+        icon: material/brightness-5
+        name: One Monokai
+
     # Palette toggle for Automatic
     - media: "(prefers-color-scheme)"
       primary: custom
       accent: custom
       toggle:
         icon: material/brightness-auto
-        name: Switch to Light Mode
+        name: Automático
 
     # Palette toggle for Light Mode
     - media: "(prefers-color-scheme: light)"
@@ -33,7 +42,7 @@ theme:
       scheme: default
       toggle:
         icon: material/brightness-7
-        name: Switch to dark mode
+        name: Modo Claro
 
     # Palette toggle for Dark Mode
     - media: "(prefers-color-scheme: dark)"
@@ -42,16 +51,7 @@ theme:
       scheme: slate
       toggle:
         icon: material/brightness-4
-        name: Switch to Automatic
-
-    # # Palette toggle for One Monokai
-    # - media:
-    #   primary: custom
-    #   accent: custom
-    #   scheme: onemonokai
-    #   toggle:
-    #     icon: material/microsoft-visual-studio-code
-    #     name: Switch to Automatic
+        name: Modo Escuro
   features:
     # - navigation.instant
     # - navigation.footer

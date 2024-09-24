@@ -23,7 +23,7 @@ tags:
 
 ---
 
-[![GitHub codinStruct/codinStruct](https://img.shields.io/badge/github-codinStruct/codinStruct-white?logo=github)](https://github.com/codinStruct/codinStruct){ target="_blank" rel="noopener noreferrer" }
+[![GitHub codinStruct/codinStruct](https://img.shields.io/badge/github-codinStruct/codinStruct-dddddd?logo=github)](https://github.com/codinStruct/codinStruct){ target="_blank" rel="noopener noreferrer" }
 [![Website codinStruct](https://img.shields.io/badge/website-codinStruct-326eff)](https://codinstruct.github.io/codinStruct-content){ target="_blank" rel="noopener noreferrer" }
 [![Website codinStruct Next](https://img.shields.io/badge/website-codinStruct Next-326eff)](https://codinstruct.luizf.dev){ target="_blank" rel="noopener noreferrer" }
 

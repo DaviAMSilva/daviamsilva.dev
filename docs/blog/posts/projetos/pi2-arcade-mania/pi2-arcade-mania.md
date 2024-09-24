@@ -18,7 +18,7 @@ tags:
   - game boy advance
 ---
 
-[![GitHub DaviAMSilva/Arcade_Mania](https://img.shields.io/badge/github-DaviAMSilva/Arcade__Mania-white?logo=github)](https://github.com/DaviAMSilva/Arcade_Mania){ target="_blank" rel="noopener noreferrer" }
+[![GitHub DaviAMSilva/Arcade_Mania](https://img.shields.io/badge/github-DaviAMSilva/Arcade__Mania-dddddd?logo=github)](https://github.com/DaviAMSilva/Arcade_Mania){ target="_blank" rel="noopener noreferrer" }
 [![GitHub DaviAMSilva/Arcade_Mania Release:latest](https://img.shields.io/github/v/release/DaviAMSilva/Arcade_Mania)](https://github.com/DaviAMSilva/Arcade_Mania/releases/tag/latest)
 
 ---
