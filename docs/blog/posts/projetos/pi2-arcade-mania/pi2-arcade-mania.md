@@ -39,8 +39,6 @@ Devido a essa complexidade técnica da plataforma e como ela me forçou a ser mu
 
     Baixe a [release mais recente](https://github.com/DaviAMSilva/Arcade_Mania/releases/tag/latest) do arquivo *Arcade_Mania.gba* e instale um emulador do GBA (eu recomendo o [mGBA](https://mgba.io)). Por fim abra o arquivo no emulador e aproveite.
 
-## O Jogo em Si
-
 Esse projeto originalmente compunha apenas 2 jogos **Snake** e **Memory Raid**, mas após algum tempo depois da entrega do trabalho eu tive a vontade de implementar um porte do jogo **Wordle**, quando ele estava ganhando popularidade na internet. O motivo do uso desses jogos inicialmente baseia-se parcialmente do fato que **Snake** pode ser melhor criado usando *tiles*, enquanto para **Memory Raid** o ideal é utilizar *sprites*, sendo os dois principais sistemas gráficos do GBA.
 
 - **Snake**

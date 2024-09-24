@@ -8,7 +8,7 @@ tags:
   - javascript
   - html
   - p5.js
-  - snake game
+  - snake
   - a*
   - algoritmo
 ---
