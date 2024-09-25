@@ -118,7 +118,6 @@ plugins:
       post_url_date_format: yyyy/MM/dd
       post_url_format: "{categories}/{slug}"
       categories_url_format: "categoria/{slug}"
-      authors_profiles_url_format: "autor/{slug}"
   - glightbox:
         auto_caption: true
   - git-revision-date-localized:
