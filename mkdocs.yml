@@ -58,7 +58,6 @@ theme:
     - navigation.tabs
     - navigation.sections
     - navigation.expand
-    - navigation.indexes
     - toc.follow
     - toc.integrate
     - navigation.top

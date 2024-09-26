@@ -10,7 +10,15 @@
 
 @media screen {
     [data-md-color-scheme="slate"] {
-        --md-hue: $davi-blue-hue;
+        --md-hue: #{$davi-blue-hue};
+    
+        // Modo escuro nas descrições de imagens
+        .glightbox-clean .gslide-description {
+            background: black;
+        }
+        .glightbox-clean .gslide-title {
+            color: white;
+        }
     }
 
     // Baseado nas cores disponibilizadas pelo meu tema favorito: One Monokai, por Joshua Azemoh
@@ -22,10 +30,18 @@
             background-color: #181A1F;
         }
 
+        // Modo escuro nas descrições de imagens
+        .glightbox-clean .gslide-description {
+            background: black;
+        }
+        .glightbox-clean .gslide-title {
+            color: white;
+        }
+
         // Indicate that the site is rendered with a dark color scheme
         color-scheme: dark;
 
-        --md-hue: $davi-blue-hue;
+        --md-hue: #{$davi-blue-hue};
 
         // Default color shades
         --md-default-fg-color:             rgba(200, 200, 200, 1);
@@ -66,16 +82,16 @@
         --md-typeset-a-color:              var(--md-primary-fg-color);
 
         // Typeset `kbd` color shades
-        --md-typeset-kbd-color:            hsla($davi-blue-hue, 15%, 90%, 0.12);
-        --md-typeset-kbd-accent-color:     hsla($davi-blue-hue, 15%, 90%, 0.2);
-        --md-typeset-kbd-border-color:     hsla($davi-blue-hue, 15%, 14%, 1);
+        --md-typeset-kbd-color:            hsla(#{$davi-blue-hue}, 15%, 90%, 0.12);
+        --md-typeset-kbd-accent-color:     hsla(#{$davi-blue-hue}, 15%, 90%, 0.2);
+        --md-typeset-kbd-border-color:     hsla(#{$davi-blue-hue}, 15%, 14%, 1);
 
         // Typeset `mark` color shades
         --md-typeset-mark-color:           #ffff0080;
 
         // Typeset `table` color shades
-        --md-typeset-table-color:          hsla($davi-blue-hue, 15%, 95%, 0.12);
-        --md-typeset-table-color--light:   hsla($davi-blue-hue, 15%, 95%, 0.035);
+        --md-typeset-table-color:          hsla(#{$davi-blue-hue}, 15%, 95%, 0.12);
+        --md-typeset-table-color--light:   hsla(#{$davi-blue-hue}, 15%, 95%, 0.035);
 
         // Admonition color shades
         --md-admonition-fg-color:          var(--md-default-fg-color);

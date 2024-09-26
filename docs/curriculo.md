@@ -4,6 +4,12 @@
     text-align: center;
     grid-template-columns: repeat(auto-fit,minmax(min(100%,10rem),1fr));
 }
+
+@media print {
+    .admonition {
+        display: none !important;
+    }
+}
 </style>
 
 !!! warning ""
@@ -58,21 +64,29 @@ Pertence ao espectro autista (CID 10 F84.0), com grau leve.
 
 ## Formação
 
-**Escola Estadual José Pinto Neto — Central de Minas**  
-<small>Ensino Fundamental — 1º até 8º ano (2020 – 2023)</small>
+### Escola Estadual José Pinto Neto
 
-**Escola Estadual Agripino Vilas Novas — Fernandes Tourinho**  
-<small>9º Ano + Ensino Médio (2016 – 2019)</small>
+*Ensino Fundamental, 1º até 8º ano — Central de Minas (2020 – 2023)*
+{ style="color: var(--md-default-fg-color--light)" }
 
-**Rede de Ensino Doctum — Caratinga**  
-<small>Ciência da Computação com Bolsa Integral do ProUni (2020 – 2023)</small>
+### Escola Estadual Agripino Vilas Novas
+
+*9º ano + Ensino Médio — Fernandes Tourinho (2016 – 2019)*
+{ style="color: var(--md-default-fg-color--light)" }
+
+### Rede de Ensino Doctum
+
+*Ciência da Computação com Bolsa Integral do ProUni — Caratinga (2020 – 2023)*
+{ style="color: var(--md-default-fg-color--light)" }
 
 ---
 
 ## Experiência
 
-**Kepi Supermercado – Fernandes Tourinho**  
-<small>Assistente Administrativo (09/2020 – Presente)</small>
+### Kepi Supermercado
+
+*Assistente Administrativo — Fernandes Tourinho (09/2020 – Presente)*
+{ style="color: var(--md-default-fg-color--light)" }
 
 <div style="line-height: 1.25" markdown>
 - Realiza entrada e emissão de notas fiscais eletrônicas por meio de um sistema ERP terceirizado.
