@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+Disallow: /files
+Sitemap: https://www.daviamsilva.dev/sitemap.xml

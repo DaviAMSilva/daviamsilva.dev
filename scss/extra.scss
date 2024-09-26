@@ -1,0 +1,35 @@
+@import "cores";
+@import "schemes";
+
+::selection {
+    color: white;
+    background-color: var(--md-primary-fg-color);
+}
+
+:root {
+    --md-tooltip-width: fit-content;
+}
+
+.md-typeset {
+    .md-button {
+        padding: 0.625em;
+    }
+}
+
+.md-header a.md-logo {
+    padding: 0 !important;
+    margin: 0 !important;
+
+    img {
+        height: 2.5rem !important;
+    }
+}
+
+.md-content p {
+    text-align: justify;
+}
+
+.gslide-title {
+    // Legenda de imagens
+    text-align: center;
+}

@@ -1,0 +1,13 @@
+$davi-blue-hue: 240deg;
+$davi-red-hue: 0deg;
+
+$davi-blue:             hsl($davi-blue-hue,  93%, 27%);
+$davi-blue--light:      hsl($davi-blue-hue, 100%, 55%);
+$davi-blue--lightest:   hsl(222,            100%, 60%);
+$davi-blue--dark:       hsl($davi-blue-hue, 100%, 20%);
+$davi-blue--background: hsl($davi-blue-hue,  33%,  6%);
+
+$davi-red:              hsl($davi-red-hue,  93%, 26%);
+$davi-red--light:       hsl($davi-red-hue, 100%, 55%);
+$davi-red--lightest:    hsl($davi-red-hue, 100%, 68%);
+$davi-red--dark:        hsl($davi-red-hue, 100%, 19%);
