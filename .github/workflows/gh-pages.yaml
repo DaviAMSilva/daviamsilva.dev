@@ -27,4 +27,14 @@ jobs:
           restore-keys: |
             mkdocs-material-
       - run: pip install -r requirements.txt
+      - run: mkdir docs/stylesheets
+      - name: Compilando SASS
+        uses: gha-utilities/sass-build@v0.6.0
+        with:
+          source: |
+            docs/scss/extra.scss
+            docs/scss/home.scss
+          destination: |
+            docs/stylesheets/extra.css
+            docs/stylesheets/home.css
       - run: mkdocs gh-deploy --force
