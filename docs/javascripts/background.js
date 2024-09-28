@@ -295,5 +295,3 @@
 
     let myp5 = new p5(backgroundSketch, document.getElementById('background-container'));
 })()
-
-console.info("Configurado o background")

@@ -1,10 +1,5 @@
 {% extends "main.html" %}
 
-{% block libs %}
-{{ super() }}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.min.js"></script>
-{% endblock %}
-
 {% block scripts %}
 {{ super() }}
 <script>
@@ -15,7 +10,8 @@
         document.body.removeAttribute("data-md-color-switching")
     })
 </script>
-<script src="javascripts/background.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.min.js"></script>
+<script src="javascripts/background.min.js"></script>
 {% endblock %}
 
 {% block container %}
@@ -25,5 +21,5 @@
 
 {% block styles %}
 {{ super() }}
-<link rel="stylesheet" href="stylesheets/home.css">
+<link rel="stylesheet" href="stylesheets/home.min.css">
 {% endblock %}

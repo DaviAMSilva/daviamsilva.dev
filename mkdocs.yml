@@ -130,10 +130,22 @@ plugins:
   - social:
       cards_layout_options:
         font_family: Fira Code
+  - minify:
+      minify_html: true
+      minify_js: true
+      minify_css: true
+      cache_safe: false
+      js_files:
+          - javascripts/background.js
+          - javascripts/mathjax.js
+      css_files:
+          - stylesheets/extra.css
+          - stylesheets/home.css
+
 
 extra_javascript:
   - javascripts/mathjax.js
-  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js
 
 extra_css:
   - stylesheets/extra.css

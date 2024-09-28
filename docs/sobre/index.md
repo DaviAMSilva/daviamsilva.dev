@@ -29,7 +29,7 @@ Eu sou formado em Ciência da Computação pela [Rede de Ensino Doctum de Carati
 
 ## Programação
 
-Eu primeiro aprendi programação pelo JavaScript na [Khan Academy](https://pt.khanacademy.org/computing/computer-programming) utilizando a biblioteca gráfica p5.js e vários dos meus [projetos iniciantes](../../tags/#p5js) foram criados utilizando-a. Desde então eu já aprendi os conceitos mais avançados dos usos do JS na web e nos ecossistemas baseado em Node e npm e estou mais ou menos ciente das funcionalidades mais modernas da linguagem.
+Eu primeiro aprendi programação pelo JavaScript na [Khan Academy](https://pt.khanacademy.org/computing/computer-programming) utilizando a biblioteca gráfica p5.js e vários dos meus [projetos iniciantes](../tags.md/#p5js) foram criados utilizando-a. Desde então eu já aprendi os conceitos mais avançados dos usos do JS na web e nos ecossistemas baseado em Node e npm e estou mais ou menos ciente das funcionalidades mais modernas da linguagem.
 
 Desde então eu já expandi para outras linguagens, principalmente Python devido a velocidade com que projetos simples podem ser desenvolvidos, mas ainda sim mantendo um poder enorme de realizar qualquer tarefa complexa. Eu estou acostumado com a ferramenta pip, ambientes virtuais e algumas das bibliotecas mais comuns, como Pillow e tqdm.
 

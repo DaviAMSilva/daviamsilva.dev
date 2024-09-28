@@ -4,3 +4,4 @@ mkdocs-material[imaging]
 mkdocs-awesome-pages-plugin
 mkdocs-glightbox
 mkdocs-git-revision-date-localized-plugin
+mkdocs-minify-plugin
