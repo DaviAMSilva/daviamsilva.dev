@@ -47,10 +47,10 @@ Por fim eu tenho experiência informal realizando *queries* em SQL Server para g
 
 ??? question "O que é a OBMEP?"
 
-    ![Logo OBMEP](../images/obmep/logo-claro.png#only-dark "OBMEP - Somando novos talentos para o Brasil"){ loading=lazy }
+    ![Logo OBMEP](../images/obmep/logo-claro.png#only-dark "OBMEP - Somando novos talentos para o Brasil")
     { .logo-obmep }
 
-    ![Logo OBMEP](../images/obmep/logo-escuro.png#only-light "OBMEP - Somando novos talentos para o Brasil"){ loading=lazy }
+    ![Logo OBMEP](../images/obmep/logo-escuro.png#only-light "OBMEP - Somando novos talentos para o Brasil")
     { .logo-obmep }
 
     Fonte: [OBMEP](http://www.obmep.org.br)
