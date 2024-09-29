@@ -14,7 +14,7 @@ hide:
 </div>
 <div class="perfil-conteudo" markdown>
 <p class="perfil-linha1">Olá, meu nome é <br /><span class="perfil-nome">DAVI&nbsp;AUGUSTO MOREIRA&nbsp;DA&nbsp;SILVA</span></p>
-<p class="perfil-linha2">Eu sou um cientista da computação, sete vezes medalhista da <strong><a href="https://www.obmep.org.br/" target="_blank" rel="noopener noreferrer">OBMEP</a></strong></p>
+<p class="perfil-linha2" markdown>Eu sou um cientista da computação, sete vezes medalhista da **[OBMEP](sobre/index.md#obmep)**</p>
 <div class="perfil-botoes" markdown>
 [:fontawesome-solid-user: Sobre](sobre/index.md){ .md-button .md-button--primary }
 [:fontawesome-solid-address-book: Contato](contato.md){ .md-button .md-button--primary }

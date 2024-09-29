@@ -5,6 +5,10 @@ body {
     height: 100%;
 }
 
+abbr {
+    cursor: unset !important;
+}
+
 h1 {
     // Um simples 'display: none' não funcionaria aqui pois o mkdocs material substitui
     // o título do site pelo título da página quando o elemento h1 deixa de ser visível

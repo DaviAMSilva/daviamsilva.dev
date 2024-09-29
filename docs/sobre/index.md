@@ -1,6 +1,12 @@
 # Sobre Mim
 
 <style>
+p.logo-obmep {
+    width: min(500px, 100%);
+    margin: auto;
+    margin-top: 2em;
+}
+
 p.imagem-obmep {
     text-align: center;
 }
@@ -38,6 +44,30 @@ Eu também já estou bem acomodado a utilizar HTML e CSS/SCSS em conjunção com
 Por fim eu tenho experiência informal realizando *queries* em SQL Server para gerar relatórios e ferramentas de trabalho no meu trabalho no [Kepi Supermercado](../curriculo.md#kepi-supermercado).
 
 ## Olimpíada Brasileira de Matemática das Escolas Públicas <small>[Resultados](conquistas.md#obmep)</small> { #obmep }
+
+??? question "O que é a OBMEP?"
+
+    ![Logo OBMEP](../images/obmep/logo-claro.png#only-dark "OBMEP - Somando novos talentos para o Brasil"){ loading=lazy }
+    { .logo-obmep }
+
+    ![Logo OBMEP](../images/obmep/logo-escuro.png#only-light "OBMEP - Somando novos talentos para o Brasil"){ loading=lazy }
+    { .logo-obmep }
+
+    Fonte: [OBMEP](http://www.obmep.org.br)
+    { style="color: var(--md-default-fg-color--light)" }
+
+    A OBMEP é um projeto nacional dirigido às escolas públicas e privadas brasileiras, realizado pelo IMPA e promovido com recursos do Ministério da Educação - MEC e do Ministério da Ciência, Tecnologia e Inovação - MCTI.
+
+    Criada em 2005 para estimular o estudo da matemática e identificar talentos na área, a OBMEP tem como objetivos principais:
+
+    - Estimular e promover o estudo da Matemática;
+    - Contribuir para a melhoria da qualidade da educação básica, possibilitando que um maior número de alunos brasileiros possa ter acesso a material didático de qualidade;
+    - Identificar jovens talentos e incentivar seu ingresso em universidades, nas áreas científicas e tecnológicas;
+    - Incentivar o aperfeiçoamento dos professores das escolas públicas, contribuindo para a sua valorização profissional;
+    - Contribuir para a integração das escolas brasileiras com as universidades públicas, os institutos de pesquisa e com as sociedades científicas;
+    - Promover a inclusão social por meio da difusão do conhecimento.
+
+    O público-alvo da OBMEP é composto de alunos do 6º ano do Ensino Fundamental até último ano do Ensino Médio. 
 
 No ano de 2013 eu recebi a minha primeira medalha da OBMEP, de bronze, sendo na época uma conquista enorme, mas na verdade era apenas o início. Durante os anos de 2013 a 2019 eu cheguei a receber 7 medalhas (1), incluindo 3 medalhas de ouro.
 { .annotate }
