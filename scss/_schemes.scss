@@ -26,6 +26,11 @@
     // Adaptado do scheme slate do Material for MkDocs
     // https://github.com/squidfunk/mkdocs-material/blob/master/src/templates/assets/stylesheets/palette/_scheme.scss
     [data-md-color-scheme="onemonokai"] {
+        img[src$="#only-light"],
+        img[src$="#gh-light-mode-only"] {
+            display: none; /* Hide light images in dark mode */
+        }
+
         header.md-header, nav.md-tabs {
             background-color: #181A1F;
         }
