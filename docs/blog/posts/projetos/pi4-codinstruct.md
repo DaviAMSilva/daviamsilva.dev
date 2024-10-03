@@ -1,5 +1,6 @@
 ---
 title: codinStruct
+description: codinStruct é um site com conteúdos acadêmicos sobre linguagens de programação
 date:
   created: 2021-11-27
   updated: 2023-09-29

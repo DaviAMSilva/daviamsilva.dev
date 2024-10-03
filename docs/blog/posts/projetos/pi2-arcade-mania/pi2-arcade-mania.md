@@ -1,5 +1,6 @@
 ---
 title: Arcade Mania
+description: Um jogo programado em C para a plataforma Game Boy Advance
 date:
   created: 2020-11-24
   updated: 2022-06-13

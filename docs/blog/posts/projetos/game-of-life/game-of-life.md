@@ -1,4 +1,5 @@
 ---
+description: Uma simulação do Jogo da Vida por John Conway
 date: 2019-05-16
 categories:
   - Projetos

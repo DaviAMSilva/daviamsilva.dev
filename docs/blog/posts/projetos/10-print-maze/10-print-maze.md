@@ -1,4 +1,5 @@
 ---
+description: Uma visualização do algoritmo A* em conjunção com uma versão parcial do padrão 10 PRINT
 date: 2019-09-16
 categories:
   - Projetos

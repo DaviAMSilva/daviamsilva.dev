@@ -1,5 +1,6 @@
 ---
 title: Bibliotecas em C
+description: Algumas bibliotecas de manipulação de dados em C
 date:
   created: 2020-11-13
   updated: 2021-06-21

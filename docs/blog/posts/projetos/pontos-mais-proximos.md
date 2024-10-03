@@ -1,5 +1,6 @@
 ---
 title: Pontos Mais Próximos
+description: Um algoritmo para encontrar os dois pontos mais próximos em uma lista de pontos
 date: 2020-02-29
 categories:
   - Projetos
