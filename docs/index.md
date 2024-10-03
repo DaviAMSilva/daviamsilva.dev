@@ -10,7 +10,7 @@ hide:
 
 <div class="perfil" markdown>
 <div class="perfil-imagem-container">
-<img src="images/Perfil.webp" alt="Perfil de DaviAMSilva" class="perfil-imagem">
+<img src="images/Perfil.webp" alt="Foto de rosto de Davi Augusto Moreira da Silva" class="perfil-imagem">
 </div>
 <div class="perfil-conteudo" markdown>
 <p class="perfil-linha1">Olá, meu nome é <br /><span class="perfil-nome">DAVI&nbsp;AUGUSTO MOREIRA&nbsp;DA&nbsp;SILVA</span></p>
