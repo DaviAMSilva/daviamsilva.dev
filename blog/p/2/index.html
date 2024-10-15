@@ -25,7 +25,7 @@
       
       
       <link rel="icon" href="../../../images/Lamp2D.gif">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.39">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.40">
     
 
     
@@ -679,6 +679,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#tabuleiro-bacana" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tabuleiro Bacana
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#10-print-maze" class="md-nav__link">
     <span class="md-ellipsis">
       10 PRINT MAZE
@@ -758,6 +767,29 @@
             Arquivo
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../arquivo/2022/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2022
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -984,6 +1016,85 @@
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
+          <time datetime="2019-12-02 00:00:00">2 de dezembro de 2019</time></li>
+        
+          <li class="md-meta__item">
+            em
+            
+              <a href="../../categoria/projetos/" class="md-meta__link">Projetos</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              3 min de leitura
+            
+          </li>
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="tabuleiro-bacana"><a class="toclink" href="../../projetos/tabuleiro-bacana/">Tabuleiro Bacana</a></h2>
+<p class="badges"><a href="https://daviamsilva.github.io/OBMEP/tabuleiro-bacana/" rel="noopener noreferrer" target="_blank"><img alt="Website Tabuleiro Bacana" src="https://img.shields.io/badge/website-Tabuleiro Bacana-326eff" /></a></p>
+<hr />
+<p>Quando eu participei da prova do terceiro nível da segunda fase da <abbr title="Olimpíada Brasileira de Matemática das Escolas Públicas">OBMEP</abbr> 2019 a questão 5 foi uma que me deixou muito intrigado se a solução que eu desenvolvi durante o teste estava correta. Por causa disso logo após terminar a prova eu fiquei curioso e decidi escrever um algoritmo capaz de resolver o problema.</p>
+<p>Essa edição específica da olimpíada foi a minha última aonde eu conquistei minha terceira medalha de ouro.</p>
+<p>O problema em questão envolve tabuleiros bacanas, descritos como:</p>
+<blockquote>
+<p>Um tabuleiro preenchido com as letras A, B, C e D é bacana se essas quatro letras aparecem em qualquer quadriculado 2×2 do tabuleiro. Por exemplo, dos tabuleiros abaixo, o da esquerda é bacana e o da direita não é bacana.</p>
+<div class="arithmatex">\[
+\begin{array}{|c|c|c|}
+\hline
+\text{C}&amp;\text{D}&amp;\text{C}\\
+\hline
+\text{A}&amp;\text{B}&amp;\text{A}\\
+\hline
+\text{C}&amp;\text{D}&amp;\text{C}\\
+\hline
+\end{array}
+\\ \space\space\space\space\space
+\begin{array}{|c|c|c|}
+\hline
+\text{C}&amp;\text{B}&amp;\text{C}\\
+\hline
+\text{C}&amp;\text{D}&amp;\text{A}\\
+\hline
+\text{A}&amp;\text{C}&amp;\text{B}\\
+\hline
+\end{array}
+\]</div>
+</blockquote>
+<details class="abstract">
+<summary>Prova e Solução</summary>
+<p><div class="grid cards" markdown>
+<div markdown>
+<a href="https://drive.google.com/file/d/1kzQRxdQYGc2S5Z1jl6tz4DgOgLdyXg2Z/view">Prova: <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M0 64C0 28.7 28.7 0 64 0h160v128c0 17.7 14.3 32 32 32h128v144H176c-35.3 0-64 28.7-64 64v144H64c-35.3 0-64-28.7-64-64zm384 64H256V0zM176 352h32c30.9 0 56 25.1 56 56s-25.1 56-56 56h-16v32c0 8.8-7.2 16-16 16s-16-7.2-16-16V368c0-8.8 7.2-16 16-16m32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24h-16v48zm96-80h32c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48h-32c-8.8 0-16-7.2-16-16V368c0-8.8 7.2-16 16-16m32 128c8.8 0 16-7.2 16-16v-64c0-8.8-7.2-16-16-16h-16v96zm80-112c0-8.8 7.2-16 16-16h48c8.8 0 16 7.2 16 16s-7.2 16-16 16h-32v32h32c8.8 0 16 7.2 16 16s-7.2 16-16 16h-32v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V368"/></svg></span> pf2n3-2019.pdf</a></p>
+<p><img alt="Tabuleiro Bacana Prova" src="../../projetos/tabuleiro-bacana/pf2n3-2019-q5.jpg" title="Tabuleiro Bacana Prova" />
+</div>
+<div markdown>
+<a href="https://drive.google.com/file/d/14fDuxVvEEi-GbEjluuNX_Y_9lf9OAtRw/view">Soluções: <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M0 64C0 28.7 28.7 0 64 0h160v128c0 17.7 14.3 32 32 32h128v144H176c-35.3 0-64 28.7-64 64v144H64c-35.3 0-64-28.7-64-64zm384 64H256V0zM176 352h32c30.9 0 56 25.1 56 56s-25.1 56-56 56h-16v32c0 8.8-7.2 16-16 16s-16-7.2-16-16V368c0-8.8 7.2-16 16-16m32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24h-16v48zm96-80h32c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48h-32c-8.8 0-16-7.2-16-16V368c0-8.8 7.2-16 16-16m32 128c8.8 0 16-7.2 16-16v-64c0-8.8-7.2-16-16-16h-16v96zm80-112c0-8.8 7.2-16 16-16h48c8.8 0 16 7.2 16 16s-7.2 16-16 16h-32v32h32c8.8 0 16 7.2 16 16s-7.2 16-16 16h-32v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V368"/></svg></span> sf2n3-2019.pdf</a></p>
+<p><img alt="Tabuleiro Bacana Solução" src="../../projetos/tabuleiro-bacana/sf2n3-2019-q5.jpg" title="Tabuleiro Bacana Solução" />
+</div>
+</div></p>
+</details>
+<p>Especificamente a letra c) da questão 5 pergunta <em>Quantos tabuleiros bacanas 8×8 existem?</em>. Eu não irei entrar em detalhes sobre a solução matemática, visto que a solução oficial acima é similar à minha.</p>
+<p>O algoritmo que eu desenvolvi para resolver esse problema envolve o uso dos métodos de força bruta e recursividade. Basicamente cada quadrado, da esquerda para a direita, de cima para baixo, é visitado uma vez para cada uma das letras e calcula recursivamente quantos casos possíveis existem para o próximo quadrado para cada letra, desde ela seja válida. No final todos os casos possíveis retornam 1 e são somados para gerar o resultado.</p>
+<p>Como se pode imaginar esse algoritmo não é eficiente, mas esse não foi um objetivo meu de qualquer jeito. Percebe-se que o algoritmo precisa percorrer tantos níveis de recursão quanto quadrados no tabuleiro e que para cada quadrado há 4 casos possíveis e para cada caso é necessário criar uma cópia do tabuleiro.</p>
+<p>Por causa disso eu acredito que a complexidade temporal desse algoritmo é <span class="arithmatex">\(O\left(4^{n^2}\right)\)</span>, enquanto a complexidade espacial é <span class="arithmatex">\(O\left(n^2 \times 4^{n^2}\right)\)</span>. É claro que isso se aplicaria apenas para o pior caso possível, sendo que na prática a maioria das possibilidades se tornarão inválidas e a recursão interrompida antes de completar todo o tabuleiro, mesmo assim isso demonstra a ineficiência desse algoritmo.</p>
+<p>Após terminar esse projeto eu pude verificar que minha solução estava de acordo com o resultado gerado pelo meu algoritmo e depois da liberação das repostas respostas oficiais eu tive a confirmação de que eu respondi corretamente todas as letras dessa questão.</p>
+<!-- markdownlint-disable MD041 -->
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
           <time datetime="2019-09-16 00:00:00">16 de setembro de 2019</time></li>
         
           <li class="md-meta__item">
@@ -1005,7 +1116,7 @@
   </header>
   <div class="md-post__content md-typeset">
     <h2 id="10-print-maze"><a class="toclink" href="../../projetos/10-print-maze/">10 PRINT MAZE</a></h2>
-<p><a href="https://github.com/DaviAMSilva/10-print-maze" rel="noopener noreferrer" target="_blank"><img alt="GitHub DaviAMSilva/10-print-maze" src="https://img.shields.io/badge/github-DaviAMSilva%2F10--print--maze-dddddd?logo=github" /></a>
+<p class="badges"><a href="https://github.com/DaviAMSilva/10-print-maze" rel="noopener noreferrer" target="_blank"><img alt="GitHub DaviAMSilva/10-print-maze" src="https://img.shields.io/badge/github-DaviAMSilva%2F10--print--maze-dddddd?logo=github" /></a>
 <a href="https://openprocessing.org/sketch/743512" rel="noopener noreferrer" target="_blank"><img alt="OpenProcessing 10 PRINT MAZE" src="https://img.shields.io/badge/openprocessing-10 PRINT MAZE-f44848" /></a>
 <a href="https://daviamsilva.github.io/10-print-maze/" rel="noopener noreferrer" target="_blank"><img alt="Website 10 PRINT MAZE" src="https://img.shields.io/badge/website-10 PRINT MAZE-326eff" /></a></p>
 <hr />
@@ -1115,7 +1226,7 @@
   </header>
   <div class="md-post__content md-typeset">
     <h2 id="daviamsilvagithubio"><a class="toclink" href="../../projetos/daviamsilvagithubio/">DaviAMSilva.github.io</a></h2>
-<p><a href="https://github.com/DaviAMSilva/DaviAMSilva.github.io" rel="noopener noreferrer" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/github-DaviAMSilva%2FDaviAMSilva.github.io-dddddd?logo=github" /></a>
+<p class="badges"><a href="https://github.com/DaviAMSilva/DaviAMSilva.github.io" rel="noopener noreferrer" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/github-DaviAMSilva%2FDaviAMSilva.github.io-dddddd?logo=github" /></a>
 <a href="https://daviamsilva.github.io" rel="noopener noreferrer" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/website-daviamsilva.github.io-326eff" /></a></p>
 <hr />
 <p>É o primeiro site pessoal que eu criei e fui atualizando com o tempo. Ele é muito simples e atualmente apenas contém alguns links e demonstrações para os meus principais projetos. Embora seja obsoleto agora eu ainda me sinto nostalgia por ele. Provavelmente eu irei apenas atualiza-lo para redirecionar automaticamente para o novo site.</p>
@@ -1151,7 +1262,7 @@
   </header>
   <div class="md-post__content md-typeset">
     <h2 id="game-of-life"><a class="toclink" href="../../projetos/game-of-life/">Game of Life</a></h2>
-<p><a href="https://github.com/DaviAMSilva/Game-of-Life" rel="noopener noreferrer" target="_blank"><img alt="GitHub DaviAMSilva/Game-of-Life" src="https://img.shields.io/badge/github-DaviAMSilva%2FGame--of--Life-dddddd?logo=github" /></a>
+<p class="badges"><a href="https://github.com/DaviAMSilva/Game-of-Life" rel="noopener noreferrer" target="_blank"><img alt="GitHub DaviAMSilva/Game-of-Life" src="https://img.shields.io/badge/github-DaviAMSilva%2FGame--of--Life-dddddd?logo=github" /></a>
 <a href="https://daviamsilva.github.io/Game-of-Life/" rel="noopener noreferrer" target="_blank"><img alt="Website Game of Life" src="https://img.shields.io/badge/website-Game%20of%20Life-326eff" /></a></p>
 <hr />
 <p>Esse foi um dos primeiros <em>grandes</em> projetos que eu criei quando eu comecei a aprender programação.</p>
