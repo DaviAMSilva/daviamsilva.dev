@@ -15,6 +15,7 @@ tags:
 
 [![Static Badge](https://img.shields.io/badge/github-DaviAMSilva%2FDaviAMSilva.github.io-dddddd?logo=github)](https://github.com/DaviAMSilva/DaviAMSilva.github.io){ target="_blank" rel="noopener noreferrer" }
 [![Static Badge](https://img.shields.io/badge/website-daviamsilva.github.io-326eff)](https://daviamsilva.github.io){ target="_blank" rel="noopener noreferrer" }
+{ .badges }
 
 ---
 

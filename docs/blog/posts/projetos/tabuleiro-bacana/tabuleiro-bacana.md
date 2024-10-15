@@ -12,6 +12,7 @@ tags:
 # Tabuleiro Bacana
 
 [![Website Tabuleiro Bacana](https://img.shields.io/badge/website-Tabuleiro Bacana-326eff)](https://daviamsilva.github.io/OBMEP/tabuleiro-bacana/){ target="_blank" rel="noopener noreferrer" }
+{ .badges }
 
 ---
 

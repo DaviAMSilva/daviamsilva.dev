@@ -19,6 +19,7 @@ tags:
 [![Steam Downloads](https://img.shields.io/steam/downloads/2870660754?logo=steam&label=downloads)](https://steamcommunity.com/sharedfiles/filedetails/?id=2870660754){ target="_blank" rel="noopener noreferrer" }
 [![Steam Inscrições](https://img.shields.io/steam/subscriptions/2870660754?logo=steam&label=inscrições)](https://steamcommunity.com/sharedfiles/filedetails/?id=2870660754){ target="_blank" rel="noopener noreferrer" }
 [![Steam Favoritos](https://img.shields.io/steam/favorites/2870660754?logo=steam&label=favoritos)](https://steamcommunity.com/sharedfiles/filedetails/?id=2870660754){ target="_blank" rel="noopener noreferrer" }
+{ .badges }
 
 <style>
 iframe {

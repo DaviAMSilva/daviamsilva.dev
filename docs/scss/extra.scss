@@ -27,6 +27,11 @@
 
 .md-content p {
     text-align: justify;
+
+    // Correção para os badges do shields.io
+    &.badges {
+        text-align: left;
+    }
 }
 
 .gslide-title {

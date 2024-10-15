@@ -12,6 +12,7 @@ tags:
 
 [![GitHub DaviAMSilva/Game-of-Life](https://img.shields.io/badge/github-DaviAMSilva%2FGame--of--Life-dddddd?logo=github)](https://github.com/DaviAMSilva/Game-of-Life){ target="_blank" rel="noopener noreferrer" }
 [![Website Game of Life](https://img.shields.io/badge/website-Game%20of%20Life-326eff)](https://daviamsilva.github.io/Game-of-Life/){ target="_blank" rel="noopener noreferrer" }
+{ .badges }
 
 ---
 

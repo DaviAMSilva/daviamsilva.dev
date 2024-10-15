@@ -19,6 +19,7 @@ tags:
 [![GitHub DaviAMSilva/Estruturas_de_Dados](https://img.shields.io/badge/github-DaviAMSilva/Estruturas__de__Dados-dddddd?logo=github)](https://github.com/DaviAMSilva/Estruturas_de_Dados){ target="\_blank" rel="noopener noreferrer" }
 [![GitHub DaviAMSilva/Searches](https://img.shields.io/badge/github-DaviAMSilva/Searches-dddddd?logo=github)](https://github.com/DaviAMSilva/Searches){ target="\_blank" rel="noopener noreferrer" }
 [![GitHub DaviAMSilva/Sorts](https://img.shields.io/badge/github-DaviAMSilva/Sorts-dddddd?logo=github)](https://github.com/DaviAMSilva/Sorts){ target="\_blank" rel="noopener noreferrer" }
+{ .badges }
 
 Essas bibliotecas se referem a três conjuntos de funções e tipos de dados que eu desenvolvi enquanto estava cursando o curso de Ciência da Computação na Doctum para acelerar o desenvolvimentos das atividades. Esses projetos são:
 

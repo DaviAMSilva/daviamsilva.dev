@@ -27,6 +27,7 @@ tags:
 [![GitHub codinStruct/codinStruct](https://img.shields.io/badge/github-codinStruct/codinStruct-dddddd?logo=github)](https://github.com/codinStruct/codinStruct){ target="_blank" rel="noopener noreferrer" }
 [![Website codinStruct](https://img.shields.io/badge/website-codinStruct-326eff)](https://codinstruct.github.io/codinStruct-content){ target="_blank" rel="noopener noreferrer" }
 [![Website codinStruct Next](https://img.shields.io/badge/website-codinStruct Next-326eff)](https://codinstruct.luizf.dev){ target="_blank" rel="noopener noreferrer" }
+{ .badges }
 
 É o projeto mais moderno que eu já desenvolvi durante o quarto semestre da minha graduação na Doctum. Foi parte de um trabalho em grupo com tema livre em que nossa motivação foi:
 
