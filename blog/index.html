@@ -717,9 +717,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#pontos-mais-proximos" class="md-nav__link">
+  <a href="#simulador-de-copa" class="md-nav__link">
     <span class="md-ellipsis">
-      Pontos Mais Próximos
+      Simulador de Copa
     </span>
   </a>
   
@@ -1316,18 +1316,19 @@ iframe {
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
-          <time datetime="2020-02-29 00:00:00+00:00">29 de fevereiro de 2020</time></li>
+          <time datetime="2020-07-01 00:00:00+00:00">1 de julho de 2020</time></li>
         
           <li class="md-meta__item">
             em
             
-              <a href="categoria/projetos/" class="md-meta__link">Projetos</a></li>
+              <a href="categoria/projetos/" class="md-meta__link">Projetos</a>, 
+              <a href="categoria/faculdade/" class="md-meta__link">Faculdade</a></li>
         
         
           
           <li class="md-meta__item">
             
-              1 min de leitura
+              3 min de leitura
             
           </li>
         
@@ -1336,13 +1337,97 @@ iframe {
     </div>
   </header>
   <div class="md-post__content md-typeset">
-    <h2 id="pontos-mais-proximos"><a class="toclink" href="projetos/pontos-mais-pr%C3%B3ximos/">Pontos Mais Próximos</a></h2>
-<p class="badges"><a href="https://github.com/DaviAMSilva/Pontos-mais-proximos" rel="noopener noreferrer" target="_blank"><img alt="GitHub DaviAMSilva/Pontos-mais-proximos" src="https://img.shields.io/badge/github-DaviAMSilva%2FPontos--mais--proximos-dddddd?logo=github" /></a>
-<a href="https://daviamsilva.github.io/OBMEP/par-mais-proximo/" rel="noopener noreferrer" target="_blank"><img alt="Website Pontos Mais Próximos" src="https://img.shields.io/badge/website-Pontos Mais Próximos-326eff" /></a></p>
-<hr />
-<p>Esse foi um algoritmo bem simples que eu desenvolvi cujo o objetivo é encontrar os dois pontos mais próximos dentro de uma coleção qualquer utilizando o algoritmo de <a href="https://pt.wikipedia.org/wiki/Divisão_e_conquista">divisão e conquista</a>.</p>
-<p>Tradicionalmente o algoritmo de <a href="https://pt.wikipedia.org/wiki/Problema_do_par_de_pontos_mais_próximo">par de pontos mais próximos</a> tem tempo de execução representado por <span class="arithmatex">\(O\left(n^2\right)\)</span>, mas utilizando a estratégia acima é possível reduzir o tempo necessário para <span class="arithmatex">\(O\left(n \log n\right)\)</span>, sendo muito mais eficiente.</p>
-<p>Eu desenvolvi esse algoritmo enquanto estava cursando o curso <em>PENSAMENTO COMPUTACIONAL, PROGRAMAÇÃO E APLICAÇÕES EM MATEMÁTICA</em> ofertada pelo <abbr title="Programa Mentores da OBMEP">ProMO</abbr> 2019 por ter sido premiado por uma medalha de prata na <abbr title="Olimpíada Brasileira de Matemática das Escolas Públicas">OBMEP</abbr> 2018.</p>
+    <h2 id="simulador-de-copa"><a class="toclink" href="projetos/simulador-de-copa/">Simulador de Copa</a></h2>
+<p class="badges"><a href="https://github.com/DaviAMSilva/PI-Copa" rel="noopener noreferrer" target="_blank"><img alt="GitHub DaviAMSilva/PI-Copa" src="https://img.shields.io/badge/github-DaviAMSilva/PI--Copa-dddddd?logo=github" /></a></p>
+<p>Foi o meu primeiro grande projeto em grupo no primeiro semestre da minha graduação na Doctum. O objetivo geral do projeto foi:</p>
+<blockquote>
+<p>Desenvolver um programa capaz de simular a realização de um torneio (copa). Pode-se utilizar o modelo atual utilizado pela FIFA para organizar a copa do mundo de futebol.</p>
+</blockquote>
+<p>O contexto era de um organizador de eventos que desejasse inserir os resultados de um tornamento, conforme ele ia acontecendo, de tal maneira que o sistema calculasse e gerasse automaticamente o resultado de cada jogo, fase e do campeonato inteiro.</p>
+<p>A minha versão suportava a quantidade de gols e cartões amarelos e vermelhos recebidos por cada time e para cada jogo. Também conseguia calcular todas as fases do torneio, desde a fase de grupos até a final, conforme as regras básicas da Copa do Mundo da FIFA. O usuário tinha também a opção de aleatorizar os resultados dos jogos, principalmente útil para testar o programa.</p>
+<p>O projeto foi desenvolvido em C e compilado usando a ferramenta make para facilitar a compilação e execução do programa. Essa experiência foi uma das razões que motivaram a minha ideia para o projeto integrador 2, que foi o <a href="projetos/arcade-mania/">Arcade Mania</a>.</p>
+<p>Esse programa foi, principalmente na segunda fase, construído utilizando-se o sistema operacional Microsoft Windows 10 e a biblioteca <code>windows.h</code> para manipular o console do Windows. Por causa disso eu nem consigo mais testar o programa no meu sistema operacional atual, o <a href="https://pop.system76.com/">Pop!_OS</a>. Mesmo ferramentas como o <a href="https://www.winehq.org/">wine</a> não conseguem exibir corretamente o console do Windows, apesar de conseguirem rodar o programa e gerar o resultado correto.</p>
+<p>Um resultado típico do programa, ao selecionar todas as opções aleatórias, é o seguinte:</p>
+<style>
+    .simulador-de-copa code {
+        /* Por algum motivo colocar "Fira Code" causa os símbolos de caixa a terem espaçamento incorreto  */
+        font-family: monospace !important;
+    }
+</style>
+
+<div class="simulador-de-copa">
+    <div class="language-text highlight"><span class="filename">Saída do Terminal</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>            ___________
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>       .---&#39;::&#39;        `---.
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>      (::::::&#39;              )
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    __|`-----._______.-----&#39;|__
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>   /  |              :::::::|  \
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>  |   |               ::::::|   |
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>  |   |                :::::|   |
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>   \  |               ::::::|  /
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    \ |    Copa do Mundo   :| /
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>     \|       da FIFA   ::::|/
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>      |               ::::::|
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>      |              .::::::|
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>      \             :::::::|
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>       \            ::::::/
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>        `.        .:::::::&#39;
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>          `-._  .::::::-&#39;
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>              |  &quot;&quot;&quot;|&quot;
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>              |  :::|
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>              |   ::|
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>             /     ::\
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>        __.-&#39;      :::`-.__
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>       (_           ::::::_)
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>         `&quot;&quot;&quot;---------&quot;&quot;&quot;&#39;
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>      GANHADOR:      
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>      Brasil
+</span></code></pre></div>
+
+    <div class="language-text highlight"><span class="filename">Arquivo de Resultado</span><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>O campeão da Copa do Mundo da FIFA foi o time:
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>&gt; Brasil &lt;
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━┓
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>┃            COPA DO MUNDO DA FIFA             ┃             Gols            ┃        Cartões       ┃
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>┣━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┯━━━━━━━━╋━━━━━━━━━━┯━━━━━━━━━━┯━━━━━━━╋━━━━━━━━━━┯━━━━━━━━━━━┫
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>┃ Nº ┃          Nome do Time          │ Pontos ┃ Marcados │ Sofridos │ Saldo ┃ Amarelos │ Vermelhos ┃
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>┣━━━━╋━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┿━━━━━━━━╋━━━━━━━━━━┿━━━━━━━━━━┿━━━━━━━╋━━━━━━━━━━┿━━━━━━━━━━━┫
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>┃ 01 ┃ Brasil                         │ 18     ┃ 34       │ 21       │ +13   ┃ 37       │ 2         ┃
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>┃ 02 ┃ Croácia                        │ 15     ┃ 23       │ 25       │ -2    ┃ 35       │ 4         ┃
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>┃ 03 ┃ Japão                          │ 15     ┃ 35       │ 29       │ +6    ┃ 41       │ 2         ┃
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>┃ 04 ┃ Egito                          │ 13     ┃ 29       │ 17       │ +12   ┃ 37       │ 4         ┃
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>┃ 05 ┃ Marrocos                       │ 9      ┃ 20       │ 12       │ +8    ┃ 16       │ 2         ┃
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>┃ 06 ┃ Senegal                        │ 9      ┃ 23       │ 18       │ +5    ┃ 28       │ 2         ┃
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>┃ 07 ┃ Alemanha                       │ 9      ┃ 20       │ 19       │ +1    ┃ 26       │ 4         ┃
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>┃ 08 ┃ Islândia                       │ 7      ┃ 17       │ 15       │ +2    ┃ 25       │ 3         ┃
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>┃ 09 ┃ Rússia                         │ 7      ┃ 11       │ 6        │ +5    ┃ 20       │ 3         ┃
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>┃ 10 ┃ Austrália                      │ 6      ┃ 18       │ 14       │ +4    ┃ 18       │ 1         ┃
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>┃ 11 ┃ Costa Rica                     │ 6      ┃ 10       │ 8        │ +2    ┃ 16       │ 2         ┃
+</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>┃ 12 ┃ Portugal                       │ 6      ┃ 14       │ 14       │ +0    ┃ 19       │ 2         ┃
+</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>┃ 13 ┃ Sérvia                         │ 6      ┃ 7        │ 8        │ -1    ┃ 16       │ 3         ┃
+</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>┃ 14 ┃ Bélgica                        │ 6      ┃ 14       │ 20       │ -6    ┃ 21       │ 1         ┃
+</span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a>┃ 15 ┃ Panamá                         │ 6      ┃ 21       │ 28       │ -7    ┃ 23       │ 4         ┃
+</span><span id="__span-1-24"><a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a>┃ 16 ┃ Dinamarca                      │ 6      ┃ 8        │ 16       │ -8    ┃ 31       │ 3         ┃
+</span><span id="__span-1-25"><a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a>┃ 17 ┃ México                         │ 6      ┃ 14       │ 14       │ +0    ┃ 21       │ 3         ┃
+</span><span id="__span-1-26"><a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a>┃ 18 ┃ Nigéria                        │ 4      ┃ 11       │ 10       │ +1    ┃ 15       │ 1         ┃
+</span><span id="__span-1-27"><a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a>┃ 19 ┃ Irã                            │ 4      ┃ 10       │ 14       │ -4    ┃ 12       │ 0         ┃
+</span><span id="__span-1-28"><a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a>┃ 20 ┃ Colômbia                       │ 3      ┃ 7        │ 2        │ +5    ┃ 5        │ 0         ┃
+</span><span id="__span-1-29"><a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a>┃ 21 ┃ Inglaterra                     │ 3      ┃ 6        │ 3        │ +3    ┃ 3        │ 0         ┃
+</span><span id="__span-1-30"><a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a>┃ 22 ┃ Peru                           │ 3      ┃ 12       │ 10       │ +2    ┃ 12       │ 1         ┃
+</span><span id="__span-1-31"><a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a>┃ 23 ┃ Tunísia                        │ 3      ┃ 19       │ 19       │ +0    ┃ 20       │ 3         ┃
+</span><span id="__span-1-32"><a id="__codelineno-1-32" name="__codelineno-1-32" href="#__codelineno-1-32"></a>┃ 24 ┃ França                         │ 3      ┃ 11       │ 11       │ +0    ┃ 8        │ 2         ┃
+</span><span id="__span-1-33"><a id="__codelineno-1-33" name="__codelineno-1-33" href="#__codelineno-1-33"></a>┃ 25 ┃ Suécia                         │ 3      ┃ 8        │ 9        │ -1    ┃ 9        │ 1         ┃
+</span><span id="__span-1-34"><a id="__codelineno-1-34" name="__codelineno-1-34" href="#__codelineno-1-34"></a>┃ 26 ┃ Polônia                        │ 3      ┃ 14       │ 17       │ -3    ┃ 21       │ 2         ┃
+</span><span id="__span-1-35"><a id="__codelineno-1-35" name="__codelineno-1-35" href="#__codelineno-1-35"></a>┃ 27 ┃ Coreia do Sul                  │ 3      ┃ 13       │ 17       │ -4    ┃ 25       │ 3         ┃
+</span><span id="__span-1-36"><a id="__codelineno-1-36" name="__codelineno-1-36" href="#__codelineno-1-36"></a>┃ 28 ┃ Arábia Saudita                 │ 3      ┃ 2        │ 6        │ -4    ┃ 19       │ 2         ┃
+</span><span id="__span-1-37"><a id="__codelineno-1-37" name="__codelineno-1-37" href="#__codelineno-1-37"></a>┃ 29 ┃ Argentina                      │ 2      ┃ 9        │ 10       │ -1    ┃ 14       │ 3         ┃
+</span><span id="__span-1-38"><a id="__codelineno-1-38" name="__codelineno-1-38" href="#__codelineno-1-38"></a>┃ 30 ┃ Espanha                        │ 1      ┃ 6        │ 12       │ -6    ┃ 14       │ 3         ┃
+</span><span id="__span-1-39"><a id="__codelineno-1-39" name="__codelineno-1-39" href="#__codelineno-1-39"></a>┃ 31 ┃ Suíça                          │ 0      ┃ 6        │ 15       │ -9    ┃ 18       │ 2         ┃
+</span><span id="__span-1-40"><a id="__codelineno-1-40" name="__codelineno-1-40" href="#__codelineno-1-40"></a>┃ 32 ┃ Uruguai                        │ 0      ┃ 0        │ 13       │ -13   ┃ 14       │ 0         ┃
+</span><span id="__span-1-41"><a id="__codelineno-1-41" name="__codelineno-1-41" href="#__codelineno-1-41"></a>┗━━━━┻━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┷━━━━━━━━┻━━━━━━━━━━┷━━━━━━━━━━┷━━━━━━━┻━━━━━━━━━━┷━━━━━━━━━━━┛
+</span></code></pre></div>
+</div>
+
 <!-- markdownlint-disable MD041 -->
     
   </div>
