@@ -80,7 +80,10 @@ Pertence ao espectro autista (CID 10 F84.0), com grau leve.
 
 ### Rede de Ensino Doctum
 
-*Ciência da Computação com Bolsa Integral do ProUni — Caratinga (2020 – 2023)*
+*Graduação em Ciência da Computação com Bolsa Integral do ProUni — Caratinga (2020 – 2023)*
+{ style="color: var(--md-default-fg-color--light)" }
+
+*Pós-graduação em Administração de Banco de Dados (2024 – 2025)*
 { style="color: var(--md-default-fg-color--light)" }
 
 ---
