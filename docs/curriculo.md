@@ -86,6 +86,9 @@ Pertence ao espectro autista (CID 10 F84.0), com grau leve.
 *Pós-graduação em Administração de Banco de Dados (2024 – 2025)*
 { style="color: var(--md-default-fg-color--light)" }
 
+*Pós-graduação em Administração de Redes de Computadores (2024 – 2025)*
+{ style="color: var(--md-default-fg-color--light)" }
+
 ---
 
 ## Experiência
