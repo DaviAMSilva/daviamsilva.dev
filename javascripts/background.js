@@ -287,7 +287,6 @@
 
 
         // Esse listener reinicia o sketch quando o tamanho da janela é alterado
-        // Esse método funciona melhor do que tentar usar hooks do React
         window.addEventListener("resize", () => {
             s.configureSketch();
         });
