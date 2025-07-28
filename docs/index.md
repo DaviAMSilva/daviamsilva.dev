@@ -19,7 +19,7 @@ hide:
 [:fontawesome-solid-user: Sobre](sobre/index.md){ .md-button .md-button--primary }
 [:fontawesome-solid-address-book: Contato](contato.md){ .md-button .md-button--primary }
 [:fontawesome-solid-file-pdf: Currículo](curriculo.md){ .md-button .md-button--primary }
-[:fontawesome-solid-screwdriver-wrench: Projetos](/blog/categoria/projetos){ .md-button .md-button--primary }
+[:fontawesome-solid-screwdriver-wrench: Projetos](blog/categoria/projetos.md){ .md-button .md-button--primary }
 </div>
 </div>
 </div>
