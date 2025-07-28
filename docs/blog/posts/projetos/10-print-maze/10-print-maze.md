@@ -1,4 +1,5 @@
 ---
+title: 10 PRINT MAZE
 description: Uma visualização do algoritmo A* em conjunção com uma versão parcial do padrão 10 PRINT
 date: 2019-09-16
 categories:
@@ -9,8 +10,6 @@ tags:
   - algoritmo
   - a*
 ---
-
-# 10 PRINT MAZE
 
 [![GitHub DaviAMSilva/10-print-maze](https://img.shields.io/badge/github-DaviAMSilva%2F10--print--maze-dddddd?logo=github)](https://github.com/DaviAMSilva/10-print-maze){ target="\_blank" rel="noopener noreferrer" }
 [![OpenProcessing 10 PRINT MAZE](https://img.shields.io/badge/openprocessing-10 PRINT MAZE-f44848)](https://openprocessing.org/sketch/743512){ target="\_blank" rel="noopener noreferrer" }

@@ -18,6 +18,8 @@ tags:
 [![GitHub DaviAMSilva/PI-Copa](https://img.shields.io/badge/github-DaviAMSilva/PI--Copa-dddddd?logo=github)](https://github.com/DaviAMSilva/PI-Copa){ target="_blank" rel="noopener noreferrer" }
 { .badges }
 
+---
+
 Foi o meu primeiro grande projeto em grupo no primeiro semestre da minha graduação na Doctum. O objetivo geral do projeto foi:
 
 > Desenvolver um programa capaz de simular a realização de um torneio (copa). Pode-se utilizar o modelo atual utilizado pela FIFA para organizar a copa do mundo de futebol.
@@ -28,7 +30,7 @@ A minha versão suportava a quantidade de gols e cartões amarelos e vermelhos r
 
 O projeto foi desenvolvido em C e compilado usando a ferramenta make para facilitar a compilação e execução do programa. Essa experiência foi uma das razões que motivaram a minha ideia para o projeto integrador 2, que foi o [Arcade Mania](pi2-arcade-mania/pi2-arcade-mania.md).
 
-Esse programa foi, principalmente na segunda fase, construído utilizando-se o sistema operacional Microsoft Windows 10 e a biblioteca `windows.h` para manipular o console do Windows. Por causa disso eu nem consigo mais testar o programa no meu sistema operacional atual, o [Pop!_OS](https://pop.system76.com/). Mesmo ferramentas como o [wine](https://www.winehq.org/) não conseguem exibir corretamente o console do Windows, apesar de conseguirem rodar o programa e gerar o resultado correto.
+Esse programa foi, principalmente na segunda fase, construído utilizando-se o sistema operacional Microsoft Windows 10 e a biblioteca `windows.h` para manipular o console do Windows. Por causa disso eu nem consigo mais testar o programa no meu sistema Linux atual. Mesmo ferramentas como o [wine](https://www.winehq.org/) não conseguem exibir corretamente o console do Windows, apesar de conseguirem rodar o programa e gerar o resultado correto.
 
 Um resultado típico do programa, ao selecionar todas as opções aleatórias, é o seguinte:
 
