@@ -51,18 +51,20 @@ Pertence ao espectro autista (CID 10 F84.0), com grau leve.
 
 ## Ferramentas
 
-<div class="grid cards ferramentas" markdown>
+<div class="grid cards ferramentas annotate" markdown>
 
-- :fontawesome-brands-git-alt: Git & :fontawesome-brands-github: GitHub
+- :fontawesome-brands-git-alt: Git
+- :fontawesome-brands-github: GitHub
 - :material-microsoft-visual-studio-code: Visual Studio Code
 - :fontawesome-brands-windows: Windows 10/11
 - :fontawesome-brands-linux: Ubuntu Linux
-- :simple-adobephotoshop: Adobe Photoshop
-- :simple-photopea: Photopea
+- :simple-photopea: Photopea (1)
 - :material-microsoft-office: Microsoft Office
 - :simple-autohotkey: AutoHotkey
 
 </div>
+
+1. Alternativa grátis para Adobe Photoshop
 
 ---
 

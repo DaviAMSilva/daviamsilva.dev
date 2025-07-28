@@ -64,7 +64,7 @@ html .md-typeset .admonition > :last-child {
     [:simple-whatsapp:&nbsp;WhatsApp](https://api.whatsapp.com/send?phone=5533988314020)
     <span class="expandir">+55 (33) 98831-4020</span>
 
-    [:simple-linkedin:&nbsp;LinkedIn](https://www.linkedin.com/in/daviamsilva/)
+    [:fontawesome-brands-linkedin:&nbsp;LinkedIn](https://www.linkedin.com/in/daviamsilva/)
     <span class="expandir">/in/daviamsilva</span>
 
     [:fontawesome-solid-envelope:&nbsp;E-mail](mailto:daviamsilva@hotmail.com)
