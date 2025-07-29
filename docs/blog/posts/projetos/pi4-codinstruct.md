@@ -10,7 +10,8 @@ categories:
 tags:
   - javascript
   - html
-  - scss
+  - sass
+  - css
   - faculdade
   - projeto integrador
   - site
