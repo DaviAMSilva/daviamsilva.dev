@@ -22,7 +22,7 @@ Essa biblioteca usa a ideia de pegar o resultado de uma função de ruído, anda
 
 Usando dois círculos em um espaço de ruído 4D é possível criar ruído repetível em um ambiente 2D.
 
-Eu tirei minha inspiração de um vídeo do Daniel Shiffman's: [:simple-youtube: Coding Challenge #136.1: Polar Perlin Noise Loops](https://www.youtube.com/watch?v=ZI1dmHv3MeM), do canal [:simple-youtube: The Coding Train](https://www.youtube.com/channel/UCvjgXvBlbQiydffZU7m1_aw).
+Eu tirei minha inspiração de um vídeo do Daniel Shiffman's: [:simple-youtube: Coding Challenge #136.1: Polar Perlin Noise Loops](https://www.youtube.com/watch?v=ZI1dmHv3MeM), do canal [:simple-youtube: The Coding Train](https://www.youtube.com/@TheCodingTrain).
 
 ![Imagem feita com a biblioteca. As linhas vermelhas marcam o local da repetição.](example_simple.png)
 *Imagem feita com a biblioteca. As linhas vermelhas marcam o local da repetição.*

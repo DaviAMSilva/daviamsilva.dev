@@ -27,9 +27,9 @@ tags:
 
 ---
 
-É o meu site atual, em que você está lendo esse texto agora mesmo. Ele foi criado utilizando como base a [Material for MkDocs](https://squidfunk.github.io/mkdocs-material) para conter informações sobre mim, minhas formas de contato, apresentar o meu currículo digital e listar todos os meus projetos principais de programação.
+É o meu site atual, em que você está lendo esse texto agora mesmo. Ele foi criado utilizando como base a [Material for MkDocs] para conter informações sobre mim, minhas formas de contato, apresentar o meu currículo digital e listar todos os meus projetos principais de programação.
 
-A escolha dessa ferramenta foi devida à minha experiência usando-a no meu trabalho no [Kepi Supermercado](../../../../curriculo.md#kepi-supermercado) para documentar processos e organizar informações. Utilizando o modo *live preview* da aplicação é possível rodar um site localmente que atualiza em tempo real conforme for necessário adicionar e alterar os conteúdos da documentação.
+A escolha dessa ferramenta foi devida à minha experiência usando-a no meu trabalho no [Kepi Supermercado] para documentar processos e organizar informações. Utilizando o modo *live preview* da aplicação é possível rodar um site localmente que atualiza em tempo real conforme for necessário adicionar e alterar os conteúdos da documentação.
 
 Adicionalmente, é bem claro para mim que um dos melhores pontos positivos dessa ferramenta é a enorme capacidade de customização que ela permite, e como é incrivelmente fácil realizar tal customização. Entretanto isso não quer dizer que isso é um processo rápido, leva-se um bom tempo preparando as configurações e tentativa e erro para deixar o site da maneira como se deseja.
 
@@ -39,7 +39,7 @@ A qualidade e praticidade dessa customização vêm-se principalmente do sistema
 
 ![Página inicial do site antigo construído usando React](site-antigo.png){ align=right style="max-width:min(100%,500px)" }
 
-A segunda característica interessante do meu site é a animação presente na página inicial, desenvolvida usando a biblioteca gráfica [p5.js](https://p5js.org/). Ela na verdade já tinha sido desenvolvida anos atrás para uma versão anterior de um site pessoal que eu nunca acabei finalizando.
+A segunda característica interessante do meu site é a animação presente na página inicial, desenvolvida usando a biblioteca gráfica [p5.js]. Ela na verdade já tinha sido desenvolvida anos atrás para uma versão anterior de um site pessoal que eu nunca acabei finalizando.
 
 Atualmente a animação é composto de um grid de retângulos que surgem aleatoriamente na tela e se expandem até não poderem mais, com um leve movimento dos tamanhos dos retângulos que também são afetados pela proximidade do mouse.
 

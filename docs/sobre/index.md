@@ -45,7 +45,7 @@ Desde então eu já expandi para outras linguagens, principalmente Python devido
 
 Eu também já estou bem acomodado a utilizar HTML e CSS/SCSS em conjunção com JavaScript para construir páginas WEB para diversos projetos. Entretanto eu geralmente trabalho melhor com a parte técnica do desenvolvimento do que a parte visual.
 
-Por fim eu tenho experiência informal realizando *queries* em SQL Server para gerar relatórios e ferramentas de trabalho no meu trabalho no [Kepi Supermercado](../curriculo.md#kepi-supermercado).
+Por fim eu tenho experiência informal realizando *queries* em SQL Server para gerar relatórios e ferramentas de trabalho no meu trabalho no [Kepi Supermercado].
 
 ## Olimpíada Brasileira de Matemática das Escolas Públicas <small>[Resultados](conquistas.md#obmep)</small> { #obmep }
 

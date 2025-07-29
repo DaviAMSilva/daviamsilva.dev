@@ -15,7 +15,7 @@ tags:
 
 ---
 
-Quando eu participei da prova do terceiro nível da segunda fase da OBMEP 2019 a questão 5 foi uma que me deixou muito intrigado se a solução que eu desenvolvi durante o teste estava correta. Por causa disso logo após terminar a prova eu fiquei curioso e decidi escrever um algoritmo capaz de resolver o problema.
+Quando eu participei da prova do terceiro nível da segunda fase da [OBMEP] 2019 a questão 5 foi uma que me deixou muito intrigado se a solução que eu desenvolvi durante o teste estava correta. Por causa disso logo após terminar a prova eu fiquei curioso e decidi escrever um algoritmo capaz de resolver o problema.
 
 Essa edição específica da olimpíada foi a minha última aonde eu conquistei minha terceira medalha de ouro.
 

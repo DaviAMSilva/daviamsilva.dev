@@ -19,7 +19,7 @@ Esse foi um dos primeiros *grandes* projetos que eu criei quando eu comecei a ap
 
 *The Game of Life*, ou o [Jogo da Vida](https://pt.wikipedia.org/wiki/Jogo_da_vida), foi criado pelo matemático [John Conway](https://pt.wikipedia.org/wiki/John_Conway) em 1970, sendo um tipo de autômato celular.
 
-Na época eu ainda tinha pouco conhecimento em como usar html e css, por isso vários dos projetos que eu criava usavam *sketches* do [p5.js](https://p5js.org/) em páginas de tela cheia.
+Na época eu ainda tinha pouco conhecimento em como usar html e css, por isso vários dos projetos que eu criava usavam *sketches* do [p5.js] em páginas de tela cheia.
 
 Por acaso a versão original separava os tipos de visualizações diferentes em arquivos `.js` diferentes e não permitir realizar a troca de maneira dinâmica. Apenas recentemente eu implantei essa opção.
 
