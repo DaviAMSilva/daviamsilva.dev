@@ -10,7 +10,6 @@ theme:
   logo: images/Lamp2D.gif
   favicon: images/Lamp2D.gif
   icon:
-    logo: fontawesome/solid/lightbulb
     repo: fontawesome/brands/github
   font:
     text: Fira Sans
@@ -53,8 +52,8 @@ theme:
         icon: material/brightness-4
         name: Modo Escuro
   features:
-    # - navigation.instant
-    # - navigation.footer
+    # - navigation.instant # Quebra o background
+    # - navigation.instant.prefetch
     - navigation.tabs
     - navigation.sections
     - navigation.expand
@@ -62,6 +61,7 @@ theme:
     - toc.integrate
     - navigation.top
     - content.tooltips
+    - content.footnote.tooltips
 
 markdown_extensions:
   - abbr
@@ -129,6 +129,9 @@ plugins:
   - social:
       cards_layout_options:
         font_family: Fira Code
+        background_image: layouts/background.png
+        background_color: transparent
+  - optimize
 
 extra_javascript:
   - javascripts/mathjax.js
