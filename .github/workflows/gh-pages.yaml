@@ -26,6 +26,7 @@ jobs:
           path: .cache
           restore-keys: |
             mkdocs-material-
+      - run: apt-get install pngquant
       - run: pip install -r requirements.txt
       - run: mkdir docs/stylesheets
       - name: Compilando SASS
