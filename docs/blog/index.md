@@ -1,5 +1,5 @@
 ---
-description: Blog pessoal de Davi Augusto Moreira da Silva
+description: Blog pessoal de Davi Augusto Moreira da Silva, bacharel em Ciência da Computação.
 ---
 
 # Blog

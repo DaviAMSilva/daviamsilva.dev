@@ -1,6 +1,6 @@
 site_name: Davi Augusto Moreira Da Silva
 site_author: Davi Augusto Moreira da Silva
-site_description: Site pessoal de Davi Augusto Moreira da Silva
+site_description: Site pessoal de Davi Augusto Moreira da Silva, bacharel em Ciência da Computação.
 site_url: https://daviamsilva.dev
 repo_url: https://github.com/daviamsilva/daviamsilva.dev
 repo_name: daviamsilva.dev
@@ -100,10 +100,13 @@ watch:
   - overrides/
 
 plugins:
-  # Plugin desabilitado até as configurações avançadas estarem disponíveis
-  # Isso é infelizmente necessário devido aos badges do shields.io
-  # - privacy
-
+  - privacy:
+      assets_exclude:
+        - cdn.jsdelivr.net/npm/mathjax*
+        - giscus.app/*
+        - img.shields.io/*
+      links_attr_map:
+        target: _blank
   - search
   - awesome-pages
   - tags
@@ -117,7 +120,7 @@ plugins:
       post_url_format: "{categories}/{slug}"
       categories_url_format: "categoria/{slug}"
   - glightbox:
-        auto_caption: true
+      auto_caption: true
   - git-revision-date-localized:
       type: timeago
       timezone: America/Sao_Paulo
@@ -125,7 +128,7 @@ plugins:
       fallback_to_build_date: false
       enable_creation_date: true
       exclude:
-          - index.md
+        - index.md
   - social:
       cards_layout_options:
         font_family: Fira Code
