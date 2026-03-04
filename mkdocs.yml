@@ -107,6 +107,7 @@ plugins:
         - img.shields.io/*
       links_attr_map:
         target: _blank
+      links_noopener: true
   - search
   - awesome-pages
   - tags
