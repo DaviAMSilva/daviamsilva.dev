@@ -31,11 +31,42 @@ p.imagem-obmep img {
     font-size: 0;
     opacity: 0;
 }
+
+.md-typeset .grid {
+    grid-template-columns: repeat(auto-fit,minmax(min(100%,16rem),auto))
+}
+
+.contato p {
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+}
 </style>
+
+<div class="grid cards" markdown>
+
+<div class="card intro" markdown>
 
 **Meu nome é <abbr>Davi<span class="esconder">&nbsp;</span>A<span class="esconder">ugusto&nbsp;</span>M<span class="esconder">oreira&nbsp;da&nbsp;</span>Silva</abbr>.**
 
 Eu sou formado em Ciência da Computação pela [Rede de Ensino Doctum de Caratinga](https://vest.doctum.edu.br/unidades/caratinga/). Eu comecei a ter uma fascinação a programação durante o ensino médio, mas já me interessava com computadores e com a matemática desde minha infância.
+
+</div>
+
+<div class="card contato" markdown>
+
+[:fontawesome-brands-linkedin:&nbsp;LinkedIn](https://www.linkedin.com/in/daviamsilva/) — /in/daviamsilva
+
+[:fontawesome-brands-github:&nbsp;GitHub](https://github.com/DaviAMSilva/) — github.com/DaviAMSilva
+
+[:fontawesome-solid-envelope:&nbsp;E-mail](mailto:daviamsilva@hotmail.com) — daviamsilva@hotmail.com
+
+[:fontawesome-brands-reddit:&nbsp;Reddit](https://www.reddit.com/user/DaviAMSilva/) — /u/DaviAMSilva
+
+[:fontawesome-brands-x-twitter:&nbsp;Twitter](https://x.com/DaviAMSilva) — @DaviAMSilva
+
+</div>
+
+</div>
 
 ## Programação
 

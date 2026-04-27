@@ -1,6 +1,7 @@
 ---
 title: daviamsilva.dev
 description: Meu site pessoal atual criado com Material for MkDocs
+slug: daviamsilva-dev
 date: 2024-09-25
 categories:
   - Projetos

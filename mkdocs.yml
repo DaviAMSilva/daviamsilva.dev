@@ -101,6 +101,7 @@ watch:
 
 plugins:
   - privacy:
+      enabled: !ENV [CI, false]
       assets_exclude:
         - cdn.jsdelivr.net/npm/mathjax*
         - giscus.app/*
@@ -146,24 +147,18 @@ extra_css:
 
 extra:
   social:
-    - icon: simple/whatsapp
-      link: https://api.whatsapp.com/send?phone=5533988314020
-      name: "WhatsApp"
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/daviamsilva/
       name: "LinkedIn"
+    - icon: fontawesome/brands/github
+      link: https://github.com/DaviAMSilva/
+      name: "GitHub"
     - icon: fontawesome/solid/envelope
       link: mailto:daviamsilva@hotmail.com
       name: "E-mail"
-    - icon: simple/github
-      link: https://github.com/DaviAMSilva/
-      name: "GitHub"
-    - icon: simple/mastodon
-      link: https://mastodon.social/@daviamsilva
-      name: "Mastodon"
-    - icon: simple/reddit
+    - icon: fontawesome/brands/reddit
       link: https://www.reddit.com/user/DaviAMSilva/
       name: "Reddit"
-    - icon: simple/lemmy
-      link: https://lemmy.eco.br/u/DaviAMSilva
-      name: "Lemmy"
+    - icon: fontawesome/brands/x-twitter
+      link: https://x.com/DaviAMSilva
+      name: "Twitter"
