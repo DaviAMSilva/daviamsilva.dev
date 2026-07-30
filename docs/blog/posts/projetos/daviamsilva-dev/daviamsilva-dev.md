@@ -5,6 +5,7 @@ slug: daviamsilva-dev
 date: 2024-09-25
 categories:
   - Projetos
+  - Destaques
 tags:
   - site
   - material for mkdocs
@@ -20,7 +21,7 @@ tags:
   - python
 ---
 
-[![Static Badge](https://img.shields.io/badge/github-DaviAMSilva%2Fdaviamsilva.dev-dddddd?logo=github)](https://github.com/DaviAMSilva/daviamsilva.dev){ target="_blank" rel="noopener noreferrer" }
+[![Static Badge](https://img.shields.io/badge/github-DaviAMSilva%2Fdaviamsilva.dev-dddddd?logo=github)](https://github.com/DaviAMSilva/daviamsilva.dev)
 [![Static Badge](https://img.shields.io/badge/website-daviamsilva.dev-326eff)](https://daviamsilva.dev)
 [![Static Badge](https://img.shields.io/github/deployments/DaviAMSilva/daviamsilva.dev/github-pages?label=deploy)](https://github.com/DaviAMSilva/daviamsilva.dev/actions/workflows/gh-pages.yaml)
 [![Static Badge](https://img.shields.io/github/actions/workflow/status/DaviAMSilva/daviamsilva.dev/markdown.yaml?label=markdownlint&logo=markdown)](https://github.com/DaviAMSilva/daviamsilva.dev/actions/workflows/markdown.yaml)
@@ -31,6 +32,8 @@ tags:
 É o meu site atual, em que você está lendo esse texto agora mesmo. Ele foi criado utilizando como base a [Material for MkDocs] para conter informações sobre mim, minhas formas de contato, apresentar o meu currículo digital e listar todos os meus projetos principais de programação.
 
 A escolha dessa ferramenta foi devida à minha experiência usando-a no meu trabalho no [Kepi Supermercado] para documentar processos e organizar informações. Utilizando o modo *live preview* da aplicação é possível rodar um site localmente que atualiza em tempo real conforme for necessário adicionar e alterar os conteúdos da documentação.
+
+<!-- more -->
 
 Adicionalmente, é bem claro para mim que um dos melhores pontos positivos dessa ferramenta é a enorme capacidade de customização que ela permite, e como é incrivelmente fácil realizar tal customização. Entretanto isso não quer dizer que isso é um processo rápido, leva-se um bom tempo preparando as configurações e tentativa e erro para deixar o site da maneira como se deseja.
 
