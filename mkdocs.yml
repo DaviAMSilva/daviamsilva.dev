@@ -100,6 +100,7 @@ watch:
   - overrides/
 
 plugins:
+  - typeset
   - privacy:
       enabled: !ENV [CI, false]
       assets_exclude:
