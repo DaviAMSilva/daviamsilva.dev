@@ -5,7 +5,7 @@
 <script>
     // Força o uso do modo escuro
     document.body.setAttribute("data-md-color-switching", "")
-    document.body.setAttribute("data-md-color-scheme", "slate")
+    document.body.setAttribute("data-md-color-scheme", "onemonokai")
     setTimeout(function () {
         document.body.removeAttribute("data-md-color-switching")
     })
@@ -22,4 +22,9 @@
 {% block styles %}
 {{ super() }}
 <link rel="stylesheet" href="stylesheets/home.css">
+<style>
+    header.md-header, nav.md-tabs, footer.md-footer {
+        background-color: #0a0a14c0 !important;
+    }
+</style>
 {% endblock %}
