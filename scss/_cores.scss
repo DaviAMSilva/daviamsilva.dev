@@ -1,13 +1,14 @@
-$davi-blue-hue: 240deg;
-$davi-red-hue: 0deg;
+$davi-background: #0a0a14;
 
-$davi-blue:             hsl($davi-blue-hue,  93%, 27%);
-$davi-blue--light:      hsl($davi-blue-hue, 100%, 55%);
-$davi-blue--lightest:   hsl(222,            100%, 60%);
-$davi-blue--dark:       hsl($davi-blue-hue, 100%, 20%);
-$davi-blue--background: hsl($davi-blue-hue,  33%,  6%);
+$davi-primary-hue: 260;
+$davi-secondary-hue: 155;
 
-$davi-red:              hsl($davi-red-hue,  93%, 26%);
-$davi-red--light:       hsl($davi-red-hue, 100%, 55%);
-$davi-red--lightest:    hsl($davi-red-hue, 100%, 68%);
-$davi-red--dark:        hsl($davi-red-hue, 100%, 19%);
+$davi-primary:           oklch(35% 0.27 $davi-primary-hue);
+$davi-primary--light:    oklch(50% 0.27 $davi-primary-hue);
+$davi-primary--lightest: oklch(60% 0.27 $davi-primary-hue);
+$davi-primary--dark:     oklch(30% 0.27 $davi-primary-hue);
+
+$davi-secondary:           oklch(35% 0.27 $davi-secondary-hue);
+$davi-secondary--light:    oklch(50% 0.27 $davi-secondary-hue);
+$davi-secondary--lightest: oklch(60% 0.27 $davi-secondary-hue);
+$davi-secondary--dark:     oklch(30% 0.27 $davi-secondary-hue);

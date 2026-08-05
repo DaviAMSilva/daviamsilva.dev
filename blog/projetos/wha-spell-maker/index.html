@@ -1,0 +1,2004 @@
+<!DOCTYPE html><html lang="pt" class="no-js"><head>
+    
+<!-- Correção para a extensão Dark Reader -->
+<meta name="darkreader-lock">
+
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Um criador de magias digital para fãs da série Witch Hat Atelier criada por Kamome Shirahama. Crie, personalize e compartilhe magias baseadas no sistema de magia da série.">
+      
+      
+        <meta name="author" content="Davi Augusto Moreira da Silva">
+      
+      
+        <link rel="canonical" href="https://daviamsilva.dev/blog/projetos/wha-spell-maker/">
+      
+      
+        <link rel="prev" href="../daviamsilva-dev/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../images/Lamp2D.gif">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+
+    
+      
+        <title>Witch Hat Atelier Spell Maker - Davi Augusto Moreira Da Silva</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="../../../assets/external/fonts.googleapis.com/css.0c16be94.css">
+        <style>:root{--md-text-font:"Fira Sans";--md-code-font:"Fira Code"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../css/timeago.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  
+<meta property="og:type" content="website">
+<meta property="og:title" content="Witch Hat Atelier Spell Maker - Davi Augusto Moreira Da Silva">
+<meta property="og:description" content="Um criador de magias digital para fãs da série Witch Hat Atelier criada por Kamome Shirahama. Crie, personalize e compartilhe magias baseadas no sistema de magia da série.">
+<meta property="og:image" content="https://daviamsilva.dev/assets/images/social/blog/projetos/wha-spell-maker.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://daviamsilva.dev/blog/projetos/wha-spell-maker/">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:title" content="Witch Hat Atelier Spell Maker - Davi Augusto Moreira Da Silva">
+<meta property="twitter:description" content="Um criador de magias digital para fãs da série Witch Hat Atelier criada por Kamome Shirahama. Crie, personalize e compartilhe magias baseadas no sistema de magia da série.">
+<meta property="twitter:image" content="https://daviamsilva.dev/assets/images/social/blog/projetos/wha-spell-maker.png">
+<link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="onemonokai" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#apresentacao" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../../.." title="Davi Augusto Moreira Da Silva" class="md-header__button md-logo" aria-label="Davi Augusto Moreira Da Silva" data-md-component="logo">
+      
+  <img src="../../../images/Lamp2D.gif" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Davi Augusto Moreira Da Silva
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Witch Hat Atelier Spell Maker
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="onemonokai" data-md-color-primary="custom" data-md-color-accent="custom" aria-label="One Monokai" type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="One Monokai" for="__palette_1" hidden="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-2.69L23.31 12 20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20z"></path></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom" aria-label="Automático" type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Automático" for="__palette_2" hidden="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"></path></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom" aria-label="Modo Claro" type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Modo Claro" for="__palette_3" hidden="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom" aria-label="Modo Escuro" type="radio" name="__palette" id="__palette_3">
+    
+      <label class="md-header__button md-icon" title="Modo Escuro" for="__palette_0" hidden="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required="">
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix="">
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/daviamsilva/daviamsilva.dev" title="Ir para repositório" class="md-source" data-md-component="source" target="_blank" rel="noopener">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"></path></svg>
+  </div>
+  <div class="md-source__repository">
+    daviamsilva.dev
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Início
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../sobre/" class="md-tabs__link">
+          
+  
+  
+  Sobre
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../curriculo/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Currículo
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+  
+  Blog
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../tags/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Tags
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden="">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Davi Augusto Moreira Da Silva" class="md-nav__button md-logo" aria-label="Davi Augusto Moreira Da Silva" data-md-component="logo">
+      
+  <img src="../../../images/Lamp2D.gif" alt="logo">
+
+    </a>
+    Davi Augusto Moreira Da Silva
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/daviamsilva/daviamsilva.dev" title="Ir para repositório" class="md-source" data-md-component="source" target="_blank" rel="noopener">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"></path></svg>
+  </div>
+  <div class="md-source__repository">
+    daviamsilva.dev
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix="">
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Início
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2">
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sobre
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Sobre
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../sobre/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class="md-typeset">
+      Sobre Mim
+    </span>
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../sobre/conquistas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class="md-typeset">
+      Conquistas
+    </span>
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../curriculo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Currículo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked="">
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blog
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Blog
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+    
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class="md-typeset">
+      Blog
+    </span>
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_2">
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arquivo
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Arquivo
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../arquivo/2026/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class="md-typeset">
+      2026
+    </span>
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../arquivo/2024/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class="md-typeset">
+      2024
+    </span>
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../arquivo/2022/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class="md-typeset">
+      2022
+    </span>
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../arquivo/2021/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class="md-typeset">
+      2021
+    </span>
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../arquivo/2020/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class="md-typeset">
+      2020
+    </span>
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../arquivo/2019/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class="md-typeset">
+      2019
+    </span>
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_3">
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Categorias
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Categorias
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../categoria/destaques/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class="md-typeset">
+      Destaques
+    </span>
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../categoria/faculdade/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class="md-typeset">
+      Faculdade
+    </span>
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../categoria/projetos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    <span class="md-typeset">
+      Projetos
+    </span>
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tags/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tags
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+  <div class="md-content md-content--post" data-md-component="content">
+    <div class="md-sidebar md-sidebar--post" data-md-component="sidebar" data-md-type="navigation">
+      <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner md-post">
+          <nav class="md-nav md-nav--primary">
+            <div class="md-post__back">
+              <div class="md-nav__title md-nav__container">
+                <a href="../../" class="md-nav__link">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+                  <span class="md-ellipsis">
+                    Voltar ao índice
+                  </span>
+                </a>
+              </div>
+            </div>
+            
+            <ul class="md-post__meta md-nav__list">
+              <li class="md-nav__item md-nav__item--section">
+                <div class="md-post__title">
+                  <span class="md-ellipsis">
+                    Metadados
+                  </span>
+                </div>
+                <nav class="md-nav">
+                  <ul class="md-nav__list">
+                    <li class="md-nav__item">
+                      <div class="md-nav__link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"></path></svg>
+                        <time datetime="2026-04-05 00:00:00+00:00" class="md-ellipsis">5 de abril de 2026</time>
+                      </div>
+                    </li>
+                    
+                      <li class="md-nav__item">
+                        <div class="md-nav__link">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15 13h1.5v2.82l2.44 1.41-.75 1.3L15 16.69zm4-5H5v11h4.67c-.43-.91-.67-1.93-.67-3a7 7 0 0 1 7-7c1.07 0 2.09.24 3 .67zM5 21a2 2 0 0 1-2-2V5c0-1.11.89-2 2-2h1V1h2v2h8V1h2v2h1a2 2 0 0 1 2 2v6.1c1.24 1.26 2 2.99 2 4.9a7 7 0 0 1-7 7c-1.91 0-3.64-.76-4.9-2zm11-9.85A4.85 4.85 0 0 0 11.15 16c0 2.68 2.17 4.85 4.85 4.85A4.85 4.85 0 0 0 20.85 16c0-2.68-2.17-4.85-4.85-4.85"></path></svg>
+                          <time datetime="2026-07-29 00:00:00+00:00" class="md-ellipsis">29 de julho de 2026</time>
+                        </div>
+                      </li>
+                    
+                    
+                      <li class="md-nav__item">
+                        <div class="md-nav__link">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 3v15h3V3zm3 2 4 13 3-1-4-13zM5 5v13h3V5zM3 19v2h18v-2z"></path></svg>
+                          <span class="md-ellipsis">
+                            em
+                            
+                              <a href="../../categoria/projetos/">Projetos</a>, 
+                              <a href="../../categoria/destaques/">Destaques</a></span>
+                        </div>
+                      </li>
+                    
+                    
+                      
+                      <li class="md-nav__item">
+                        <div class="md-nav__link">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"></path></svg>
+                          <span class="md-ellipsis">
+                            
+                              18 min de leitura
+                            
+                          </span>
+                        </div>
+                      </li>
+                    
+                  </ul>
+                </nav>
+              </li>
+            </ul>
+            
+          </nav>
+          
+            
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#apresentacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Apresentação
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#desenvolvimento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Desenvolvimento
+        </span>
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Desenvolvimento">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#editor-de-magias-jsoneditor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Editor de Magias <small>(JSONEditor)</small>
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#canvas-de-magias-p5js" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Canvas de Magias <small>(p5.js)</small>
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#links-compartilhaveis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Links Compartilháveis
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#criacao-dos-simbolos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Criação dos Símbolos
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cloudflare" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Cloudflare
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#impacto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Impacto
+        </span>
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Impacto">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#comunidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Comunidade
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#estatisticas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Estatísticas
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analise-da-serie-spoilers-marcados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Análise da Série <small>(spoilers marcados)</small>
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+          
+        </div>
+      </div>
+    </div>
+    <article class="md-content__inner md-typeset">
+      
+        
+  
+
+
+  <nav class="md-tags">
+    
+      
+      
+      
+      
+        <a href="../../../tags/#tag:anime" class="md-tag">anime</a>
+      
+    
+      
+      
+      
+      
+        <a href="../../../tags/#tag:bootstrap" class="md-tag">bootstrap</a>
+      
+    
+      
+      
+      
+      
+        <a href="../../../tags/#tag:cloudflare" class="md-tag">cloudflare</a>
+      
+    
+      
+      
+      
+      
+        <a href="../../../tags/#tag:css" class="md-tag">css</a>
+      
+    
+      
+      
+      
+      
+        <a href="../../../tags/#tag:font-awesome" class="md-tag">font awesome</a>
+      
+    
+      
+      
+      
+      
+        <a href="../../../tags/#tag:html" class="md-tag">html</a>
+      
+    
+      
+      
+      
+      
+        <a href="../../../tags/#tag:javascript" class="md-tag">javascript</a>
+      
+    
+      
+      
+      
+      
+        <a href="../../../tags/#tag:json" class="md-tag">json</a>
+      
+    
+      
+      
+      
+      
+        <a href="../../../tags/#tag:jsx" class="md-tag">jsx</a>
+      
+    
+      
+      
+      
+      
+        <a href="../../../tags/#tag:mangá" class="md-tag">mangá</a>
+      
+    
+      
+      
+      
+      
+        <a href="../../../tags/#tag:node" class="md-tag">node</a>
+      
+    
+      
+      
+      
+      
+        <a href="../../../tags/#tag:npm" class="md-tag">npm</a>
+      
+    
+      
+      
+      
+      
+        <a href="../../../tags/#tag:p5js" class="md-tag">p5.js</a>
+      
+    
+      
+      
+      
+      
+        <a href="../../../tags/#tag:python" class="md-tag">python</a>
+      
+    
+      
+      
+      
+      
+        <a href="../../../tags/#tag:sass" class="md-tag">sass</a>
+      
+    
+      
+      
+      
+      
+        <a href="../../../tags/#tag:site" class="md-tag">site</a>
+      
+    
+      
+      
+      
+      
+        <a href="../../../tags/#tag:typescript" class="md-tag">typescript</a>
+      
+    
+      
+      
+      
+      
+        <a href="../../../tags/#tag:vite" class="md-tag">vite</a>
+      
+    
+  </nav>
+
+
+  
+  
+
+
+  <h1>Witch Hat Atelier Spell Maker</h1>
+
+<style>
+  .width30 {
+    margin:auto;
+    text-align: center !important;
+    width: min(max(30%, 350px), 90%) !important;
+    max-width: 100% !important;
+  }
+  .width50 {
+    margin:auto;
+    text-align: center !important;
+    width: max(50%, 400px) !important;
+    max-width: 100% !important;
+  }
+  .width75 {
+    margin:auto;
+    text-align: center !important;
+    width: max(75%, 600px) !important;
+    max-width: 100% !important;
+  }
+  .md-typeset details p {
+    font-size: 0.8rem;
+  }
+</style>
+
+<p class="badges"><a href="https://github.com/DaviAMSilva/wha-spell-maker" target="_blank" rel="noopener"><img alt="Static Badge" src="https://img.shields.io/badge/github-DaviAMSilva%2Fwha--spell--maker-dddddd?logo=github"></a>
+<a href="https://wha-spell-maker.daviamsilva.dev" target="_blank" rel="noopener"><img alt="Static Badge" src="https://img.shields.io/badge/website-Witch Hat Atelier Spell Maker-326eff"></a></p>
+<p>Witch Hat Atelier Spell Maker é um editor de magias digital para fãs da série Witch Hat Atelier que permite criar, editar e compartilhar magias baseadas no sistema de magia dessa série. Esse projeto é um site estático desenvolvido com Typescript e Node.js, hospedado na Cloudflare Workers &amp; Pages.</p>
+<p class="width75"><a href="https://wha-spell-maker.daviamsilva.dev/" target="_blank" rel="noopener"><img alt="Witch Hat Atelier Spell Maker Preview" src="/blog/projetos/wha-spell-maker/whasm-preview.png"></a></p>
+<p>Criada por Kamome Shirohama, a série de fantasia Witch Hat Atelier, em forma de mangá e anime, é uma das minhas favoritas. Não apenas a <em>mangaká</em> demonstra habilidades artísticas e de composição incríveis, a ponto de ser sua própria mágica, mas ela também cria personagens interessantes e enredos cativantes que forçam o leitor a ponderar os temas apresentados.</p>
+<!-- more -->
+
+<figure align="right" class="width30" style="float: right; margin: 1rem">
+<a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-title="Sapatos Sylph" data-desc-position="bottom"><img alt="Sapatos Sylph" src="/blog/projetos/wha-spell-maker/spell-sylph-shoes-dark.png#only-dark"></a>
+<a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-title="Sapatos Sylph" data-desc-position="bottom"><img alt="Sapatos Sylph" src="/blog/projetos/wha-spell-maker/spell-sylph-shoes-light.png#only-light"></a>
+
+<figcaption class="width30" style="clear: both"><strong>Magia Sapatos Sylph</strong>:<br>Contendo um brasão de vento e flechas de levitação e convergência</figcaption>
+</figure>
+<p class="annotate">Uma das fundações da série é o sistema de magia baseado em desenhos que os bruxos usam. De maneira simplificada um brasão no centro do selo define o elemento que a magia irá incorporar. Flechas em volta do brasão definem a forma em que a magia irá se manifestar. E, por último, ao fechar um círculo em volta, a magia é ativada. (1)</p>
+<ol>
+<li>Em inglês: círculo = <em>ring</em>, brasão = <em>sigil</em> e flecha = <em>sign</em></li>
+</ol>
+<p>Esse sistema de magia contém outros conceitos mais avançados que o torna mais surpreendentemente profundo e complexo, de forma que um leitor criativo pode aprender o sistema, pegar magias e símbolos apresentados na série e desenvolver novas magias originais. Para leitores interessados o melhor lugar para começar é na página sobre magia da <a href="https://witchhatatelier.telepedia.net/wiki/Magic" target="_blank" rel="noopener">Independent Witch Hat Atelier Wiki</a>.</p>
+<p>A série cria uma analogia entre a magia e a arte, convidando o leitor a desenhar as magias ele mesmo. Foi a partir daí que eu percebi a oportunidade de desenvolver um aplicativo para acelerar a criação de novas magias. A capacidade de criar, mover, copiar e apagar os símbolos como quiser e a natureza simétrica das magias que necessita o uso de símbolos repetidos são as principais vantagens que o editor digital providencia.</p>
+<p>Entretanto é importante enfatizar: <strong>O editor não é um substituto para a criatividade, habilidade artística e conhecimento do sistema necessários para criar magias</strong>. Eu recomendo que qualquer fã interessado tente desenhar pelo menos uma vez uma magia complexa em papel para compreender a habilidade demonstrada pelos personagens na série.</p>
+<h2 id="apresentacao">Apresentação</h2>
+<p>A interface de usuário é dividida em duas partes, na esquerda há o elemento canvas em que ocorre o desenha das magias. Já na direita há o painel que permite editar as diversas partes da magia. O site também suporta a orientação vertical; nesse modo o canvas move para o topo da página, enquanto o editor move para a parte de baixo.</p>
+<p class="width75"><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-title="Visualização do website" data-desc-position="bottom"><img alt="Visualização do website" src="/blog/projetos/wha-spell-maker/whasm-website.png"></a></p>
+<p>Com o editor o usuário pode adicionar a quantidade que quiser dos diversos tipos de elementos que compõem uma magia: Círculos, brasões e flechas. O editor permite posicionar, rotacionar e alterar o tamanho e cores dos diversos símbolos já estabelecidos na série. Imagens customizadas fornecidas pelo próprio usuário também são suportadas para símbolos não-oficiais e outras variações.</p>
+<p>As diferentes partes do editor foram especificamente projetadas para facilitar a criação do tipo mais comum de magia: contendo um círculo, um brasão central e várias flechas distribuídas uniformemente em volta do brasão. Magias mais complexas que usam múltiplos círculos, e símbolos não uniformes ou com posição arbitrária são suportadas, mas requerem mais trabalho para serem criadas.</p>
+<p>O editor exporta as magias criadas na forma de imagem (1000×1000px) ou como JSON usando a representação interna da magia. A disponibilidade desse formato permite que usuários salvem magias para serem importadas posteriormente, ou ainda, editem diretamente no editor secundário no formato JSON. O editor também é capaz de criar um link compartilhável da magia atual, permitindo que outros usuários possam rapidamente abrir a mesma magia.</p>
+<h2 id="desenvolvimento">Desenvolvimento</h2>
+<p>Esse projeto utiliza duas bibliotecais centrais para a criação do site: <a href="https://p5js.org" target="_blank" rel="noopener">p5.js</a>, para o desenho das magias, e <a href="https://github.com/json-editor/json-editor" target="_blank" rel="noopener">JSONEditor</a>, para a edição da magia. Para a build do site usa-se a ferramenta <a href="https://vite.dev/" target="_blank" rel="noopener">Vite</a> em Node.js, sendo o meu primeiro grande projeto a usar Typescript (suportado em Node 23+).</p>
+<p>Curiosamente eu tenho maior experiência com JavaScript e Python, duas linguagens famosas por terem tipagens fracas, entretanto em ambas eu geralmente acabou usando a tipagem opcional. De certa maneira esse modo de desenvolver junta as duas vantagens de cada tipo de linguagem: Liberdade de manipulação de dados, mas com dicas de tipagem providenciadas automaticamente por editores como o Visual Studio Code.</p>
+<h3 id="editor-de-magias-jsoneditor">Editor de Magias <small>(JSONEditor)</small></h3>
+<p>O JSONEditor usa como base um arquivo <a href="https://json-schema.org/" target="_blank" rel="noopener">JSON Schema</a> para gerar um componente HTML em que os vários elementos presentes seguirão as regras de exibição e validação definidas. O resultado é um editor visual e dinâmico que é equivalente a uma estrutura JSON, garantindo uma boa experiência de usuário, mas ainda tirando proveito da flexibilidade do formato JSON e da organização do schema.</p>
+<p>A partir daí a biblioteca oferece métodos de conseguir o valor atual do editor no formato JSON definido no schema e, opcionalmente, o resultado da validação dos dados inseridos pelo usuário. Entretanto, nesse projeto, tanto o schema quanto o código de desenho utilizam valores padrões para todos os campos, portanto a funcionalidade de validação não foi necessária.</p>
+<p class="annotate">Abaixo está uma versão simplificado do schema (o real tem cerca de 600 linhas) que demonstra que uma magia contem uma estrutura em hierarquia. A raiz da estrutura deve conter um ou mais selos (1) e que cada selo pode ter qualquer quantidade de círculos, brasões, flechas e linhas. No schema real a propriedade <code>format</code> pode ser utilizada para mudar o tipo de dado que aquele elemento representa: textual, numérico, cor e vários outros tipos.</p>
+<ol>
+<li>Selo, ou <em>seal</em> em inglês, se refere ao desenho de círculo com símbolos dentro</li>
+</ol>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="nt">"$schema"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://json-schema.org/draft-07/schema#"</span><span class="p">,</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"object"</span><span class="p">,</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Witch Hat Atelier Spell Maker"</span><span class="p">,</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="nt">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="hll"><span class="w">        </span><span class="c1">// Mensagem inicial exibida no topo do editor</span>
+</span></span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">        </span><span class="nt">"firstTimeInfo"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="cm">/* ... */</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">        </span><span class="cm">/* ... */</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">        </span><span class="nt">"seals"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">            </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"array"</span><span class="p">,</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">            </span><span class="nt">"format"</span><span class="p">:</span><span class="w"> </span><span class="s2">"tabs-top"</span><span class="p">,</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">            </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Spell Seals"</span><span class="p">,</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">                </span><span class="nt">"format"</span><span class="p">:</span><span class="w"> </span><span class="s2">"categories"</span><span class="p">,</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">                </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Seal"</span><span class="p">,</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">                </span><span class="nt">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">                    </span><span class="cm">/* ... */</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">                    </span><span class="nt">"rings"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">                        </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"array"</span><span class="p">,</span>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">                        </span><span class="nt">"format"</span><span class="p">:</span><span class="w"> </span><span class="s2">"tabs-top"</span><span class="p">,</span>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">                        </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Seal Rings"</span><span class="p">,</span>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="w">                        </span><span class="nt">"items"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="w">                            </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"object"</span><span class="p">,</span>
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="w">                            </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Ring"</span><span class="p">,</span>
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="w">                            </span><span class="nt">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="cm">/* ... */</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="w">                        </span><span class="p">}</span>
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="w">                    </span><span class="p">},</span>
+</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="w">                    </span><span class="nt">"sigils"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a><span class="w">                        </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"array"</span><span class="p">,</span>
+</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="w">                        </span><span class="nt">"format"</span><span class="p">:</span><span class="w"> </span><span class="s2">"tabs-top"</span><span class="p">,</span>
+</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a><span class="w">                        </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Seal Sigils"</span><span class="p">,</span>
+</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a><span class="w">                        </span><span class="nt">"items"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a><span class="w">                            </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"object"</span><span class="p">,</span>
+</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a><span class="w">                            </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Sigil"</span><span class="p">,</span>
+</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a><span class="w">                            </span><span class="nt">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="cm">/* ... */</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a><span class="w">                        </span><span class="p">}</span>
+</span><span id="__span-0-36"><a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a><span class="w">                    </span><span class="p">},</span>
+</span><span id="__span-0-37"><a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a><span class="w">                    </span><span class="nt">"signs"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-38"><a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a><span class="w">                        </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"array"</span><span class="p">,</span>
+</span><span id="__span-0-39"><a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a><span class="w">                        </span><span class="nt">"format"</span><span class="p">:</span><span class="w"> </span><span class="s2">"tabs-top"</span><span class="p">,</span>
+</span><span id="__span-0-40"><a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a><span class="w">                        </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Seal Signs"</span><span class="p">,</span>
+</span><span id="__span-0-41"><a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a><span class="w">                        </span><span class="nt">"options"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-42"><a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a><span class="w">                            </span><span class="nt">"disable_collapse"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+</span><span id="__span-0-43"><a id="__codelineno-0-43" name="__codelineno-0-43" href="#__codelineno-0-43"></a><span class="w">                            </span><span class="nt">"enable_array_copy"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+</span><span id="__span-0-44"><a id="__codelineno-0-44" name="__codelineno-0-44" href="#__codelineno-0-44"></a><span class="w">                        </span><span class="p">},</span>
+</span><span id="__span-0-45"><a id="__codelineno-0-45" name="__codelineno-0-45" href="#__codelineno-0-45"></a><span class="w">                        </span><span class="nt">"items"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-46"><a id="__codelineno-0-46" name="__codelineno-0-46" href="#__codelineno-0-46"></a><span class="w">                            </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"object"</span><span class="p">,</span>
+</span><span id="__span-0-47"><a id="__codelineno-0-47" name="__codelineno-0-47" href="#__codelineno-0-47"></a><span class="w">                            </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Sign"</span><span class="p">,</span>
+</span><span id="__span-0-48"><a id="__codelineno-0-48" name="__codelineno-0-48" href="#__codelineno-0-48"></a><span class="w">                            </span><span class="nt">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="cm">/* ... */</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-0-49"><a id="__codelineno-0-49" name="__codelineno-0-49" href="#__codelineno-0-49"></a><span class="w">                        </span><span class="p">}</span>
+</span><span id="__span-0-50"><a id="__codelineno-0-50" name="__codelineno-0-50" href="#__codelineno-0-50"></a><span class="w">                    </span><span class="p">},</span>
+</span><span id="__span-0-51"><a id="__codelineno-0-51" name="__codelineno-0-51" href="#__codelineno-0-51"></a><span class="w">                    </span><span class="nt">"lines"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-52"><a id="__codelineno-0-52" name="__codelineno-0-52" href="#__codelineno-0-52"></a><span class="w">                        </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"array"</span><span class="p">,</span>
+</span><span id="__span-0-53"><a id="__codelineno-0-53" name="__codelineno-0-53" href="#__codelineno-0-53"></a><span class="w">                        </span><span class="nt">"format"</span><span class="p">:</span><span class="w"> </span><span class="s2">"tabs-top"</span><span class="p">,</span>
+</span><span id="__span-0-54"><a id="__codelineno-0-54" name="__codelineno-0-54" href="#__codelineno-0-54"></a><span class="w">                        </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Seal Lines"</span><span class="p">,</span>
+</span><span id="__span-0-55"><a id="__codelineno-0-55" name="__codelineno-0-55" href="#__codelineno-0-55"></a><span class="w">                        </span><span class="nt">"items"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-56"><a id="__codelineno-0-56" name="__codelineno-0-56" href="#__codelineno-0-56"></a><span class="w">                            </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Line"</span><span class="p">,</span>
+</span><span id="__span-0-57"><a id="__codelineno-0-57" name="__codelineno-0-57" href="#__codelineno-0-57"></a><span class="w">                            </span><span class="nt">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="cm">/* ... */</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-0-58"><a id="__codelineno-0-58" name="__codelineno-0-58" href="#__codelineno-0-58"></a><span class="w">                        </span><span class="p">}</span>
+</span><span id="__span-0-59"><a id="__codelineno-0-59" name="__codelineno-0-59" href="#__codelineno-0-59"></a><span class="w">                    </span><span class="p">}</span>
+</span><span id="__span-0-60"><a id="__codelineno-0-60" name="__codelineno-0-60" href="#__codelineno-0-60"></a><span class="w">                </span><span class="p">}</span>
+</span><span id="__span-0-61"><a id="__codelineno-0-61" name="__codelineno-0-61" href="#__codelineno-0-61"></a><span class="w">            </span><span class="p">}</span>
+</span><span id="__span-0-62"><a id="__codelineno-0-62" name="__codelineno-0-62" href="#__codelineno-0-62"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__span-0-63"><a id="__codelineno-0-63" name="__codelineno-0-63" href="#__codelineno-0-63"></a><span class="hll"><span class="w">        </span><span class="c1">// Usado para armazenar as imagens customizadas</span>
+</span></span><span id="__span-0-64"><a id="__codelineno-0-64" name="__codelineno-0-64" href="#__codelineno-0-64"></a><span class="w">        </span><span class="nt">"custom"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="cm">/* ... */</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-0-65"><a id="__codelineno-0-65" name="__codelineno-0-65" href="#__codelineno-0-65"></a><span class="hll"><span class="w">        </span><span class="c1">// Ambas as seções de Importar/Exportar e Sobre precisam estar presentes no schema para que</span>
+</span></span><span id="__span-0-66"><a id="__codelineno-0-66" name="__codelineno-0-66" href="#__codelineno-0-66"></a><span class="hll"><span class="w">        </span><span class="c1">// as abas sejam geradas pelo JSONEditor e eventualmente populadas por código Javascript</span>
+</span></span><span id="__span-0-67"><a id="__codelineno-0-67" name="__codelineno-0-67" href="#__codelineno-0-67"></a><span class="w">        </span><span class="nt">"io"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="cm">/* ... */</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-0-68"><a id="__codelineno-0-68" name="__codelineno-0-68" href="#__codelineno-0-68"></a><span class="w">        </span><span class="nt">"about"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="cm">/* ... */</span><span class="w"> </span><span class="p">}</span>
+</span><span id="__span-0-69"><a id="__codelineno-0-69" name="__codelineno-0-69" href="#__codelineno-0-69"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-0-70"><a id="__codelineno-0-70" name="__codelineno-0-70" href="#__codelineno-0-70"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>Infelizmente, devido ao fato dessa biblioteca ser tão focada em criar um editor com base em um schema fixo, foram encontradas as seguintes limitações que tiveram de ser resolvidas durante o desenvolvimento do projeto:</p>
+<p>Um usuário avançado tem a opção de adicionar novos símbolos com imagens e nomes customizáveis para serem usadas dentro das magias e permitir o uso de brasões e flechas que não estão presentes no editor ou na série. Uma consequência dessa funcionalidade é a necessidade da adição ou remoção de itens da lista de imagens nas caixas de seleção de símbolos. Entretanto o JSONEditor não suporta a alteração do schema dinamicamente após a criação do editor.</p>
+<p>Para isso a função <code>createJsonEditor</code> é a responsável por criar ou recriar o editor e invocar todas as correções e adições secundárias a serem aplicadas. Uma das correções é realizada pela função <code>rebuildAvailableSymbols</code> cuja a responsabilidade é juntar os símbolos embutidos com os símbolos carregados pelo usuário em uma única lista que é injetada dentro do schema JSON importado toda vez que o editor é criado ou recriado.</p>
+<p class="annotate">Duas adições realizadas no editor são a população das abas "Importar / Exportar" e "Sobre" (1), em que a estrutura é criada no arquivo <code>src/tabs.tsx</code> e injetada por JavaScript logo após a árvore HTML do editor ser gerada. Os elementos dessas abas são formatadas usando o mesmo estilos de Bootstrap usados no tema do editor.</p>
+<ol>
+<li>"Import / Export" e "About" em inglês</li>
+</ol>
+<p>Por fim, uma das funcionalidades adicionadas após a publicação do site foi uma opção de destacar temporariamente o símbolo atualmente em edição, ou seja, o símbolo atualmente visível no editor. Mas, ao meu entendimento, o JSONEditor não tem um modo nativo de informar em qual parte da schema o usuário está atualmente acessando. A solução adotada é uma que eu não estou muito satisfeito, mas que funciona:</p>
+<p>Ela envolve o uso de <code class="language-javascript highlight"><span class="nx">MutationObserver</span></code> para detectar alterações em um dos elementos no HTML do editor quando o usuário troca o símbolo atualmente sendo editado. Quando isso ocorre o código encontra o índice do selo, o tipo do símbolo e o índice do símbolo atualmente visível e armazena em uma variável global. Então o p5.js utiliza essas informações durante o desenho da magia para determinar se algum símbolo precisa ser pintado com a cor de destaque.</p>
+<div class="language-javascript highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1">// Variável global em src/sketch.ts, importada e alterada em src/form.ts</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="k">export</span><span class="w"> </span><span class="kd">const</span><span class="w"> </span><span class="nx">highlightInfo</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="nx">seal</span><span class="o">:</span><span class="w"> </span><span class="nx">number</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">    </span><span class="nx">type</span><span class="o">:</span><span class="w"> </span><span class="nx">string</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">    </span><span class="nx">index</span><span class="o">:</span><span class="w"> </span><span class="nx">number</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kc">null</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">    </span><span class="nx">seal</span><span class="o">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">    </span><span class="nx">type</span><span class="o">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">    </span><span class="nx">index</span><span class="o">:</span><span class="w"> </span><span class="kc">null</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="p">};</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="cm">/* ... */</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="c1">// Ao desenhar os símbolos e, de maneira similar, outros elementos da magia</span>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="kd">const</span><span class="w"> </span><span class="nx">symbolHighlighted</span><span class="w"> </span><span class="o">=</span>
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="w">    </span><span class="nx">spell</span><span class="p">.</span><span class="nx">highlight</span><span class="w"> </span><span class="o">&amp;&amp;</span>
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="w">    </span><span class="nx">highlightInfo</span><span class="p">.</span><span class="nx">seal</span><span class="w">  </span><span class="o">===</span><span class="w"> </span><span class="nx">sealIndex</span><span class="w"> </span><span class="o">&amp;&amp;</span>
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="w">    </span><span class="nx">highlightInfo</span><span class="p">.</span><span class="nx">type</span><span class="w">  </span><span class="o">===</span><span class="w"> </span><span class="nx">symbolDrawType</span><span class="w"> </span><span class="o">&amp;&amp;</span>
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="w">    </span><span class="nx">highlightInfo</span><span class="p">.</span><span class="nx">index</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="nx">localIndex</span><span class="p">;</span>
+</span></code></pre></div>
+<h3 id="canvas-de-magias-p5js">Canvas de Magias <small>(p5.js)</small></h3>
+<p>A responsabilidade de desenhar as magias em si é da biblioteca p5.js, que eu já estou <a href="../../../tags/#tag:p5js">familiarizado há algum tempo</a>. O código que recebe e interpreta a magia em forma de JSON foi desenvolvido com o foco em evitar erros fatais. Todos as partes do código de desenho contém valores padrões, além do fato que o schema em si já vir configurado com padrões preenchidos pelo JSONEditor. Dessa forma mesmo que a magia fornecida esteja incompleta, inválida ou qualquer outro erro exceto de sintaxe JSON, o canvas ainda será preenchido com <em>alguma coisa</em>.</p>
+<p>As várias partes da estrutura de uma magia são processadas em vários <em>loops</em>, um por um. O ponto interessante foi lidar com o posicionamento relativo dos símbolos em diferentes níveis da hierarquia, considerando que cada elemento contém uma translação e rotação relativas ao elemento um nível acima na estrutura. A maneira inteligente de conseguir esse efeito é usando as funções de <a href="https://p5js.org/reference/#Transform" target="_blank" rel="noopener">transformação</a> do p5.js.</p>
+<p>O modo como elas funcionam é usando as funções <code class="language-javascript highlight"><span class="nx">push</span><span class="p">()</span></code> para adicionar um grupo à pilha de transformação, executando todas as transformações necessárias àquele grupo, e finalmente usando <code class="language-javascript highlight"><span class="nx">pop</span><span class="p">()</span></code> para finalizar o grupo. Dessa forma todos os grupos na pilha são afetados pelos grupos abaixo de forma automática. A melhor demonstração desse método é na parte responsável pelo posicionamento e desenho dos brasões e flechas:</p>
+<div class="language-javascript highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="cm">/* [Comentários originais traduzidos] */</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="c1">// Desenhando cada um dos brasões/flechas no círculo</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nx">symbolAmountDraw</span><span class="p">;</span><span class="w"> </span><span class="nx">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">    </span><span class="nx">p</span><span class="p">.</span><span class="nx">push</span><span class="p">();</span><span class="w"> </span><span class="c1">// BRASÕES &amp; FLECHAS</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">    </span><span class="c1">// Transladar o centro do brasão/círculo de flechas</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">    </span><span class="nx">p</span><span class="p">.</span><span class="nx">translate</span><span class="p">(</span><span class="nx">symbolOffsetX</span><span class="p">,</span><span class="w"> </span><span class="nx">symbolOffsetY</span><span class="p">);</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="hll"><span class="w">    </span><span class="c1">// A melhor maneira de imaginar essas transformações é imaginar que</span>
+</span></span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="hll"><span class="w">    </span><span class="c1">// elas acontecem na ordem opostas a que elas estão definidas no código</span>
+</span></span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">symbolDrawType</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s2">"sign"</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">        </span><span class="c1">// Girar em volta do centro do círculo de flechas com</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">        </span><span class="c1">// uma distância baseada no índice da flecha atual</span>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="w">        </span><span class="nx">p</span><span class="p">.</span><span class="nx">rotate</span><span class="p">(</span>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="w">            </span><span class="p">(</span><span class="nx">symbol</span><span class="p">.</span><span class="nx">rotation</span><span class="w"> </span><span class="o">??</span><span class="w"> </span><span class="nx">symbolDefaults</span><span class="p">.</span><span class="nx">rotation</span><span class="p">)</span><span class="w"> </span><span class="o">+</span>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="w">            </span><span class="nx">i</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">360</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="nx">symbolAmount</span>
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="w">        </span><span class="p">);</span>
+</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>
+</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="w">        </span><span class="c1">// Transladar para a parte superior do círculo de flechas</span>
+</span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="w">        </span><span class="nx">p</span><span class="p">.</span><span class="nx">translate</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="p">(</span><span class="nx">symbol</span><span class="p">.</span><span class="nx">radius</span><span class="w"> </span><span class="o">??</span><span class="w"> </span><span class="nx">symbolDefaults</span><span class="p">.</span><span class="nx">radius</span><span class="p">));</span>
+</span><span id="__span-2-21"><a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a>
+</span><span id="__span-2-22"><a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a><span class="w">        </span><span class="c1">// Transladar o brasão/flecha horizontalmente relativo</span>
+</span><span id="__span-2-23"><a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a><span class="w">        </span><span class="c1">// à posição individual da flecha no círculo de flechas</span>
+</span><span id="__span-2-24"><a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a><span class="w">        </span><span class="nx">p</span><span class="p">.</span><span class="nx">translate</span><span class="p">(</span><span class="nx">symbolOffsetStrafe</span><span class="p">,</span><span class="w"> </span><span class="mf">0</span><span class="p">);</span>
+</span><span id="__span-2-25"><a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-2-26"><a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a>
+</span><span id="__span-2-27"><a id="__codelineno-2-27" name="__codelineno-2-27" href="#__codelineno-2-27"></a><span class="w">    </span><span class="c1">// Girar em volta do centro do brasão/flecha</span>
+</span><span id="__span-2-28"><a id="__codelineno-2-28" name="__codelineno-2-28" href="#__codelineno-2-28"></a><span class="w">    </span><span class="nx">p</span><span class="p">.</span><span class="nx">rotate</span><span class="p">(</span><span class="nx">symbolAngle</span><span class="p">);</span>
+</span><span id="__span-2-29"><a id="__codelineno-2-29" name="__codelineno-2-29" href="#__codelineno-2-29"></a>
+</span><span id="__span-2-30"><a id="__codelineno-2-30" name="__codelineno-2-30" href="#__codelineno-2-30"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">tintedImage</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-31"><a id="__codelineno-2-31" name="__codelineno-2-31" href="#__codelineno-2-31"></a><span class="w">        </span><span class="nx">p</span><span class="p">.</span><span class="nx">image</span><span class="p">(</span><span class="nx">tintedImage</span><span class="p">,</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="nx">symbolSize</span><span class="p">,</span><span class="w"> </span><span class="nx">symbolSize</span><span class="p">);</span>
+</span><span id="__span-2-32"><a id="__codelineno-2-32" name="__codelineno-2-32" href="#__codelineno-2-32"></a><span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-33"><a id="__codelineno-2-33" name="__codelineno-2-33" href="#__codelineno-2-33"></a><span class="w">        </span><span class="nx">p</span><span class="p">.</span><span class="nx">image</span><span class="p">(</span><span class="nx">symbolImage</span><span class="p">,</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="nx">symbolSize</span><span class="p">,</span><span class="w"> </span><span class="nx">symbolSize</span><span class="p">);</span>
+</span><span id="__span-2-34"><a id="__codelineno-2-34" name="__codelineno-2-34" href="#__codelineno-2-34"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-2-35"><a id="__codelineno-2-35" name="__codelineno-2-35" href="#__codelineno-2-35"></a>
+</span><span id="__span-2-36"><a id="__codelineno-2-36" name="__codelineno-2-36" href="#__codelineno-2-36"></a><span class="w">    </span><span class="c1">// Desenhar bordas em volta dos símbolos</span>
+</span><span id="__span-2-37"><a id="__codelineno-2-37" name="__codelineno-2-37" href="#__codelineno-2-37"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">spell</span><span class="p">.</span><span class="nx">symbolBorder</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-38"><a id="__codelineno-2-38" name="__codelineno-2-38" href="#__codelineno-2-38"></a><span class="w">        </span><span class="nx">p</span><span class="p">.</span><span class="nx">strokeWeight</span><span class="p">(</span><span class="mf">2</span><span class="p">);</span>
+</span><span id="__span-2-39"><a id="__codelineno-2-39" name="__codelineno-2-39" href="#__codelineno-2-39"></a><span class="w">        </span><span class="nx">p</span><span class="p">.</span><span class="nx">noFill</span><span class="p">();</span>
+</span><span id="__span-2-40"><a id="__codelineno-2-40" name="__codelineno-2-40" href="#__codelineno-2-40"></a><span class="w">        </span><span class="nx">p</span><span class="p">.</span><span class="nx">strokeWeight</span><span class="p">(</span><span class="mf">1</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="nx">sealScale</span><span class="p">);</span>
+</span><span id="__span-2-41"><a id="__codelineno-2-41" name="__codelineno-2-41" href="#__codelineno-2-41"></a><span class="w">        </span><span class="nx">p</span><span class="p">.</span><span class="nx">stroke</span><span class="p">(</span><span class="nx">tintColor</span><span class="p">);</span>
+</span><span id="__span-2-42"><a id="__codelineno-2-42" name="__codelineno-2-42" href="#__codelineno-2-42"></a><span class="w">        </span><span class="nx">p</span><span class="p">.</span><span class="nx">rect</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="nx">symbolSize</span><span class="p">,</span><span class="w"> </span><span class="nx">symbolSize</span><span class="p">);</span>
+</span><span id="__span-2-43"><a id="__codelineno-2-43" name="__codelineno-2-43" href="#__codelineno-2-43"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-2-44"><a id="__codelineno-2-44" name="__codelineno-2-44" href="#__codelineno-2-44"></a>
+</span><span id="__span-2-45"><a id="__codelineno-2-45" name="__codelineno-2-45" href="#__codelineno-2-45"></a><span class="w">    </span><span class="nx">p</span><span class="p">.</span><span class="nx">pop</span><span class="p">();</span><span class="w"> </span><span class="c1">// BRASÕES &amp; FLECHAS</span>
+</span><span id="__span-2-46"><a id="__codelineno-2-46" name="__codelineno-2-46" href="#__codelineno-2-46"></a><span class="p">}</span>
+</span></code></pre></div>
+<h3 id="links-compartilhaveis">Links Compartilháveis</h3>
+<p>O editor permite que o usuário crie um link da magia em edição para salva-la ou compartilha-la. Esse link envolve o uso da url do site com o parâmetro <code>?spell=</code> preenchido com um valor compactado e codificado em base64.</p>
+<p>Em testes foi verificado que simplesmente codificar o texto em formato JSON diretamente é extremamente ineficiente, de forma que, em magias complexas, o link seria muito grande, possivelmente atingindo limites de redes sociais e de navegadores. Por isso grande esforço foi tomado para diminuir o tamanho dos links gerados.</p>
+<p>Para isso foi adicionado uma etapa de compressão usando o algoritmo <code>deflate-raw</code>, mas ainda mais significante foi a adição de uma etapa anterior responsável por remover informações redundantes, ou seja, campos que já continham o valor padrão e portanto podem ser apagados, com a ciência de que o JSONEditor irá preenche-los com o mesmo valor padrão.</p>
+<p>Com isso é possível compartilhar magias usando apenas um link e <a href="https://wha-spell-maker.daviamsilva.dev/?spell=XVJBjtswDPwKoVMLGEmxwF58K3ppse3JLXJogoCRaYtYhTQkOka6yN8Lyem224shazjDITUvTvBMrnXdNU4BuqCUXeNwtqDJte4Jz3om6AInDHhG17iesk88Gau41n0PBLlyc-FCJozgVQxZMiB4EksYYWHpYZae0qBqkHnkCO8QLpgYxUAHsEBrWQXfQ55T0kLp4XQFFMBolASNZYQJrfwUnle5UBpJPAFKD5EubFj8FSXJG-gUBkwNsEHADCrxCicigVw-pe6fCYr5hHW-DEtgHwBj1KX6mzMlMIUhKhrgSS9U78fqtLYf4hWWQEKXUhoIbNG7NCYC09kH6sF0JAuUNlBXWNbGGU6cyRv1DagQBIxDsUfoA2SN1NQORb0qr6pV8VVvBdZXOE-RrPQt1rzxBY1ys45Tlvh2outmL3vpdE6eWvgiPU0kPYnBjs0H-IwGH40iU4IdP_NegtmU2-12KXhAwxXdGEWaqGfcCNl24Wfe1nwda76OHWF0jSsms2t_vrjEMq6nexq_IYu7HRpXo_AGqjfHXcnJjz9xKmL8i1z7-PjhzpL_SXL89Dcn7ta8xb6-ZsY1Lun92D483A63w-03" rel="noopener noreferrer" target="_blank">um clique <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10.76 8.69a.76.76 0 0 0-.76.76V20.9c0 .42.34.76.76.76.19 0 .35-.06.48-.16l1.91-1.55 1.66 3.62c.13.27.4.43.69.43.11 0 .22 0 .33-.08l2.76-1.28c.38-.18.56-.64.36-1.01L17.28 18l2.41-.45a.9.9 0 0 0 .43-.26c.27-.32.23-.79-.12-1.08l-8.74-7.35-.01.01a.76.76 0 0 0-.49-.18M15 10V8h5v2zm-1.17-5.24 2.83-2.83 1.41 1.41-2.83 2.83zM10 0h2v5h-2zM3.93 14.66l2.83-2.83 1.41 1.41-2.83 2.83zm0-11.32 1.41-1.41 2.83 2.83-1.41 1.41zM7 10H2V8h5z"></path></svg></span></a>.</p>
+<div class="language-javascript highlight"><span class="filename">Código de codificação e decodificação do parâmetro spell:</span><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">export</span><span class="w"> </span><span class="k">async</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">base64urlDeflateRawEncode</span><span class="p">(</span><span class="nx">input</span><span class="o">:</span><span class="w"> </span><span class="nx">string</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="nb">Promise</span><span class="o">&lt;</span><span class="nx">string</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">stream</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Response</span><span class="p">(</span><span class="nx">input</span><span class="p">).</span><span class="nx">body</span><span class="o">!</span><span class="p">.</span><span class="nx">pipeThrough</span><span class="p">(</span><span class="ow">new</span><span class="w"> </span><span class="nx">CompressionStream</span><span class="p">(</span><span class="s2">"deflate-raw"</span><span class="p">));</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">buffer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Response</span><span class="p">(</span><span class="nx">stream</span><span class="p">).</span><span class="nx">arrayBuffer</span><span class="p">();</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">bytes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Uint8Array</span><span class="p">(</span><span class="nx">buffer</span><span class="p">);</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">binary</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Array</span><span class="p">.</span><span class="kr">from</span><span class="p">(</span><span class="nx">bytes</span><span class="p">,</span><span class="w"> </span><span class="kr">byte</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nb">String</span><span class="p">.</span><span class="nx">fromCharCode</span><span class="p">(</span><span class="kr">byte</span><span class="p">)).</span><span class="nx">join</span><span class="p">(</span><span class="s2">""</span><span class="p">);</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">btoa</span><span class="p">(</span><span class="nx">binary</span><span class="p">).</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/\+/g</span><span class="p">,</span><span class="w"> </span><span class="s2">"-"</span><span class="p">).</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/\//g</span><span class="p">,</span><span class="w"> </span><span class="s2">"_"</span><span class="p">).</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/=/g</span><span class="p">,</span><span class="w"> </span><span class="s2">""</span><span class="p">);</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="p">}</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="k">export</span><span class="w"> </span><span class="k">async</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">base64urlDeflateRawDecode</span><span class="p">(</span><span class="nx">input</span><span class="o">:</span><span class="w"> </span><span class="nx">string</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="nb">Promise</span><span class="o">&lt;</span><span class="nx">string</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">base64</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">input</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/-/g</span><span class="p">,</span><span class="w"> </span><span class="s2">"+"</span><span class="p">).</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/_/g</span><span class="p">,</span><span class="w"> </span><span class="s2">"/"</span><span class="p">);</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">padded</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">base64</span><span class="p">.</span><span class="nx">padEnd</span><span class="p">(</span><span class="nx">base64</span><span class="p">.</span><span class="nx">length</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="mf">4</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">base64</span><span class="p">.</span><span class="nx">length</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mf">4</span><span class="p">)</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="s2">"="</span><span class="p">);</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">binary</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">atob</span><span class="p">(</span><span class="nx">padded</span><span class="p">);</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">bytes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">Uint8Array</span><span class="p">.</span><span class="kr">from</span><span class="p">(</span><span class="nx">binary</span><span class="p">,</span><span class="w"> </span><span class="kr">char</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="kr">char</span><span class="p">.</span><span class="nx">charCodeAt</span><span class="p">(</span><span class="mf">0</span><span class="p">));</span>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">stream</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Response</span><span class="p">(</span><span class="nx">bytes</span><span class="p">).</span><span class="nx">body</span><span class="o">!</span><span class="p">.</span><span class="nx">pipeThrough</span><span class="p">(</span><span class="ow">new</span><span class="w"> </span><span class="nx">DecompressionStream</span><span class="p">(</span><span class="s2">"deflate-raw"</span><span class="p">));</span>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">decompressed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">Response</span><span class="p">(</span><span class="nx">stream</span><span class="p">).</span><span class="nx">arrayBuffer</span><span class="p">();</span>
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">TextDecoder</span><span class="p">().</span><span class="nx">decode</span><span class="p">(</span><span class="nx">decompressed</span><span class="p">);</span>
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="p">}</span>
+</span></code></pre></div>
+<h3 id="criacao-dos-simbolos">Criação dos Símbolos</h3>
+<p>Para simplificar o processo de inserção de símbolos e evitar confusão com conceitos já definidos na comunidade a lista de símbolos (brasões e flechas) foi tirada diretamente da Independent Witch Hat Atelier Wiki, a fonte principal de informações sobre a série.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-title="Símbolos disponíveis no editor" data-desc-position="bottom"><img align="right" alt="Símbolos disponíveis no editor" class="width50" src="/blog/projetos/wha-spell-maker/whasm-symbols.png"></a></p>
+<p>A maior parte dos símbolos foi desenhada se traçando por cima dos desenhos já presentes na wiki, ou usando referências diretas da série. Além dos símbolos oficialmente reconhecidos foram adicionados figuras geométricas úteis e os símbolos de magia vindos da série <a href="https://pt.wikipedia.org/wiki/The_Owl_House" target="_blank" rel="noopener">A Casa Coruja</a>, outra série que eu sou fã e que contém diversas semelhanças com Witch Hat Atelier.</p>
+<p>Para todos os símbolos a grossura da linha é fixa como sendo 10px, o mesmo valor padrão da grossura dos círculos e linhas disponíveis no editor. Entretanto símbolos diferentes geralmente tem proporções diferentes entre si (brasões são geralmente maiores que flechas, por exemplo), e para lidar com isso certos tipos diferentes de símbolos tem imagens de tamanho diferentes, variando de 200×200px até 800×800px.</p>
+<p class="annotate">Durante o processo de build do site um script python é responsável por converter e organizar todas as imagens nas pastas dentro de <code>symbols</code> para converter em um único arquivo <code>src/data/symbols.json</code> que é importado dentro do código e integrado diretamente no código gerado pelo sistema de build Vite. (1)</p>
+<ol>
+<li>Ou manualmente para desenvolvimento, usando o comando <code class="language-text highlight">npm run make</code></li>
+</ol>
+<h3 id="cloudflare">Cloudflare</h3>
+<p>Para esse projeto, hospedar o site na infraestrutura Workers &amp; Pages da Cloudflare foi o ideal. Ela é gratuita, global, fácil de começar e que permite algumas opções avançadas para a configuração do backend. Mais especificamente foi possível resolver alguns problemas derivados pela forma como o site é carregado, que não seria possível em Github Pages, por exemplo.</p>
+<p>Primeiramente, uma limitação de usar as bibliotecas p5.js, JSONEditor e código para gerar as abas extras é que nenhum desses códigos será executado quando um motor de busca tentar indexar a página. Ou seja, caso nada fosse feito, a única estrutura HTML disponível para análise seriam as tags <code class="language-html highlight"><span class="p">&lt;</span><span class="nt">meta</span><span class="p">&gt;</span></code> do cabeçalho, o título <code class="language-html highlight"><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span></code> e os contêineres que irão acomodar a estrutura do site que ainda não existe.</p>
+<p>Para resolver isso, usa-se o plugin <code>plugin/prerender.ts</code> que é executado durante a build do site e que usa a biblioteca <a href="https://pptr.dev/" target="_blank" rel="noopener">Puppeteer</a>, capaz de executar o site localmente, para exportar o código HTML gerado para um arquivo separado (chamo de <code>index-prerendered.html</code>). A única desvantagem desse método é que o ambiente de build automático da Cloudflare não suporta a Puppeteer, o que força que o lançamento de novas versões ocorram de maneira manual e local.</p>
+<p>Usando um binding do tipo ASSETS, uma funcionalidade da Cloudflare Workers &amp; Pages, declarado em <code>functions/index.ts</code> é possível detectar quando uma requisição está vindo de um <em>crawler</em>, de uma lista fixa dos <em>crawlers</em> mais importantes, e propositalmente enviar como resposta o arquivo pré-renderizado. Dessa forma todos os motores de pesquisa, indexação ou de redes sociais processam a mesma versão da página que um usuário final vê.</p>
+<p>Nesse mesmo arquivo acima há uma segunda funcionalidade implementada: Quando uma requisição é recebida contendo o parâmetro <code>?spell=</code>, indicando que isso é um link de compartilhamento, um código é executado para decodificar as informações da magia. Se um título válido é encontrado o arquivo HTML será editado para incluir o nome da magia no título do site, como exemplo, "Sylph&nbsp;Shoes&nbsp;Spell | Witch&nbsp;Hat&nbsp;Atelier&nbsp;Spell&nbsp;Maker". Assim, ao compartilhar magias em sites que suportam algum tipo de pré-visualização, o usuário final visualizará o título da página contendo o nome da magia que está preste a carregar:</p>
+<p class="width75"><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-title="Pré-visualização de uma magia no site X" data-desc-position="bottom"><img alt="Pré-visualização de uma magia no site X" src="/blog/projetos/wha-spell-maker/x-preview.webp"></a></p>
+<h2 id="impacto">Impacto</h2>
+<h3 id="comunidade">Comunidade</h3>
+<p>Eu inicialmente comecei a desenvolver esse projeto no final do ano passado, mas ele ficou em suspensão até que em março desse ano eu decidi focar integralmente nesse projeto, com a intenção de lança-lo publicamente perto do dia do início da primeira temporada do anime. A data da publicação ocorreu em 5 de abril de 2026, no domingo, um dia antes do primeiro episódio lançar.</p>
+<p>Com o projeto finalizado e estável eu o postei nas comunidades do <a href="https://www.reddit.com/r/WitchHatAtelier/comments/1sd5z5n/presenting_the_witch_hat_atelier_spell_maker/" target="_blank" rel="noopener">Reddit</a> (200 upvotes), Discord e <a href="https://x.com/DaviAMSilva/status/2040848941470597165" target="_blank" rel="noopener">X (antigo Twitter)</a> (4000 likes e 800 reposts) com várias reações positivas, um influxo de acessos ao site e engajamento nas redes sociais devido a combinação da novidade para fãs já existentes e novos fãs chegando na comunidade.</p>
+<p>Após algumas semanas a explosão inicial diminuiu e, naturalmente, após a conclusão da primeira temporada houve uma segunda diminuição de popularidade. Após essa final a taxa de acesso normalizou. Ainda assim, é surreal encontrar imagens de magias sendo compartilhadas por fãs, principalmente no Reddit e Discord, e notar a presença dos símbolos que eu desenhei para o projeto.</p>
+<p>Uma fato curioso, que eu acredito ser indiretamente responsável devido a facilidade de uso do meu editor, foi a proliferação de postagens de magias de baixa qualidade por novos fãs da série. Esses usuários não tinham o conhecimento suficiente do sistema de magia para criar magias coerentes. Isso chegou ao ponto de os moderadores serem forçados a adotar medidas para limitar essas postagens. No subreddit posts sobre esses tipos de magias agora só podem ser postados nos sábados com a etiqueta "Spell-Post Saturday" e no servidor discord canais separados foram criados para magias gerais e magias sérias.</p>
+<p>Finalmente em termos de suporte posterior ao lançamento houveram poucas mudanças. Algumas correções de bugs visuais, funcionalidades de qualidade de vida, mas principalmente a atualização dos símbolos conforme as novidades que o anime trouxe. O meu plano atual para suporte futuro é ocasionalmente visitar as páginas da wiki e atualizar a lista de símbolos conforme novas informações sobre a série se tornam disponíveis.</p>
+<h3 id="estatisticas">Estatísticas</h3>
+<p>Infelizmente eu não me dei conta que a Cloudflare tinha um limite de cerca de 30 dias em que as estatísticas de um Worker estão disponíveis. Mas no que eu me recordo que a taxa de acesso logo após o início do anime foi pelo menos três vezes a taxa de uso atual, talvez mais, que é perto de 500 invocações por dia:</p>
+<p class="width75"><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-title="Cloudflare" data-desc-position="bottom"><img alt="Cloudflare" src="/blog/projetos/wha-spell-maker/stats-cloudflare.webp"></a></p>
+<p class="annotate">As estatísticas realmente interessantes são as dos motores de pesquisa. Mesmo com as minhas tentativas de melhorar o SEO do site, no Google a posição média em resultados ainda é apenas a quinta posição. Inclusive em certas condições o repositório no GitHub ou a postagem no Reddit sobre a publicação do projeto consegue aparecer acima do site em si. Enquanto isso, com o Bing, o site é geralmente melhor colocado nos resultados, entretanto o CTR (1) e o volume absoluto de cliques são menores.</p>
+<ol>
+<li><em>Click-Through Ratio</em>, ou a porcentagem de impressões que geram um clique</li>
+</ol>
+<figure>
+<a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-title="Google" data-desc-position="bottom"><img alt="Google" class="width75" src="/blog/projetos/wha-spell-maker/stats-google.webp"></a>
+
+<figcaption>Google</figcaption>
+</figure>
+<figure>
+<a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-title="Bing" data-desc-position="bottom"><img alt="Bing" class="width75" src="/blog/projetos/wha-spell-maker/stats-bing.webp"></a>
+
+<figcaption>Bing</figcaption>
+</figure>
+<p class="annotate">Principalmente no gráfico do Google é possível visualizar vários picos de cliques e impressões elevados, do qual apenas um eu tenho uma explicação muito interessante: No início de junho começaram a ser compartilhados pela comunidade o projeto <a href="https://github.com/ytnrvdf/wha-spell-simulator" target="_blank" rel="noopener">Witch Hat Atelier Spell Simulator</a> e outras versões derivadas, originalmente criado por usuário do GitHub <a href="https://github.com/ytnrvdf" target="_blank" rel="noopener">ytnrvdf</a>, descrito como <em>"Um simulador de desenho de magias direto no navegador inspirado por Witch Hat Atelier"</em> (1).</p>
+<ol>
+<li>Tradução própria. Original: <em>"A fan-made browser-based spell drawing simulator inspired by Witch Hat Atelier."</em></li>
+</ol>
+<p>Esse projeto não é um competidor direto em termos de conceito, entretanto o fato dele ser genuinamente impressionante e ter um apelo visual e interativo faz ele chamar mais atenção que o meu projeto que é destinado a fãs mais dedicados à criação de novas magias. Infelizmente, devido ao fato das palavras "Maker" and "Simulator" serem relacionadas, após ele ser lançado o CTR caiu do meu site caiu drasticamente devido à competição nos resultados de pesquisa.</p>
+<p>E uma última estatística: Segundo o Google os países com a maior porcentagem de pesquisa são, sem muita surpresa, os Estados Unidos com 33% e o Reino Unido com 7%, já em terceiro lugar vem o brasil com 6%. Isso reflete a minha experiência de ter descoberto uma quantidade surpreendente de fãs brasileiros dentro da comunidade de Witch Hat Atelier, substancialmente maior que outras comunidades de anime e mangá que eu já vi.</p>
+<h2 id="analise-da-serie-spoilers-marcados">Análise da Série <small>(spoilers marcados)</small></h2>
+<p>Por fim, eu acredito que seja apropriado terminar falando um pouco da série em si e o que me fez amar ela. Eu pretendo falar principalmente da arte da série e da premissa, sem focar nos personagens em si.</p>
+<p>O motivo mais óbvio  para gostar dessa série, sem nenhuma surpresa para os fãs, é a qualidade da arte produzida pela <em>mangaká</em>, Kamome Shirahama, tanto em questão da qualidade técnica quanto a visão artística. Os personagens e ambientes são incrivelmente detalhados e as expressões conseguem facilmente transmitir toda as emoções presentes em cada cena.</p>
+<p>Uma das características mais únicas sobre a arte dela é o fato da Shirahama não ter medo de quebrar o fluxo tradicional dos painéis em cada página. Em várias páginas personagens e objetos excedem e interagem com as margens dos painéis, tornando a cena mais dinâmica e aumentando a profundidade da página e do ambiente em questão.</p>
+<p>O melhor exemplo dessa expressão artística está presente em uma sequência presente no capítulo 47 <small>(sem spoilers)</small>. No capítulo, durante duas páginas, Qifrey (o professor) está educando as garotas sobre a origem mitológica de um festival para o qual eles estão viajando; a história é exibida em um livro (um simbolismo constante no mangá e anime), inicialmente fechado e depois aberto, desenhado na página como um objeto dentro do universo da série. Na página dupla imediatamente a seguir nos deparamos com a seguinte cena:</p>
+<figure>
+<a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-title="Silver Eve Festival Arrival (Chapter 47)" data-desc-position="bottom"><img alt="Silver Eve Festival Arrival (Chapter 47)" class="width75" src="/blog/projetos/wha-spell-maker/manga-silver-eve.png"></a>
+
+<figcaption>Os personagens figurativamente e literalmente chegam ao festival após virar a página do livro sobre a origem do festival</figcaption>
+</figure>
+<details class="warning">
+<summary>SPOILERS do volume 1: A premissa da série</summary>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-title="Manga Intro" data-desc-position="bottom"><img align="right" alt="Manga Intro" class="width50" src="/blog/projetos/wha-spell-maker/manga-intro.png"></a></p>
+<p>A premissa da série é também muito interessante, pois no primeiro capítulo a magia é inicialmente apresentada como uma habilidade exclusiva a pessoas que nasceram com ela, os bruxos, algo muito comum em histórias de fantasia. Mas rapidamente é revelado que os únicos pré-requisitos para usufruir da magia são uma folha de papel, uma caneta, tinta mágica e o conhecimento e técnica necessários para desenha-la. Todos os bruxos, e especialmente o Conselho de Segurança Mágico, são obrigados a manter esse conhecimento da magia um segredo completo para todos os não-bruxos.</p>
+<p>Toda a progressão da série ocorre em volta do conflito entre duas facções: Os bruxos de Chapéu Pontudos, na forma dos personagens principais, junto do Conselho de Segurança Mágica que juram manter o segredo da magia a todo custo e os Chapéus de Aba que pretendem revelar o segredo da magia para que todas as pessoas tenham acesso a ela.</p>
+<p>Enquanto outras histórias mais simples declarariam um ou outro grupo como o inimigo definitivo, Witch Hat Atelier mostra uma nuance em oferecer personagens dos dois lados com convicções baseadas em argumentos morais que não podem ser imediatamente rejeitadas pelo leitor. Dessa forma após ponderar sobre os conflitos levantados durante a história é possível perceber que ambos os lados têm motivações complexas em que não há uma solução fácil e definitiva.</p>
+<p>Me parece bem claro que essa obra é um estudo sobre a interação, no mundo real, dos fenômenos sociológicos que são o privilégio de nascença e a meritocracia. Em minha interpretação a obra é uma crítica na incapacidade da implementação de um meritocracia real devido a oposição das seções privilegiadas da sociedade que desejam, direta ou indiretamente, não permitir que outros tenham a capacidade de chegar ao mesmo nível que eles.</p>
+<p>Entretanto a autora é inteligente por reconhecer que existem perigos associados com a remoção de todas as barreiras da sociedade. O exemplo principal disso no mundo real é a democratização do acesso a serviços de comunicação digital. A partir dele pessoas de todos os cantos do mundo têm acesso a comunicação instantânea, mas ele também permite a proliferação de campanhas de desinformação em uma escala global. Isso demonstra como algumas limitações sociais e legais se tornam necessárias para suportar a estabilidade frágil da sociedade moderna, exatamente a justifica pelas ações tomadas pelo Conselho de Segurança Mágica na série.</p>
+</details>
+<details class="warning">
+<summary>SPOILERS do capítulo 85: Minha arte favorita da série e o seu significado</summary>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-title="Manga Chapter 85 Cover" data-desc-position="bottom"><img align="right" alt="Manga Chapter 85 Cover" class="width50" src="/blog/projetos/wha-spell-maker/manga-cover-85.jpeg"></a></p>
+<p>Eu amo a arte dessa página, que é a capa do capítulo 85, pois ela representa todos os pontos que fazem Witch Hat Atelier ser especial: Arte belíssima e detalhada, presença interativa da arte dentro da página, cheia de emoção e que sozinha conta uma história sobre o sujeito representado.</p>
+<p>Qifrey é um personagem com várias camadas de segredos e traumas reprimidos desde a sua infância, mas que ele é forçado a esconder na atualidade. Isso é representado pelos quadros, cada um uma parte mais interna e antiga de sua alma até que, no quadro mais profundo e bem difícil de perceber, está o Qifrey quando era criança.</p>
+<p>Os braços apertados parecem representar desespero e uma vontade de esconder quem ele realmente é, mas, em outra interpretação, também podem significar uma tentativa de confortar e preservar o que sobra da inocência que ele anteriormente possuía.</p>
+</details>
+<!-- markdownlint-disable MD041 MD053 -->
+
+<!-- Abreviações de nomes -->
+
+<!-- Abreviações de links -->
+
+
+
+
+
+
+
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Última atualização">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="31 de julho de 2026 00:05:07 -03"><span class="timeago" datetime="2026-07-31T00:05:07-03:00" locale="pt"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="31 de julho de 2026 00:05:07 -03">2026-07-31</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Criado em">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"></path></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="31 de julho de 2026 00:05:07 -03"><span class="timeago" datetime="2026-07-31T00:05:07-03:00" locale="pt"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="31 de julho de 2026 00:05:07 -03">2026-07-31</span>
+  </span>
+
+    
+    
+    
+  </aside>
+
+
+
+  
+
+
+
+      
+    </article>
+  </div>
+
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden="">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Voltar para o topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://www.linkedin.com/in/daviamsilva/" target="_blank" rel="noopener" title="LinkedIn" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"></path></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://github.com/DaviAMSilva/" target="_blank" rel="noopener" title="GitHub" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"></path></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="mailto:daviamsilva@hotmail.com" target="_blank" rel="noopener" title="E-mail" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4l208 156a48 48 0 0 0 57.6 0l208-156c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48zM0 196v188c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V196L313.6 344.8c-34.1 25.6-81.1 25.6-115.2 0z"></path></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://www.reddit.com/user/DaviAMSilva/" target="_blank" rel="noopener" title="Reddit" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M0 256C0 114.6 114.6 0 256 0s256 114.6 256 256-114.6 256-256 256H37.1c-13.7 0-20.5-16.5-10.9-26.2L75 437C28.7 390.7 0 326.7 0 256m349.6-102.4c23.6 0 42.7-19.1 42.7-42.7s-19.1-42.7-42.7-42.7c-20.6 0-37.8 14.6-41.8 34-34.5 3.7-61.4 33-61.4 68.4v.2c-37.5 1.6-71.8 12.3-99 29.1-10.1-7.8-22.8-12.5-36.5-12.5-33 0-59.8 26.8-59.8 59.8 0 24 14.1 44.6 34.4 54.1 2 69.4 77.6 125.2 170.6 125.2s168.7-55.9 170.6-125.3c20.2-9.6 34.1-30.2 34.1-54 0-33-26.8-59.8-59.8-59.8-13.7 0-26.3 4.6-36.4 12.4-27.4-17-62.1-27.7-100-29.1v-.2c0-25.4 18.9-46.5 43.4-49.9 4.4 18.8 21.3 32.8 41.5 32.8zm-172.5 93.3c16.7 0 29.5 17.6 28.5 39.3s-13.5 29.6-30.3 29.6-31.4-8.8-30.4-30.5S160.3 247 177 247zm190.1 38.3c1 21.7-13.7 30.5-30.4 30.5s-29.3-7.9-30.3-29.6 11.8-39.3 28.5-39.3 31.2 16.6 32.1 38.3zm-48.1 56.7c-10.3 24.6-34.6 41.9-63 41.9s-52.7-17.3-63-41.9c-1.2-2.9.8-6.2 3.9-6.5 18.4-1.9 38.3-2.9 59.1-2.9s40.7 1 59.1 2.9c3.1.3 5.1 3.6 3.9 6.5"></path></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://x.com/DaviAMSilva" target="_blank" rel="noopener" title="Twitter" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M357.2 48h70.6L273.6 224.2 455 464H313L201.7 318.6 74.5 464H3.8l164.9-188.5L-5.2 48h145.6l100.5 132.9zm-24.8 373.8h39.1L119.1 88h-42z"></path></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "toc.follow", "toc.integrate", "navigation.top", "content.tooltips", "content.footnote.tooltips"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../../js/timeago.min.js"></script>
+      
+        <script src="../../../js/timeago_mkdocs_material.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script>
+      
+    
+  
+<script id="init-glightbox">document.querySelectorAll('.glightbox').forEach(function(element) {
+    try {
+        var img = element.querySelector('img');
+        if (img && img.src) {
+            element.setAttribute('href', img.src);
+        } else {
+            console.log('No img element with src attribute found');
+        }
+    } catch (error) {
+        console.log('Error:', error);
+    }
+});
+const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>

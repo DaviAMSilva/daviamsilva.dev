@@ -1,16 +1,16 @@
 :root {
-    --md-primary-fg-color: #{$davi-blue--lightest};
-    --md-primary-fg-color--light: #{$davi-blue--light};
-    --md-primary-fg-color--dark: #{$davi-blue--dark};
+    --md-primary-fg-color: #{$davi-primary--lightest};
+    --md-primary-fg-color--light: #{$davi-primary--light};
+    --md-primary-fg-color--dark: #{$davi-primary--dark};
 
-    --md-accent-fg-color: #{$davi-red--lightest};
-    --md-accent-fg-color--light: #{$davi-red--light};
-    --md-accent-fg-color--dark: #{$davi-red--dark};
+    --md-accent-fg-color: #{$davi-secondary--lightest};
+    --md-accent-fg-color--light: #{$davi-secondary--light};
+    --md-accent-fg-color--dark: #{$davi-secondary--dark};
 }
 
 @media screen {
     [data-md-color-scheme="slate"] {
-        --md-hue: #{$davi-blue-hue};
+        --md-hue: #{$davi-primary-hue};
     
         // Modo escuro nas descrições de imagens
         .glightbox-clean .gslide-description {
@@ -31,7 +31,7 @@
             display: none; /* Hide light images in dark mode */
         }
 
-        header.md-header, nav.md-tabs {
+        header.md-header, nav.md-tabs, footer.md-footer {
             background-color: #181A1F;
         }
 
@@ -46,10 +46,10 @@
         // Indicate that the site is rendered with a dark color scheme
         color-scheme: dark;
 
-        --md-hue: #{$davi-blue-hue};
+        --md-hue: #{$davi-primary-hue};
 
         // Default color shades
-        --md-default-fg-color:             rgba(200, 200, 200, 1);
+        --md-default-fg-color:             rgba(200, 200, 200, 1.00);
         --md-default-fg-color--light:      rgba(200, 200, 200, 0.56);
         --md-default-fg-color--lighter:    rgba(200, 200, 200, 0.32);
         --md-default-fg-color--lightest:   rgba(200, 200, 200, 0.12);
@@ -87,16 +87,16 @@
         --md-typeset-a-color:              var(--md-primary-fg-color);
 
         // Typeset `kbd` color shades
-        --md-typeset-kbd-color:            hsla(#{$davi-blue-hue}, 15%, 90%, 0.12);
-        --md-typeset-kbd-accent-color:     hsla(#{$davi-blue-hue}, 15%, 90%, 0.2);
-        --md-typeset-kbd-border-color:     hsla(#{$davi-blue-hue}, 15%, 14%, 1);
+        --md-typeset-kbd-color:            hsla(#{$davi-primary-hue}, 15%, 90%, 0.12);
+        --md-typeset-kbd-accent-color:     hsla(#{$davi-primary-hue}, 15%, 90%, 0.20);
+        --md-typeset-kbd-border-color:     hsla(#{$davi-primary-hue}, 15%, 14%, 1.00);
 
         // Typeset `mark` color shades
         --md-typeset-mark-color:           #ffff0080;
 
         // Typeset `table` color shades
-        --md-typeset-table-color:          hsla(#{$davi-blue-hue}, 15%, 95%, 0.12);
-        --md-typeset-table-color--light:   hsla(#{$davi-blue-hue}, 15%, 95%, 0.035);
+        --md-typeset-table-color:          hsla(#{$davi-primary-hue}, 15%, 95%, 0.120);
+        --md-typeset-table-color--light:   hsla(#{$davi-primary-hue}, 15%, 95%, 0.035);
 
         // Admonition color shades
         --md-admonition-fg-color:          var(--md-default-fg-color);
