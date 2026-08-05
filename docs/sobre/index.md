@@ -40,6 +40,13 @@ p.imagem-obmep img {
     margin-top: 0.25em;
     margin-bottom: 0.25em;
 }
+
+.sem-selecao {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
 </style>
 
 <div class="grid cards" markdown>
@@ -54,15 +61,15 @@ Eu sou formado em Ciência da Computação pela [Rede de Ensino Doctum de Carati
 
 <div class="card contato" markdown>
 
-[:fontawesome-brands-linkedin:&nbsp;LinkedIn](https://www.linkedin.com/in/daviamsilva/) — /in/daviamsilva
+<span class="sem-selecao" markdown>[:fontawesome-brands-linkedin:&nbsp;LinkedIn](https://www.linkedin.com/in/daviamsilva/) — </span>/in/daviamsilva
 
-[:fontawesome-brands-github:&nbsp;GitHub](https://github.com/DaviAMSilva/) — github.com/DaviAMSilva
+<span class="sem-selecao" markdown>[:fontawesome-brands-github:&nbsp;GitHub](https://github.com/DaviAMSilva/) — </span>github.com/DaviAMSilva
 
-[:fontawesome-solid-envelope:&nbsp;E-mail](mailto:daviamsilva@hotmail.com) — daviamsilva@hotmail.com
+<span class="sem-selecao" markdown>[:fontawesome-solid-envelope:&nbsp;E-mail](mailto:daviamsilva@hotmail.com) — </span>daviamsilva@hotmail.com <!-- markdownlint-disable-line no-bare-urls -->
 
-[:fontawesome-brands-reddit:&nbsp;Reddit](https://www.reddit.com/user/DaviAMSilva/) — /u/DaviAMSilva
+<span class="sem-selecao" markdown>[:fontawesome-brands-reddit:&nbsp;Reddit](https://www.reddit.com/user/DaviAMSilva/) — </span>/u/DaviAMSilva
 
-[:fontawesome-brands-x-twitter:&nbsp;Twitter](https://x.com/DaviAMSilva) — @DaviAMSilva
+<span class="sem-selecao" markdown>[:fontawesome-brands-x-twitter:&nbsp;Twitter](https://x.com/DaviAMSilva) — </span>@DaviAMSilva
 
 </div>
 
