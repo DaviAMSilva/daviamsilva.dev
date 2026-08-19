@@ -3,7 +3,7 @@ title: Witch Hat Atelier Spell Maker
 description: Um criador de magias digital para fãs da série Witch Hat Atelier criada por Kamome Shirahama. Crie, personalize e compartilhe magias baseadas no sistema de magia da série.
 date:
   created: 2026-04-05
-  updated: 2026-07-29
+  updated: 2026-08-18
 slug: wha-spell-maker
 categories:
   - Projetos
@@ -327,15 +327,9 @@ Durante o processo de build do site um script python é responsável por convert
 
 ### Cloudflare
 
-Para esse projeto, hospedar o site na infraestrutura Workers & Pages da Cloudflare foi o ideal. Ela é gratuita, global, fácil de começar e que permite algumas opções avançadas para a configuração do backend. Mais especificamente foi possível resolver alguns problemas derivados pela forma como o site é carregado, que não seria possível em Github Pages, por exemplo.
+Para esse projeto, hospedar o site na infraestrutura Workers & Pages da Cloudflare foi o ideal. Ela é gratuita, global, fácil de começar e que permite algumas opções avançadas para a configuração do backend. Essa possibilidade de acessar o back-end permitiu desenvolver a seguinte funcionalidade:
 
-Primeiramente, uma limitação de usar as bibliotecas p5.js, JSONEditor e código para gerar as abas extras é que nenhum desses códigos será executado quando um motor de busca tentar indexar a página. Ou seja, caso nada fosse feito, a única estrutura HTML disponível para análise seriam as tags `#!html <meta>` do cabeçalho, o título `#!html <h1>` e os contêineres que irão acomodar a estrutura do site que ainda não existe.
-
-Para resolver isso, usa-se o plugin `plugin/prerender.ts` que é executado durante a build do site e que usa a biblioteca [Puppeteer](https://pptr.dev/), capaz de executar o site localmente, para exportar o código HTML gerado para um arquivo separado (chamo de `index-prerendered.html`). A única desvantagem desse método é que o ambiente de build automático da Cloudflare não suporta a Puppeteer, o que força que o lançamento de novas versões ocorram de maneira manual e local.
-
-Usando um binding do tipo ASSETS, uma funcionalidade da Cloudflare Workers & Pages, declarado em `functions/index.ts` é possível detectar quando uma requisição está vindo de um *crawler*, de uma lista fixa dos *crawlers* mais importantes, e propositalmente enviar como resposta o arquivo pré-renderizado. Dessa forma todos os motores de pesquisa, indexação ou de redes sociais processam a mesma versão da página que um usuário final vê.
-
-Nesse mesmo arquivo acima há uma segunda funcionalidade implementada: Quando uma requisição é recebida contendo o parâmetro `?spell=`, indicando que isso é um link de compartilhamento, um código é executado para decodificar as informações da magia. Se um título válido é encontrado o arquivo HTML será editado para incluir o nome da magia no título do site, como exemplo, "Sylph&nbsp;Shoes&nbsp;Spell | Witch&nbsp;Hat&nbsp;Atelier&nbsp;Spell&nbsp;Maker". Assim, ao compartilhar magias em sites que suportam algum tipo de pré-visualização, o usuário final visualizará o título da página contendo o nome da magia que está preste a carregar:
+Quando uma requisição é recebida contendo o parâmetro `?spell=`, indicando que isso é um link de compartilhamento, um código em `functions/index.ts` é executado para decodificar as informações da magia. Se um título válido é encontrado o arquivo HTML será editado para incluir o nome da magia no título do site, como exemplo, "Sylph&nbsp;Shoes&nbsp;Spell | Witch&nbsp;Hat&nbsp;Atelier&nbsp;Spell&nbsp;Maker". Assim, ao compartilhar magias em sites que suportam algum tipo de pré-visualização, o usuário final visualizará o título da página contendo o nome da magia que está preste a carregar:
 
 ![Pré-visualização de uma magia no site X](/blog/projetos/wha-spell-maker/x-preview.webp)
 { .width75 }
