@@ -1,7 +1,54 @@
 {% extends "base.html" %}
 
+
 {% block site_meta %}
 <!-- Correção para a extensão Dark Reader -->
 <meta name="darkreader-lock">
 {{ super() }}
+{% endblock %}
+
+
+{% block extrahead %}
+{{ super() }}
+
+{% set is_post = page.meta and page.meta.date %}
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "{{ "BlogPosting" if is_post else "WebPage" }}",
+    "name": "{{ page.title }}",
+    "url": "{{ page.canonical_url }}",
+    "inLanguage": "pt-BR"
+    {%- if page.meta and page.meta.description %},
+    "description": "{{ page.meta.description }}"
+    {%- endif %}
+    {%- if page.meta and page.meta.tags %},
+    "keywords": [{% for tag in page.meta.tags %}"{{ tag }}"{% if not loop.last %}, {% endif %}{% endfor %}]
+    {%- endif %}
+
+    {%- if is_post %}
+    {%- set created = page.meta.date.created if page.meta.date is mapping else page.meta.date %}
+    {%- set updated = page.meta.date.updated if page.meta.date is mapping else created %},
+    "datePublished": "{{ created | string }}",
+    "dateModified": "{{ updated | string }}"
+    {%- endif %},
+    "author": {
+        "@type": "Person",
+        "name": "Davi Augusto Moreira da Silva",
+        "url": "https://daviamsilva.dev",
+        "sameAs": [
+            "https://github.com/DaviAMSilva",
+            "https://x.com/DaviAMSilva",
+            "https://www.reddit.com/user/DaviAMSilva",
+            "https://www.linkedin.com/in/daviamsilva"
+        ]
+    },
+    "isPartOf": {
+        "@type": "WebSite",
+        "name": "{{ config.site_name }}",
+        "url": "{{ config.site_url }}"
+    }
+}
+</script>
 {% endblock %}
