@@ -7,18 +7,18 @@ categories:
   - Projetos
   - Destaques
 tags:
-  - site
+  - css
+  - github actions
+  - github pages
+  - html
+  - javascript
+  - markdown
   - material for mkdocs
   - mkdocs
-  - markdown
   - p5.js
-  - javascript
-  - html
-  - sass
-  - css
-  - github pages
-  - github actions
   - python
+  - sass
+  - website
 ---
 
 [![Static Badge](https://img.shields.io/badge/github-DaviAMSilva%2Fdaviamsilva.dev-dddddd?logo=github)](https://github.com/DaviAMSilva/daviamsilva.dev)

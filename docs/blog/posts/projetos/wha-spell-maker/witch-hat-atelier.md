@@ -24,9 +24,9 @@ tags:
   - p5.js
   - python
   - sass
-  - site
   - typescript
   - vite
+  - website
 ---
 
 <style>

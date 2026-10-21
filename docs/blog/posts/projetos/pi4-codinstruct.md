@@ -8,19 +8,19 @@ categories:
   - Projetos
   - Faculdade
 tags:
-  - javascript
-  - html
-  - sass
   - css
+  - express
   - faculdade
-  - projeto integrador
-  - site
-  - markdown
   - github actions
-  - webpack
+  - html
+  - javascript
+  - markdown
   - node
   - npm
-  - express
+  - projeto integrador
+  - sass
+  - webpack
+  - website
 ---
 
 [![GitHub codinStruct/codinStruct](https://img.shields.io/badge/github-codinStruct/codinStruct-dddddd?logo=github)](https://github.com/codinStruct/codinStruct){ target="_blank" rel="noopener noreferrer" }
