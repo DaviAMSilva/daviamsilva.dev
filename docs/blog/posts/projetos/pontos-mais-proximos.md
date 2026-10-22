@@ -9,6 +9,9 @@ tags:
   - p5.js
   - algoritmo
   - obmep
+links:
+  - Website: https://daviamsilva.github.io/OBMEP/par-mais-proximo
+  - Repositório: https://github.com/DaviAMSilva/Pontos-mais-proximos
 ---
 
 [![GitHub DaviAMSilva/Pontos-mais-proximos](https://img.shields.io/badge/github-DaviAMSilva%2FPontos--mais--proximos-dddddd?logo=github)](https://github.com/DaviAMSilva/Pontos-mais-proximos){ target="\_blank" rel="noopener noreferrer" }

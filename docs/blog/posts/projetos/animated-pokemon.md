@@ -13,6 +13,10 @@ tags:
   - html
   - javascript
   - css
+links:
+  - Repositório: https://github.com/DaviAMSilva/AnimatedPokemon
+  - Steam Workshop: https://steamcommunity.com/sharedfiles/filedetails/?id=2870660754
+  - Vídeo: https://youtu.be/1iHMsn2k8DU
 ---
 
 <style>
@@ -25,7 +29,7 @@ iframe {
 </style>
 
 [![GitHub DaviAMSilva/AnimatedPokemon](https://img.shields.io/badge/github-DaviAMSilva/AnimatedPokemon-dddddd?logo=github)](https://github.com/DaviAMSilva/AnimatedPokemon){ target="_blank" rel="noopener noreferrer" }
-[![YouTube](https://img.shields.io/badge/youtube-Animated Pokémon -- Wallpaper Engine-ff0000?logo=youtube)](https://youtu.be/1iHMsn2k8DU?si=1RjxHRUrVUfHyOVT){ target="_blank" rel="noopener noreferrer" }
+[![YouTube](https://img.shields.io/badge/youtube-Animated Pokémon -- Wallpaper Engine-ff0000?logo=youtube)](https://youtu.be/1iHMsn2k8DU){ target="_blank" rel="noopener noreferrer" }
 [![Steam Downloads](https://img.shields.io/steam/downloads/2870660754?logo=steam&label=downloads)](https://steamcommunity.com/sharedfiles/filedetails/?id=2870660754){ target="_blank" rel="noopener noreferrer" }
 [![Steam Inscrições](https://img.shields.io/steam/subscriptions/2870660754?logo=steam&label=inscrições)](https://steamcommunity.com/sharedfiles/filedetails/?id=2870660754){ target="_blank" rel="noopener noreferrer" }
 [![Steam Favoritos](https://img.shields.io/steam/favorites/2870660754?logo=steam&label=favoritos)](https://steamcommunity.com/sharedfiles/filedetails/?id=2870660754){ target="_blank" rel="noopener noreferrer" }
@@ -40,7 +44,7 @@ Um sou um fã dos jogos de Pokémon, especialmente os clássicos que ainda tinha
 
 A partir disso eu me perguntei se não seria possível criar de maneira automática um papel de parede animado para cada Pokémon existente. Na época existiam um pouco menos de mil Pokémon distintos, mas com o lançamento de Pokémon Scarlet e Pokémon Violet em 2022 esse número já foi superado.
 
-<iframe src="https://www.youtube-nocookie.com/embed/1iHMsn2k8DU?si=R9OhnztgAj0-dz18" title="YouTube: Animated Pokémon - Wallpaper Engine" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe src="https://www.youtube-nocookie.com/embed/1iHMsn2k8DU" title="YouTube: Animated Pokémon - Wallpaper Engine" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 Nesse mesma época eu tinha começado a utilizar a ferramenta [Wallpaper Engine](https://www.wallpaperengine.io) em meu computador pois eu gostava dos planos de fundos animados que ele conseguia produzir e não estava muito preocupado com o efeito dela na performance do sistema. Um dos modos de funcionamento dessa *engine* é baseado em HTML e JavaScript o que era perfeito para um projeto desse tipo.
 

@@ -11,6 +11,10 @@ tags:
   - javascript
   - css
   - github pages
+links:
+  - Website: https://daviamsilva.github.io
+  - Repositório: https://github.com/DaviAMSilva/DaviAMSilva.github.io
+  - Website Novo: docs/blog/posts/projetos/daviamsilva-dev/daviamsilva-dev.md
 ---
 
 [![Static Badge](https://img.shields.io/badge/github-DaviAMSilva%2FDaviAMSilva.github.io-dddddd?logo=github)](https://github.com/DaviAMSilva/DaviAMSilva.github.io){ target="_blank" rel="noopener noreferrer" }

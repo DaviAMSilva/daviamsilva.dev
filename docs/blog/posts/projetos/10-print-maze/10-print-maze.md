@@ -9,6 +9,10 @@ tags:
   - p5.js
   - algoritmo
   - a*
+links:
+  - Website: https://daviamsilva.github.io/10-print-maze/
+  - Repositório: https://github.com/DaviAMSilva/10-print-maze
+  - Open Processing: https://openprocessing.org/sketch/743512
 ---
 
 [![GitHub DaviAMSilva/10-print-maze](https://img.shields.io/badge/github-DaviAMSilva%2F10--print--maze-dddddd?logo=github)](https://github.com/DaviAMSilva/10-print-maze){ target="\_blank" rel="noopener noreferrer" }

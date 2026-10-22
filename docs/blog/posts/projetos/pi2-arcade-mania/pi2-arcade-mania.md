@@ -18,6 +18,8 @@ tags:
   - github actions
   - devkitpro
   - game boy advance
+links:
+  - Repositório: https://github.com/DaviAMSilva/Arcade_Mania
 ---
 
 [![GitHub DaviAMSilva/Arcade_Mania](https://img.shields.io/badge/github-DaviAMSilva/Arcade__Mania-dddddd?logo=github)](https://github.com/DaviAMSilva/Arcade_Mania){ target="_blank" rel="noopener noreferrer" }

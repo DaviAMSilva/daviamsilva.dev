@@ -57,7 +57,7 @@ img#logo {
 
 **Para informações de uso da biblioteca em si acesse o site da documentação: [Escriturador SPED](https://escriturador-sped.daviamsilva.dev/).**
 
-<img id="logo" src="https://raw.githubusercontent.com/DaviAMSilva/escriturador-sped/main/docs/imagens/logo-transparente.webp" alt="Logo do Escriturador SPED" markdown />
+<a href="https://escriturador-sped.daviamsilva.dev" target="_blank" rel="noopener noreferrer"><img id="logo" src="https://raw.githubusercontent.com/DaviAMSilva/escriturador-sped/main/docs/imagens/logo-transparente.webp" alt="Logo do Escriturador SPED" markdown /></a>
 { .logo-paragrafo }
 
 Atualmente eu trabalho como assistente administrativo no [Kepi Supermercado], em que algumas das minhas funções principais são a entrada e emissão de notas fiscais por intermédio do sistema ERP contratado pela empresa. Uma responsabilidade adicional é a geração, análise, correção e validação prévia dos arquivos de escrituração da [EFD ICMS IPI](https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-icms-ipi) e [EFD Contribuições](https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-contribuicoes).

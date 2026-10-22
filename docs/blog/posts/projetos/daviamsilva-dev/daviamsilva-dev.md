@@ -19,6 +19,10 @@ tags:
   - python
   - sass
   - website
+links:
+  - Website: https://daviamsilva.dev
+  - Repositório: https://github.com/DaviAMSilva/daviamsilva.dev
+  - Website Antigo: blog/posts/projetos/daviamsilva-github-io.md
 ---
 
 [![Static Badge](https://img.shields.io/badge/github-DaviAMSilva%2Fdaviamsilva.dev-dddddd?logo=github)](https://github.com/DaviAMSilva/daviamsilva.dev)

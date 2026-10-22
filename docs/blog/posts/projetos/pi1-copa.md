@@ -13,6 +13,8 @@ tags:
   - faculdade
   - projeto integrador
   - copa do mundo
+links:
+  - Repositório: https://github.com/DaviAMSilva/PI-Copa
 ---
 
 [![GitHub DaviAMSilva/PI-Copa](https://img.shields.io/badge/github-DaviAMSilva/PI--Copa-dddddd?logo=github)](https://github.com/DaviAMSilva/PI-Copa){ target="_blank" rel="noopener noreferrer" }

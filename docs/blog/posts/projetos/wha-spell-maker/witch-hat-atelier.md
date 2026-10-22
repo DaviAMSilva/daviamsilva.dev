@@ -27,6 +27,10 @@ tags:
   - typescript
   - vite
   - website
+links:
+  - Website: https://wha-spell-maker.daviamsilva.dev
+  - Repositório: https://github.com/DaviAMSilva/wha-spell-maker
+  - Wiki: https://witchhatatelier.telepedia.net
 ---
 
 <style>

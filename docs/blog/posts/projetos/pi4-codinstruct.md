@@ -21,6 +21,10 @@ tags:
   - sass
   - webpack
   - website
+links:
+  - Website: https://codinstruct.github.io/codinStruct-content
+  - Website Next: https://codinstruct.luizf.dev
+  - Repositório: https://github.com/codinStruct/codinStruct
 ---
 
 [![GitHub codinStruct/codinStruct](https://img.shields.io/badge/github-codinStruct/codinStruct-dddddd?logo=github)](https://github.com/codinStruct/codinStruct){ target="_blank" rel="noopener noreferrer" }

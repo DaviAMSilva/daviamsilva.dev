@@ -13,6 +13,10 @@ tags:
   - make
   - algoritmo
   - biblioteca
+links:
+  - Repositório Estruturas de Dados: https://github.com/DaviAMSilva/Estruturas_de_Dados
+  - Repositório Searches: https://github.com/DaviAMSilva/Searches
+  - Repositório Sorts: https://github.com/DaviAMSilva/Sorts
 ---
 
 [![GitHub DaviAMSilva/Estruturas_de_Dados](https://img.shields.io/badge/github-DaviAMSilva/Estruturas__de__Dados-dddddd?logo=github)](https://github.com/DaviAMSilva/Estruturas_de_Dados){ target="\_blank" rel="noopener noreferrer" }
