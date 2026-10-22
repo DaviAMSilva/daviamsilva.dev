@@ -1094,6 +1094,17 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
       
         <li class="md-nav__item">
+  <a href="#escriturador-sped" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Escriturador SPED
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#witch-hat-atelier-spell-maker" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1260,6 +1271,140 @@
 
 <!-- Abreviações de links -->
       </header>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2026-10-21 00:00:00+00:00">21 de outubro de 2026</time></li>
+        
+          <li class="md-meta__item">
+            em
+            
+              <a href="../projetos/" class="md-meta__link">Projetos</a>, 
+              <a href="./" class="md-meta__link">Destaques</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              5 min de leitura
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="escriturador-sped"><a class="toclink" href="../../projetos/escriturador-sped/">Escriturador <abbr title="Sistema Público de Escrituração Digital">SPED</abbr></a></h2>
+<style>
+img#logo {
+    float: left;
+    width: 220px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 1.5rem 1rem 0;
+}
+
+@media (max-width: 721px) {
+    .logo-paragrafo {
+        text-align: center !important;
+    }
+
+    img#logo {
+        float: unset;
+        width: 160px;
+        margin: 0 auto 0.75rem;
+    }
+}
+</style>
+
+<p class="badges"><a href="https://github.com/DaviAMSilva/escriturador-sped" target="_blank" rel="noopener"><img alt="Static Badge" src="https://img.shields.io/badge/github-DaviAMSilva%2Fescriturador--sped-dddddd?logo=github"></a>
+<a href="https://escriturador-sped.daviamsilva.dev" target="_blank" rel="noopener"><img alt="Static Badge" src="https://img.shields.io/badge/website-Escriturador%20SPED-326eff"></a>
+<a href="https://pypi.org/project/escriturador-sped" target="_blank" rel="noopener"><img alt="Static Badge" src="https://img.shields.io/pypi/v/escriturador-sped?logo=pypi&amp;logoColor=white"></a></p>
+<blockquote>
+<p>A biblioteca Escriturador <abbr title="Sistema Público de Escrituração Digital">SPED</abbr> tem como objetivo fornecer uma API de acesso, criação e manipulação de arquivos de escrituração pertencentes ao projeto <abbr title="Sistema Público de Escrituração Digital">SPED</abbr> do governo brasileiro. A biblioteca escrita em Python é destinada a programadores, ou usuários avançados, que trabalham com módulos do projeto <abbr title="Sistema Público de Escrituração Digital">SPED</abbr> que envolvam a criação ou edição de escriturações.</p>
+</blockquote>
+<p><strong>Para informações de uso da biblioteca em si acesse o site da documentação: <a href="https://escriturador-sped.daviamsilva.dev/" target="_blank" rel="noopener">Escriturador <abbr title="Sistema Público de Escrituração Digital">SPED</abbr></a>.</strong></p>
+<p class="logo-paragrafo"><a href="https://escriturador-sped.daviamsilva.dev" target="_blank" rel="noopener noreferrer"><img id="logo" src="../../../assets/external/raw.githubusercontent.com/DaviAMSilva/escriturador-sped/main/docs/imagens/logo-transparente.webp" alt="Logo do Escriturador SPED" markdown=""></a></p>
+<p>Atualmente eu trabalho como assistente administrativo no <a href="/curriculo#kepi-supermercado">Kepi Supermercado</a>, em que algumas das minhas funções principais são a entrada e emissão de notas fiscais por intermédio do sistema ERP contratado pela empresa. Uma responsabilidade adicional é a geração, análise, correção e validação prévia dos arquivos de escrituração da <a href="https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-icms-ipi" target="_blank" rel="noopener">EFD ICMS IPI</a> e <a href="https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-contribuicoes" target="_blank" rel="noopener">EFD Contribuições</a>.</p>
+<p>Quando eu comecei meu trabalho na empresa os arquivos de escrituração eram feitos de forma completamente manual, visto que o gerador do sistema ERP gerava um único arquivo <em>pronto</em> e quaisquer alterações posteriores precisavam ser realizadas manualmente por intermédio dos programas validadores disponibilizados pelo governo federal.</p>
+<p>Entretanto desde o meu primeiro dia no escritório eu adotei uma filosofia em que eu deveria utilizar as habilidades que apenas eu possuísse para me destacar no meu trabalho, especificamente o meu conhecimento em ciência da computação. Após adquirir alguns anos de experiência eu fiquei mais familiarizado com o programa <abbr title="Sistema Público de Escrituração Digital">SPED</abbr>, seus módulos e principalmente os formatos dos arquivos de escrituração.</p>
+<p>Originalmente eu editava os arquivos manualmente para corrigir os pequenos detalhes e correções que o gerador dos arquivos não suportava configurar ou que ele gerava de maneira incorreta. Mas após vários períodos fiscais realizando as mesmas alterações repetidamente eu decidi aprender um pouco mais sobre a parte técnica do formato dos arquivos de escrituração e tentar automatizar o processo.</p>
+<hr>
+<p>O formato utilizado pelo <abbr title="Sistema Público de Escrituração Digital">SPED</abbr> é baseado em texto, similar a um arquivo CSV, mas usando barras verticais (<code>|</code>), inclusive no início e fim da linha. Cada linha representa um registro e entre cada par de barras verticais o texto representa um campo desse registro. Cada registro tem um nome composto de um caractere que representa o bloco organizacional a que o registro pertence em adição de três algarismos.</p>
+<p>Em uma linha de um registro o primeiro campo sempre contém o nome do registro em si. A partir da informação do nome do registro atual é necessário consultar o manual relevante para descobrir a quantidade de campos esperado para a linha, os nomes e tipos dos campos, além da explicação de como cada campo deve ser interpretado.</p>
+<p>Apesar do fato de os registros serem listados linearmente na forma de texto, cada registro tem um nível a que ele pertence. Registros são considerados <em>filhos</em> do primeiro registro anterior em um nível acima, sendo esse o registro <em>pai</em>. Esse método de gerar uma árvore é idêntico à maneira como o python interpreta indentação, apenas nesse caso a indentação é substituída por um nível implícito baseado no registro.</p>
+<p>Além disso as escriturações contém alguns funcionalidades adicionais em sua estrutura, como registros de abertura e fechamento da escrituração e dos vários blocos presentes. Finalmente o bloco 9 é dedicado exclusivamente para totalizar a quantidade de vezes que cada registro aparece na escrituração, servindo como uma validação básica de que a estrutura da escrituração está valida.</p>
+<details class="abstract">
+<summary>Exemplo de um arquivo de escrituração do módulo EFD Contribuições</summary>
+<p>Contida no exemplo abaixo linha <code>|0140|1|EMPRESA XXX|99999999000191|MG||3106200|||</code> representa o registro 0140, pertencente ao bloco 0. O registro tem nove campos no total, cujos os nomes são <code>|REG|COD_EST|NOME|CNPJ|UF|IE|COD_MUN|IM|SUFRAMA|</code> e o resto dos detalhes podem ser consultados na seguinte <a href="https://escriturador-sped.daviamsilva.dev/modulos/?tabela=efd_contribuicoes-006-1.35#0140" target="_blank" rel="noopener">tabela</a> ou no seguinte <a href="https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-contribuicoes/manuais/guia_pratico_efd_contribuicoes_versao_1_35-18_06_2021.pdf/@@display-file/file" target="_blank" rel="noopener">manual</a>.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>|0000|002|0|||01042011|30042011|EMPRESA XXX|99999999000191|MG|3106200||00|0|
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>|0001|0|
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>|0110|1|2|1|
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>|0111|1|0|0|0|1|
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>|0140|1|EMPRESA XXX|99999999000191|MG||3106200|||
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>|0990|6|
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>|A001|1|
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>|A990|2|
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>|C001|1|
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>|C990|2|
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>|D001|1|
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>|D990|2|
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>|F001|1|
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>|F990|2|
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>|M001|0|
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>|M200|0|0|0|0|0|0|0|0|0|0|0|0|
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>|M600|0|0|0|0|0|0|0|0|0|0|0|0|
+</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>|M990|4|
+</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>|1001|1|
+</span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a>|1990|2|
+</span><span id="__span-3-21"><a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a>|9001|0|
+</span><span id="__span-3-22"><a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a>|9900|0000|1|
+</span><span id="__span-3-23"><a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a>|9900|0001|1|
+</span><span id="__span-3-24"><a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a>|9900|0110|1|
+</span><span id="__span-3-25"><a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a>|9900|0111|1|
+</span><span id="__span-3-26"><a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a>|9900|0140|1|
+</span><span id="__span-3-27"><a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a>|9900|0990|1|
+</span><span id="__span-3-28"><a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a>|9900|1001|1|
+</span><span id="__span-3-29"><a id="__codelineno-3-29" name="__codelineno-3-29" href="#__codelineno-3-29"></a>|9900|1990|1|
+</span><span id="__span-3-30"><a id="__codelineno-3-30" name="__codelineno-3-30" href="#__codelineno-3-30"></a>|9900|9001|1|
+</span><span id="__span-3-31"><a id="__codelineno-3-31" name="__codelineno-3-31" href="#__codelineno-3-31"></a>|9900|9990|1|
+</span><span id="__span-3-32"><a id="__codelineno-3-32" name="__codelineno-3-32" href="#__codelineno-3-32"></a>|9900|9999|1|
+</span><span id="__span-3-33"><a id="__codelineno-3-33" name="__codelineno-3-33" href="#__codelineno-3-33"></a>|9900|A001|1|
+</span><span id="__span-3-34"><a id="__codelineno-3-34" name="__codelineno-3-34" href="#__codelineno-3-34"></a>|9900|A990|1|
+</span><span id="__span-3-35"><a id="__codelineno-3-35" name="__codelineno-3-35" href="#__codelineno-3-35"></a>|9900|C001|1|
+</span><span id="__span-3-36"><a id="__codelineno-3-36" name="__codelineno-3-36" href="#__codelineno-3-36"></a>|9900|C990|1|
+</span><span id="__span-3-37"><a id="__codelineno-3-37" name="__codelineno-3-37" href="#__codelineno-3-37"></a>|9900|D001|1|
+</span><span id="__span-3-38"><a id="__codelineno-3-38" name="__codelineno-3-38" href="#__codelineno-3-38"></a>|9900|D990|1|
+</span><span id="__span-3-39"><a id="__codelineno-3-39" name="__codelineno-3-39" href="#__codelineno-3-39"></a>|9900|F001|1|
+</span><span id="__span-3-40"><a id="__codelineno-3-40" name="__codelineno-3-40" href="#__codelineno-3-40"></a>|9900|F990|1|
+</span><span id="__span-3-41"><a id="__codelineno-3-41" name="__codelineno-3-41" href="#__codelineno-3-41"></a>|9900|M001|1|
+</span><span id="__span-3-42"><a id="__codelineno-3-42" name="__codelineno-3-42" href="#__codelineno-3-42"></a>|9900|M200|1|
+</span><span id="__span-3-43"><a id="__codelineno-3-43" name="__codelineno-3-43" href="#__codelineno-3-43"></a>|9900|M600|1|
+</span><span id="__span-3-44"><a id="__codelineno-3-44" name="__codelineno-3-44" href="#__codelineno-3-44"></a>|9900|M990|1|
+</span><span id="__span-3-45"><a id="__codelineno-3-45" name="__codelineno-3-45" href="#__codelineno-3-45"></a>|9900|9900|24|
+</span><span id="__span-3-46"><a id="__codelineno-3-46" name="__codelineno-3-46" href="#__codelineno-3-46"></a>|9990|27|
+</span><span id="__span-3-47"><a id="__codelineno-3-47" name="__codelineno-3-47" href="#__codelineno-3-47"></a>|9999|47|
+</span></code></pre></div>
+</details>
+<p>O fato que existem centenas de registros e milhares de campos para cada módulo e que a única fonte para essa informação são manuais publicados em formato PDF é o que dificulta o trabalho de conversão desses dados para um formato próprio para automatização.</p>
+<hr>
+<p>A primeira versão da ferramenta interna que utiliza a biblioteca foi desenvolvida há mais de dois anos. Desde então a biblioteca foi atualizada incrementalmente baseado nas necessidades e limitações encontradas durante o uso dentro do escritório. O uso dessa ferramenta como um passo adicional após a geração inicial das escriturações transformou um processo que demorava uma tarde inteira para um que pode ser realizado em menos de dez minutos. Isso, além do fato que várias inconsistências anteriormente despercebidas agora podem ser detectadas e corrigidas automaticamente.</p>
+<p>Essa foi a minha primeira experiência desenvolvendo e <a href="https://pypi.org/project/escriturador-sped/" target="_blank" rel="noopener">publicando</a> um pacote python. Um dos novos paradigmas de programação que eu aprendi durante o processo foi a utilização do sistema <a href="https://semver.org/lang/pt-BR/" target="_blank" rel="noopener">semver</a> para versionamento das mudanças. Adicionalmente foi a minha primeira experiência com uma utilização mais avançada de Git e GitHub. Especificamente a prática de criar ramos para funcionalidades específicas, que são unidas no ramo <em>dev</em> e eventualmente no ramo <em>main</em> para a publicação de uma nova versão.</p>
+<!-- markdownlint-disable MD041 MD053 -->
+
+<!-- Abreviações de nomes -->
+
+<!-- Abreviações de links -->
+    
+    
+  </div>
+</article>
       
         <article class="md-post md-post--excerpt">
   <header class="md-post__header">
