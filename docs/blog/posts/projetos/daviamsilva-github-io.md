@@ -11,6 +11,7 @@ tags:
   - javascript
   - css
   - github pages
+  - website
 links:
   - Website: https://daviamsilva.github.io
   - Repositório: https://github.com/DaviAMSilva/DaviAMSilva.github.io
