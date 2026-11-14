@@ -220,7 +220,7 @@
             s.createCanvas(s.windowWidth, s.windowHeight);
             s.background(10, 10, 20);
             s.noiseDetail(2, 0.5);
-            s.describe("Plano de fundo futurista com retângulos azuis e uma imagem de uma lâmpada"); // Usado para acessibilidade
+            s.describe("Plano de fundo futurista com retângulos azuis"); // Usado para acessibilidade
             s.configureSketch();
         }
 
