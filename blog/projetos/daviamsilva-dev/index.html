@@ -25,7 +25,7 @@
       
       
       <link rel="icon" href="../../../images/Lamp2D.gif">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.1">
     
 
     
@@ -34,10 +34,10 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.57a0d79d.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.fb2fffe2.min.css">
       
       
 
@@ -1454,7 +1454,7 @@
 <p>Adicionalmente, é bem claro para mim que um dos melhores pontos positivos dessa ferramenta é a enorme capacidade de customização que ela permite, e como é incrivelmente fácil realizar tal customização. Entretanto isso não quer dizer que isso é um processo rápido, leva-se um bom tempo preparando as configurações e tentativa e erro para deixar o site da maneira como se deseja.</p>
 <p>A qualidade e praticidade dessa customização vêm-se principalmente do sistema de plugins que o projeto se adere, tanto os internos quantos os construídos externamente pela comunidade. Os mais impressionantes e úteis que eu uso em meu site são o sistema de pesquisa, blog, tags e as várias opções de formatação adicionais.</p>
 <hr>
-<p></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" data-title="Página inicial do site antigo construído usando React" data-desc-position="bottom"><img align="right" alt="Página inicial do site antigo construído usando React" src="site-antigo.png" style="max-width:min(100%,500px)"></a></p>
 <p>A segunda característica interessante do meu site é a animação presente na página inicial, desenvolvida usando a biblioteca gráfica <a href="https://p5js.org" target="_blank" rel="noopener">p5.js</a>. Ela na verdade já tinha sido desenvolvida anos atrás para uma versão anterior de um site pessoal que eu nunca acabei finalizando.</p>
 <p>Atualmente a animação é composto de um grid de retângulos que surgem aleatoriamente na tela e se expandem até não poderem mais, com um leve movimento dos tamanhos dos retângulos que também são afetados pela proximidade do mouse.</p>
 <p>Entretanto originalmente a ideia era substituir um dos quadrados pela minha imagem de perfil (atualmente uma lâmpada do jogo Minecraft colorida como a bandeira do Brasil). Ao clicar nessa imagem todo o papel de parede seria desligado e a imagem seria substituída pela versão da lâmpada desligada, simulando uma tomada de luz. A ideia foi descartada para simplificar a interação da animação com a página em si.</p>
@@ -1597,10 +1597,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "toc.follow", "toc.integrate", "navigation.top", "content.tooltips", "content.footnote.tooltips"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "toc.follow", "toc.integrate", "navigation.top", "content.tooltips", "content.footnote.tooltips"], "search": "../../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.a5f9d56c.min.js"></script>
       
         <script src="../../../js/timeago.min.js"></script>
       
@@ -1615,10 +1615,15 @@
 <script id="init-glightbox">document.querySelectorAll('.glightbox').forEach(function(element) {
     try {
         var img = element.querySelector('img');
-        if (img && img.src) {
-            element.setAttribute('href', img.src);
+        if (img) {
+            const imageSrc = img.dataset.src || img.src;
+            if (imageSrc) {
+                element.setAttribute('href', imageSrc);
+            } else {
+                console.log('No img element with src or data-src attribute found');
+            }
         } else {
-            console.log('No img element with src attribute found');
+            console.log('No img element found');
         }
     } catch (error) {
         console.log('Error:', error);
